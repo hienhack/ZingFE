@@ -1,0 +1,41 @@
+.bg-cyan-400 {
+    font-size: 50px;
+    background-color: black;
+}
+
+.header {
+    position: fixed;
+    z-index: 5;
+    right: 0;
+    top: 0;
+    left: 240px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 59px;
+    
+    &.is-sticky {
+        box-shadow: 0 3px 5px var(--sticky-header-box-shadow);
+        
+        &:before {
+            bottom: 0;
+        }
+    }
+
+    &:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 100%;
+        z-index: 1;
+        height: 70px;
+        background-color: var(--layout-header-bg);
+        backdrop-filter: blur(50px);
+    }
+
+    * {
+        z-index: 10;
+    }
+}

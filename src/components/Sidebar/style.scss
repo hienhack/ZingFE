@@ -1,0 +1,70 @@
+.zing-logo {
+    width: 120px;
+    height: 40px;
+    display: inline-block;
+    background: var(--img-logo-mp3) 50% / contain no-repeat;
+}
+
+.sidebar-divider>hr {
+    border: 0 0 0.5px 0;
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+
+.sidebar-item {
+    border-left-width: 3px;
+    border-left-color: transparent;
+    padding: 12px 21px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: rgb(195, 194, 194);
+
+    &:hover {
+        color: white;
+    }
+
+    .content-wrapper {
+        display: flex;
+        align-items: center;
+
+        .icon {
+            width: 24px;
+            height: 24px;
+            display: flex;
+            align-items: center;
+            margin-right: 12px;
+
+            >svg {
+                fill: white;
+            }
+        }
+    }
+}
+
+.sidebar-item span {
+    font-size: 0.875rem;
+    line-height: normal;
+    font-weight: 500;
+    /* color: rgb(210, 205, 205) */
+}
+
+.sidebar-item .play-btn {
+    visibility: hidden;
+    color: white;
+}
+
+.sidebar-item:hover .play-btn {
+    visibility: visible;
+    height: 24px;
+    width: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.sidebar-item.active {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-left-color: blueviolet;
+    color: white;
+}

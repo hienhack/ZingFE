@@ -6,13 +6,43 @@ import { Header } from './components/Header';
 import { Routes, Route } from 'react-router-dom';
 import { DefaultLayout } from './layouts';
 import HomePage from './pages/Home/HomePage';
+import ZingChartPage from './pages/ZingChart/ZingChartPage';
+import RadioPage from './pages/Radio/RadioPage';
+import NewReleasePage from './pages/NewRelease/NewReleasePage';
+import TopicPage from './pages/Topic/TopicPage';
+import Top100Page from './pages/Top100/Top100Page';
+import HistoryPage from './pages/History/HistoryPage';
+import MyPlaylistPage from './pages/MyPlaylist/MyPLaylistPage';
+import { MyMusicPage, FavoriteSong, UploadSong, Song } from './pages/MyMusic';
 
 function App() {
   return (
     <>
       <Routes>
         <Route path="/" element={<DefaultLayout />}>
-          <Route path="/" element={<HomePage />}></Route>
+          <Route path="/mymusic" element={<MyMusicPage />}>
+            <Route path="/mymusic/song" element={<Song />}>
+              <Route index path="/mymusic/song" element={<FavoriteSong />} />
+              <Route path="/mymusic/song/favorite" element={<FavoriteSong />} />
+              <Route path="/mymusic/song/upload" element={<UploadSong />} />
+            </Route>
+            <Route path="/mymusic/mv" element={<MyMusicPage />} />
+            <Route path="/mymusic/album" element={<MyMusicPage />} />
+          </Route>
+          <Route index={true} path="/" element={<HomePage />}></Route>
+          <Route path="/zing-chart" element={<ZingChartPage />}></Route>
+          <Route path="/radio" element={<RadioPage />}></Route>
+          <Route path="/moi-phat-hanh" element={<NewReleasePage />}></Route>
+          <Route path="/hub" element={<TopicPage />}></Route>
+          <Route path="/top100" element={<Top100Page />}></Route>
+          <Route path="/mymusic/history" element={<HistoryPage />}></Route>
+          {/* Bài hát yêu thích */}
+          <Route path="/mymusic/song/favorite" element={<MyMusicPage />}></Route>
+          <Route path="/mymusic/library/playlist" element={<MyPlaylistPage />}></Route>
+
+          <Route path="/mymusic/album" element={<MyMusicPage />}></Route>
+          <Route path="/" element={<MyMusicPage />}></Route>
+          <Route path="/mymusic/song/upload" element={<MyMusicPage />}></Route>
         </Route>
       </Routes>
     </>
