@@ -1,7 +1,18 @@
 import SidebarItem from './SidebarItem';
+import { useSelector, useDispatch } from 'react-redux';
+import { setAuthenticate } from '../../redux/slice/userSlice';
 import './style.scss';
 
 function Sidebar() {
+  const isLoggedIn = useSelector((state) => state.user.isLoggedIn);
+  const dispatch = useDispatch();
+
+  function handleMyMusicClicking() {
+    if (!isLoggedIn) {
+      dispatch(setAuthenticate(true));
+    }
+  }
+
   return (
     <div className="h-full max-h-full w-full bg-[var(--sidebar-bg)] flex flex-col z-10">
       <div className="h-[70px] min-h-[70px] pl-7 pt-3">
@@ -10,7 +21,7 @@ function Sidebar() {
         </button>
       </div>
       <div className="flex flex-col">
-        <SidebarItem path="/mymusic" isPlayable={true}>
+        <SidebarItem path="/mymusic" isPlayable={isLoggedIn} handleClick={handleMyMusicClicking}>
           <svg width="24" height="24" viewBox="0 0 24 24" className="fill-white">
             <path
               fill-rule="evenodd"

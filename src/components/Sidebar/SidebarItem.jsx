@@ -7,7 +7,7 @@ import { setCurrentSong } from '../../redux/slice/featureSlice';
 import { setPlaying } from '../../redux/slice/statusSlice';
 import './style.scss';
 
-function SidebarItem({ path, className, isPlayable, children }) {
+function SidebarItem({ path, className, isPlayable, handleClick, children }) {
   const components = Children.toArray(children);
   const dispacth = useDispatch();
   const currentSong = useSelector((state) => state.feature.currentSong);
@@ -18,8 +18,15 @@ function SidebarItem({ path, className, isPlayable, children }) {
     dispacth(setCurrentSong({ id: 1 }));
   }
 
+  function onClick(e) {
+    if (handleClick) {
+      e.preventDefault();
+      handleClick();
+    }
+  }
+
   return (
-    <NavLink to={path}>
+    <NavLink to={path} onClick={onClick}>
       {({ isActive }) => (
         <div className={clsx('sidebar-item', isActive && 'active', className)}>
           <div className="content-wrapper">

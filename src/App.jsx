@@ -14,8 +14,15 @@ import Top100Page from './pages/Top100/Top100Page';
 import HistoryPage from './pages/History/HistoryPage';
 import MyPlaylistPage from './pages/MyPlaylist/MyPLaylistPage';
 import { MyMusicPage, FavoriteSong, UploadSong, Song } from './pages/MyMusic';
+import { useSelector, useDispatch } from 'react-redux';
+import { setAuthenticate } from './redux/slice/userSlice';
+import Modal from './components/Modal/Modal';
+import AuthForm from './components/Form/AuthForm';
 
 function App() {
+  const authenticate = useSelector((state) => state.user.authenticate);
+  const dispacth = useDispatch();
+
   return (
     <>
       <Routes>
@@ -45,6 +52,7 @@ function App() {
           <Route path="/mymusic/song/upload" element={<MyMusicPage />}></Route>
         </Route>
       </Routes>
+      <AuthForm open={authenticate} handleOpen={() => dispacth(setAuthenticate(false))} />
     </>
   );
 }
