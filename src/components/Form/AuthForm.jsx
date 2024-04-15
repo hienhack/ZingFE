@@ -14,7 +14,9 @@ function AuthForm({ open, handleOpen }) {
         {formType == 'register' && <Register toSignin={() => setFormType('login')} />}
         <div className="cover">
           <div className="logo"></div>
-          <div className="image"></div>
+          <div className="bg-[--layout-bg]">
+            <div className="image"></div>
+          </div>
         </div>
       </div>
     </Modal>

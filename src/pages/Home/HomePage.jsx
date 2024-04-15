@@ -5,8 +5,8 @@ function HomePage() {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="text-white h-[1000px] asc">
-      <h1>This is discovery page</h1>
+    <div className="px-[--padding-section]">
+      <h1 className="text-white">This is discovery page</h1>
     </div>
   );
 }

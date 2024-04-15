@@ -1,5 +1,9 @@
 function TopicPage() {
-  return <div className="text-white h-[1000px]">This is TopicPage</div>;
+  return (
+    <div className="px-[--padding-section]">
+      <h1 className="text-white">Chủ đề và thể loại</h1>
+    </div>
+  );
 }
 
 export default TopicPage;

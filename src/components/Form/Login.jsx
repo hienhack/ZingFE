@@ -1,6 +1,7 @@
 import { useForm } from 'react-hook-form';
 import FormInput from './FormInput';
 import { ErrorMessage } from '@hookform/error-message';
+import axios from 'axios';
 
 function Login({ toRegister }) {
   const {
@@ -13,7 +14,15 @@ function Login({ toRegister }) {
   });
 
   function onSubmit(data) {
-    console.log(data);
+    axios
+      .post('http://nxc-hcmus.me:8081/api/auth/authenticate', {
+        username: data.email,
+        password: data.password,
+      })
+      .then((data) => {
+        console.log(data);
+      })
+      .catch((error) => console.log(error));
   }
 
   return (
@@ -35,10 +44,10 @@ function Login({ toRegister }) {
             <FormInput
               {...register('email', {
                 required: { value: true, message: 'Email không được bỏ trống' },
-                pattern: {
-                  value: /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/,
-                  message: 'Email không hợp lệ',
-                },
+                // pattern: {
+                //   value: /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/,
+                //   message: 'Email không hợp lệ',
+                // },
               })}
               error={errors.email}
               placeholder="Email"
@@ -58,10 +67,10 @@ function Login({ toRegister }) {
                   value: true,
                   message: 'Mật khẩu không được bỏ trống',
                 },
-                minLength: {
-                  value: 8,
-                  message: 'Mật khẩu phải chứa ít nhất 8 kí tự',
-                },
+                // minLength: {
+                //   value: 8,
+                //   message: 'Mật khẩu phải chứa ít nhất 8 kí tự',
+                // },
               })}
               error={errors.password}
               placeholder="Mật khẩu"

@@ -1,5 +1,9 @@
 function ZingChartPage() {
-  return <div className="text-white h-[1000px]">This is ZingChartPage</div>;
+  return (
+    <div className="px-[--padding-section]">
+      <h1 className="text-white">This is zingchart page</h1>
+    </div>
+  );
 }
 
 export default ZingChartPage;

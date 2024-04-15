@@ -1,11 +1,14 @@
 import { GoChevronRight } from 'react-icons/go';
 
-function DiscoveryBtn() {
+function DiscoveryBtn({ path }) {
   return (
-    <button className="flex items-center gap-1 text-[--text-secondary] hover:text-[--link-text-hover]">
+    <a
+      href={path}
+      className="flex w-fit items-center gap-1 text-[--text-secondary] hover:text-[--link-text-hover]"
+    >
       <span className="text-xs font-semibold ">TẤT CẢ</span>
       <GoChevronRight size="1.5rem"></GoChevronRight>
-    </button>
+    </a>
   );
 }
 

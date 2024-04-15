@@ -65,6 +65,7 @@
   --chart-bg-img-alpha: rgba(30, 30, 30, 0.9);
   --chart-box-bg-alpha: hsla(0, 0%, 100%, 0.05);
   --chart-logo-color: #fff;
+  --padding-section: 59px;
 }
 
 * {
