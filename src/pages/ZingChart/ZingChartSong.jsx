@@ -8,7 +8,7 @@ import { FaArrowUp, FaArrowDown } from 'react-icons/fa';
 import { RiVipLine } from "react-icons/ri";
 
 function ZingChartSong({ songInfo, index }) {
-    const { currentSongId } = useSelector((state) => state.music);
+    // const { currentSongId } = useSelector((state) => state.music);
     const dispatch = useDispatch();
 
     // const handleClickSong = () => {
@@ -21,11 +21,7 @@ function ZingChartSong({ songInfo, index }) {
     return (
         <div
             // onDoubleClick={handleClickSong}
-            className={`flex justify-between select-none p-[10px] border-b-[1px] border-border-color-2 rounded-[4px] group ${
-                songInfo?.encodeId === currentSongId
-                    ? 'bg-primary-color-8'
-                    : 'hover:bg-primary-color-8'
-            }`}
+            className={`flex justify-between select-none p-[10px] border-b-[1px] border-border-color-2 rounded-[4px] group bg-primary-color-8`}
         >
             <div className="flex items-center flex-5 w-6/12 justify-items-center">
                 <span
@@ -67,22 +63,7 @@ function ZingChartSong({ songInfo, index }) {
                         />
                     </div>
                     {/* {songInfo?.isWorldWide === false && <FaArrowDown />} */}
-                    {songInfo?.encodeId !== currentSongId && (
-                        <span className="absolute top-[50%] right-[50%] translate-x-[50%] translate-y-[-50%] text-text-color-2 cursor-pointer hidden group-hover:block">
-                            <FaPlay size={16} />
-                        </span>
-                    )}
-                    {songInfo?.encodeId === currentSongId ? (
-                        <span className="absolute top-[50%] right-[50%] translate-x-[50%] translate-y-[-50%] text-text-color-2 cursor-pointer">
-                            {/* {isPlaying ? (
-                                <AudioLoading height={'25'} width={'25'} color={'#FFFFFF'} />
-                            ) : (
-                                <FaPlay size={16} />
-                            )} */}
-                        </span>
-                    ) : (
-                        ''
-                    )}
+                    
                 </div>
                 {/* <div className="flex items-center ">
                     <div className="pt-2 px-2 text-lg text-gray-400">

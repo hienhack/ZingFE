@@ -7,8 +7,8 @@ import { FaArrowUp, FaArrowDown } from 'react-icons/fa';
 import { RiVipLine } from "react-icons/ri";
 
 function ZingChartSongSmall({ songInfo, index }) {
-    const { currentSongId } = useSelector((state) => state.music);
-    const { screenWidthRedux } = useSelector((state) => state.app);
+    // const { currentSongId } = useSelector((state) => state.music);
+    // const { screenWidthRedux } = useSelector((state) => state.app);
     const dispatch = useDispatch();
 
     // const handleClickSong = () => {
@@ -17,16 +17,12 @@ function ZingChartSongSmall({ songInfo, index }) {
     // };
 
     const artistsLength = songInfo?.artists?.length;
-    const titleLength = screenWidthRedux > 1224 ? 10 : 35;
+    const titleLength = 10;
 
     return (
         <div
             // onDoubleClick={handleClickSong}
-            className={`flex justify-between select-none p-[10px] rounded-[4px] group ${
-                songInfo?.encodeId === currentSongId
-                    ? 'bg-[hsla(0,0%,100%,0.1)]'
-                    : 'hover:bg-[hsla(0,0%,100%,0.1)]'
-            }`}
+            className={`flex justify-between select-none p-[10px] rounded-[4px] group bg-[hsla(0,0%,100%,0.1)] `}
         >
             <div className="flex items-center flex-5">
                 <span className="text-shadow-4 mr-[15px] w-[40px] flex items-center justify-center text-[32px] text-[rgba(139,57,121,0.9)]">
@@ -57,22 +53,7 @@ function ZingChartSongSmall({ songInfo, index }) {
                             alt={songInfo.title}
                         />
                     </div>
-                    {songInfo?.encodeId !== currentSongId && (
-                        <span className="absolute top-[50%] right-[50%] translate-x-[50%] translate-y-[-50%] text-text-color-2 cursor-pointer hidden group-hover:block">
-                            {/* <FaPlay size={16} /> */}
-                        </span>
-                    )}
-                    {songInfo?.encodeId === currentSongId ? (
-                        <span className="absolute top-[50%] right-[50%] translate-x-[50%] translate-y-[-50%] text-text-color-2 cursor-pointer">
-                            {/* {isPlaying ? (
-                                <AudioLoading height={'25'} width={'25'} color={'#FFFFFF'} />
-                            ) : (
-                                <FaPlay size={16} />
-                            )} */}
-                        </span>
-                    ) : (
-                        ''
-                    )}
+                    
                 </div>
                 <div className="flex flex-col">
                     <span className="text-sm font-semibold leading-5 text-text-color-2">

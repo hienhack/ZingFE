@@ -85,3 +85,19 @@ body {
 button:hover {
   opacity: 0.9;
 }
+
+.text-shadow-1 {
+  text-shadow: 1px 1px 0 #4a90e2, -1px 1px 0 #4a90e2, -1px -1px 0 #4a90e2, 1px -1px 0 #4a90e2;
+}
+
+.text-shadow-2 {
+  text-shadow: 1px 1px 0 #27bd9c, -1px 1px 0 #27bd9c, -1px -1px 0 #27bd9c, 1px -1px 0 #27bd9c;
+}
+
+.text-shadow-3 {
+  text-shadow: 1px 1px 0 #e35050, -1px 1px 0 #e35050, -1px -1px 0 #e35050, 1px -1px 0 #e35050;
+}
+
+.text-shadow-4 {
+  text-shadow: 1px 1px 0 #ffffff, -1px 1px 0 #ffffff, -1px -1px 0 #ffffff, 1px -1px 0 #ffffff;
+}

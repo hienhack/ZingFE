@@ -13,19 +13,19 @@ import TabTitle from './TabTitle';
 // import SongItemChartHomeTooltip from './SongItemChartHomeTooltip';
 import ZingChartSong from './ZingChartSong';
 import ZingChartSongSmall from './ZingChartSongSmall';
-
+import chartPageData from './chartData2.json';
 
 
 
 function ZingChartPage() {
-  const [chartData, setChartData] = useState(null);
+//   const [chartData, setChartData] = useState(null);
   const [randomSong, setRandomSong] = useState(null);
   const [isShowFull, setIsShowFull] = useState(false);
   const [songData, setSongData] = useState([]);
 
 
   const chartRef = useRef('');
-  const chartPageData = require('./chartData2.json');
+//   const chartPageData = require('./chartData2.json');
 
 
   useEffect(() => {
@@ -33,32 +33,32 @@ function ZingChartPage() {
   }, []);
 
 
-  useEffect(() => {
-    const labels = chartPageData?.RTChart?.chart?.times
-        ?.filter((time) => +time.hour % 2 === 0)
-        ?.map((item) => `${item.hour}:00`);
+//   useEffect(() => {
+//     const labels = chartPageData?.RTChart?.chart?.times
+//         ?.filter((time) => +time.hour % 2 === 0)
+//         ?.map((item) => `${item.hour}:00`);
 
-    if (chartPageData?.RTChart?.chart?.items) {
-        const datasets = [];
-        for (let i = 0; i < 3; i++) {
-            datasets.push({
-                data: chartPageData?.RTChart?.chart?.items[
-                    Object.keys(chartPageData?.RTChart?.chart?.items)[i]
-                ]
-                    ?.filter((item) => +item.hour % 2 === 0)
-                    ?.map((item) => item.counter),
-                borderColor: i === 0 ? '#4A90E2' : i === 1 ? '#27BD9C' : '#E35050',
-                tension: 0.2,
-                borderWidth: 2,
-                pointBackgroundColor: 'white',
-                pointHoverRadius: 5,
-                pointBorderColor: i === 0 ? '#4A90E2' : i === 1 ? '#27BD9C' : '#E35050',
-                pointHoverBorderWidth: 2
-            });
-        }
-        setChartData({ labels, datasets });
-    }
-  }, [chartPageData]);
+//     if (chartPageData?.RTChart?.chart?.items) {
+//         const datasets = [];
+//         for (let i = 0; i < 3; i++) {
+//             datasets.push({
+//                 data: chartPageData?.RTChart?.chart?.items[
+//                     Object.keys(chartPageData?.RTChart?.chart?.items)[i]
+//                 ]
+//                     ?.filter((item) => +item.hour % 2 === 0)
+//                     ?.map((item) => item.counter),
+//                 borderColor: i === 0 ? '#4A90E2' : i === 1 ? '#27BD9C' : '#E35050',
+//                 tension: 0.2,
+//                 borderWidth: 2,
+//                 pointBackgroundColor: 'white',
+//                 pointHoverRadius: 5,
+//                 pointBorderColor: i === 0 ? '#4A90E2' : i === 1 ? '#27BD9C' : '#E35050',
+//                 pointHoverBorderWidth: 2
+//             });
+//         }
+//         setChartData({ labels, datasets });
+//     }
+//   }, [chartPageData]);
 
 
   useEffect(() => {
