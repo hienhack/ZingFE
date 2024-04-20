@@ -14,7 +14,7 @@ import TabTitle from './TabTitle';
 import ZingChartSong from './ZingChartSong';
 import ZingChartSongSmall from './ZingChartSongSmall';
 import chartPageData from './chartData2.json';
-
+import { FaCirclePlay } from "react-icons/fa6";
 
 
 function ZingChartPage() {
@@ -85,19 +85,19 @@ return (
   <>
     <div className="w-full relative h-full overflow-x-hidden overflow-y-auto overflow-y-overlay text-white">
       <div className="relative">
-          <img src={bgChart} alt="cover" className="object-cover w-full h-[500px]" />
-          <div className="absolute top-0 bottom-0 left-0 right-0 bg-[rgba(65,22,54,0.92)]"></div>
-          <div
+          {/* <img src={bgChart} alt="cover" className="object-cover w-full h-[500px]" />
+          <div className="absolute top-0 bottom-0 left-0 right-0 bg-[rgba(65,22,54,0.92)]"></div> */}
+          {/* <div
               className={`absolute top-0 bottom-2/3 flex items-end left-[59px] right-[59px]`
                 
-                // ${    screenWidthRedux > 1022
-                //       ? 'left-[59px] right-[59px]'
-                //       : 'left-[29px] right-[29px]'
-                // }`
+                ${    screenWidthRedux > 1022
+                      ? 'left-[59px] right-[59px]'
+                      : 'left-[29px] right-[29px]'
+                }`
               }
           >
               <h3 className="mb-5 text-[40px] font-extrabold">#zingchart</h3>
-          </div>
+          </div> */}
           {/* <div className="absolute top-1/3 bottom-0 left-0 right-[10px] md:right-[59px] bg-gradient-to-t from-[rgb(65,22,54)] to-transparent">
               <div className="w-full h-[90%] relative">
                   {chartData && <Line data={chartData} options={options} ref={chartRef} />}
@@ -135,7 +135,7 @@ return (
           <div className="w-full flex items-center justify-center ">
               <button
                   onClick={() => setIsShowFull((prev) => !prev)}
-                  className="py-2 px-[25px] border-[1px] border-[#ffffff] rounded-full font-medium text-sm hover:bg-opacity-color-4"
+                  className="py-2 px-[25px] border-[1px] border-[#ffffff] rounded-full font-medium text-sm hover:bg-opacity-color-4 hover:bg-[rgba(61,45,76,1)]"
               >
                   {isShowFull ? 'Ẩn bớt' : 'Xem top 100'}
               </button>
@@ -152,7 +152,7 @@ return (
                   // }`
                 }
               />
-              <div className="absolute top-0 bottom-0 left-0 right-0 bg-[rgba(139,57,121,0.9)]"></div>
+              <div className="absolute top-0 bottom-0 left-0 right-0 bg-[rgba(32,15,53,0.9)] "></div>
               <div className="absolute top-0 bottom-0 left-[59px] right-[59px]">
                   <div className="mt-8 mb-5">
                       <Link
@@ -176,15 +176,16 @@ return (
                           // }`
                         }
                       >
-                          <div className="w-full pl-10 pb-[10px]">
+                          <div className="w-full pl-10 pb-[10px] flex row ">
                               <Link
-                                  className="text-2xl font-bold hover:text-text-color-primary-1"
+                                  className="text-2xl font-bold hover:text-purple-500 items-center"
                                   to={chartPageData?.weekChart?.vn?.link}
                               >
                                   Việt Nam
                               </Link>
+                              <FaCirclePlay className=" pl-1 text-4xl fill-purple-500"/>
                           </div>
-                          <div className="mb-[15px]">
+                          <div className="mb-[15px] ">
                               {chartPageData?.weekChart?.vn?.items
                                   ?.filter((item, index) => index < 5)
                                   ?.map((item, index) => (
@@ -198,7 +199,7 @@ return (
                           <div className="w-full flex items-center justify-center">
                               <Link
                                   to={chartPageData?.weekChart?.vn?.link}
-                                  className="py-[6px] px-[25px] border-[1px] border-[#ffffff] rounded-full font-medium text-sm hover:bg-opacity-color-4"
+                                  className="py-[6px] px-[25px] border-[1px] border-[#ffffff] rounded-full font-medium text-sm hover:bg-opacity-color-4 hover:bg-[rgba(61,45,76,1)]"
                               >
                                   Xem tất cả
                               </Link>
@@ -211,13 +212,14 @@ return (
                           // }`
                         }
                       >
-                          <div className="w-full pl-10 pb-[10px]">
+                          <div className="w-full pl-10 pb-[10px] flex col-auto item-center">
                               <Link
-                                  className="text-2xl font-bold hover:text-text-color-primary-1"
+                                  className="text-2xl font-bold hover:text-purple-500"
                                   to={chartPageData?.weekChart?.us?.link}
                               >
                                   US-UK
                               </Link>
+                              <FaCirclePlay className=" pl-1 text-4xl fill-purple-500"/>
                           </div>
                           <div className="mb-[15px]">
                               {chartPageData?.weekChart?.us?.items
@@ -233,7 +235,7 @@ return (
                           <div className="w-full flex items-center justify-center">
                               <Link
                                   to={chartPageData?.weekChart?.us?.link}
-                                  className="py-[6px] px-[25px] border-[1px] border-[#ffffff] rounded-full font-medium text-sm hover:bg-opacity-color-4"
+                                  className="py-[6px] px-[25px] border-[1px] border-[#ffffff] rounded-full font-medium text-sm hover:bg-opacity-color-4 hover:bg-[rgba(61,45,76,1)]"
                               >
                                   Xem tất cả
                               </Link>
@@ -246,13 +248,14 @@ return (
                           // }`
                         }
                       >
-                          <div className="w-full pl-10 pb-[10px]">
+                          <div className="w-full pl-10 pb-[10px] flex col-auto items-center">
                               <Link
-                                  className="text-2xl font-bold hover:text-text-color-primary-1"
+                                  className="text-2xl font-bold hover:text-purple-500"
                                   to={chartPageData?.weekChart?.korea?.link}
                               >
                                   K-Pop
                               </Link>
+                              <FaCirclePlay className=" pl-1 text-4xl fill-purple-500"/>
                           </div>
                           <div className="mb-[15px]">
                               {chartPageData?.weekChart?.korea?.items
@@ -268,7 +271,7 @@ return (
                           <div className="w-full flex items-center justify-center">
                               <Link
                                   to={chartPageData?.weekChart?.korea?.link}
-                                  className="py-[6px] px-[25px] border-[1px] border-[#ffffff] rounded-full font-medium text-sm hover:bg-opacity-color-4"
+                                  className="py-[6px] px-[25px] border-[1px] border-[#ffffff] rounded-full font-medium text-sm hover:bg-opacity-color-4 hover:bg-[rgba(61,45,76,1)]"
                               >
                                   Xem tất cả
                               </Link>
