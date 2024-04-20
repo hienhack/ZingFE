@@ -85,3 +85,19 @@ body {
 button:hover {
   opacity: 0.9;
 }
+
+.text-shadow-no1 {
+  text-shadow: 1px 1px 0 rgb(57, 174, 241), -1px 1px 0 rgb(57, 174, 241), -1px -1px 0 rgb(57, 174, 241),
+      1px -1px 0 rgb(57, 174, 241);
+}
+
+.text-shadow-no2 {
+  text-shadow: 1px 1px 0 rgb(66,174,154), -1px 1px 0 rgb(66,174,154), -1px -1px 0 rgb(66,174,154),
+      1px -1px 0 rgb(66,174,154);
+}
+
+.text-shadow-no3 {
+  text-shadow: 1px 1px 0 rgb(148,55,62), -1px 1px 0 rgb(148,55,62), -1px -1px 0 rgb(148,55,62),
+      1px -1px 0 rgb(148,55,62);
+}
+
