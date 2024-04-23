@@ -2,10 +2,10 @@ import { useState } from 'react';
 import DiscoveryBtn from '../../components/DiscoveryBtn/DiscoveryBtn';
 import { Chart } from '../../components/Chart';
 import { BsFillPlayFill } from 'react-icons/bs'
-const chartitem = [
-  { id: 1, title: 'Chúng Ta Của Tương Lai', thumbnail: "https://photo-resize-zmp3.zmdcdn.me/w320_r1x1_jpeg/cover/7/e/7/b/7e7b8f07e9af15dc2fa3424d237bfff7.jpg", artist: "Sơn Tùng MTP", point: '50%' },
-  { id: 2, title: 'Em Của Ngày Hôm Qua', thumbnail: "https://photo-resize-zmp3.zmdcdn.me/w320_r1x1_jpeg/cover/f/1/3/8/f138a02472481738a6660e97421ceff2.jpg", artist: "Sơn Tùng MTP", point: '50%' },
-  { id: 3, title: 'Chúng Ta Của Hiện Tại', thumbnail: "https://photo-resize-zmp3.zmdcdn.me/w320_r1x1_jpeg/cover/6/4/7/9/64797af5fc5fa8aee8660d85a8cb3816.jpg", artist: "Sơn Tùng MTP", point: '50%' },
+export const chartitem = [
+  { id: 0, title: 'Chúng Ta Của Tương Lai', thumbnail: "https://photo-resize-zmp3.zmdcdn.me/w320_r1x1_jpeg/cover/7/e/7/b/7e7b8f07e9af15dc2fa3424d237bfff7.jpg", artist: "Sơn Tùng MTP", point: '50%' },
+  { id: 1, title: 'Em Của Ngày Hôm Qua', thumbnail: "https://photo-resize-zmp3.zmdcdn.me/w320_r1x1_jpeg/cover/f/1/3/8/f138a02472481738a6660e97421ceff2.jpg", artist: "Sơn Tùng MTP", point: '50%' },
+  { id: 2, title: 'Chúng Ta Của Hiện Tại', thumbnail: "https://photo-resize-zmp3.zmdcdn.me/w320_r1x1_jpeg/cover/6/4/7/9/64797af5fc5fa8aee8660d85a8cb3816.jpg", artist: "Sơn Tùng MTP", point: '50%' },
 ];
 function ChartHome() {
   const [open, setOpen] = useState(false);
@@ -35,7 +35,7 @@ function ChartHome() {
               <div className='h-7 mt-4 flex items-center justify-center text-white'><span className='h-full w-[30%] rounded-full border flex items-center justify-center text-center cursor-pointer hover:bg-[#945EA7]'>Xem thêm</span></div>
             </div>
             <div className=' w-[554px] h-[300px] ml-6'>
-              <Chart />
+              <Chart chartitem={chartitem}/>
             </div>
           </div>
         </div>
