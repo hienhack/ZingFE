@@ -6,16 +6,16 @@ import _ from 'lodash';
 // eslint-disable-next-line no-unused-vars
 // import { Chart } from 'chart.js/auto';
 
-import bgChart from '../../assets/bg-chart.jpg'
+// import bgChart from '../../assets/bg-chart.jpg'
 import bgChart2 from '../../assets/bg-chart-2.jpg'
-
+import { FaPlay } from 'react-icons/fa';
 import TabTitle from './TabTitle';
 // import SongItemChartHomeTooltip from './SongItemChartHomeTooltip';
 import ZingChartSong from './ZingChartSong';
 import ZingChartSongSmall from './ZingChartSongSmall';
 import chartPageData from './chartData2.json';
 import { FaCirclePlay } from "react-icons/fa6";
-
+import { IoIosPlay } from "react-icons/io";
 
 function ZingChartPage() {
 //   const [chartData, setChartData] = useState(null);
@@ -133,12 +133,15 @@ return (
               ))}
           </div>
           <div className="w-full flex items-center justify-center ">
-              <button
-                  onClick={() => setIsShowFull((prev) => !prev)}
-                  className="py-2 px-[25px] border-[1px] border-[#ffffff] rounded-full font-medium text-sm hover:bg-opacity-color-4 hover:bg-[rgba(61,45,76,1)]"
-              >
-                  {isShowFull ? 'Ẩn bớt' : 'Xem top 100'}
-              </button>
+              {isShowFull ? '': 
+                <button
+                onClick={() => setIsShowFull((prev) => !prev)}
+                className="py-2 px-[25px] border-[1px] border-[#ffffff] rounded-full font-medium text-sm hover:bg-opacity-color-4 hover:bg-[rgba(61,45,76,1)]"
+            >
+                {/* {isShowFull ? 'Ẩn bớt' : 'Xem top 100'} */}
+                Xem top 100
+            </button>
+              }
           </div>
       </div>
       {chartPageData && (
@@ -177,13 +180,16 @@ return (
                         }
                       >
                           <div className="w-full pl-10 pb-[10px] flex row ">
-                              <Link
-                                  className="text-2xl font-bold hover:text-purple-500 items-center"
-                                  to={chartPageData?.weekChart?.vn?.link}
-                              >
-                                  Việt Nam
-                              </Link>
-                              <FaCirclePlay className=" pl-1 text-4xl fill-purple-500"/>
+                                <Link
+                                    className="text-2xl font-bold hover:text-purple-500 items-center"
+                                    to={chartPageData?.weekChart?.vn?.link}
+                                >
+                                    Việt Nam
+                                </Link>
+                                <div className="relative mx-2">
+                                    <FaCirclePlay className="text-4xl fill-purple-500 hover:fill-purple-600" />
+                                    <FaPlay className="absolute inset-1 m-auto text-white" size={18}/>
+                                </div>
                           </div>
                           <div className="mb-[15px] ">
                               {chartPageData?.weekChart?.vn?.items
@@ -219,7 +225,10 @@ return (
                               >
                                   US-UK
                               </Link>
-                              <FaCirclePlay className=" pl-1 text-4xl fill-purple-500"/>
+                              <div className="relative mx-2">
+                                    <FaCirclePlay className="text-4xl fill-purple-500 hover:fill-purple-600" />
+                                    <FaPlay className="absolute inset-0 m-auto text-white"size={18}/>
+                                </div>
                           </div>
                           <div className="mb-[15px]">
                               {chartPageData?.weekChart?.us?.items
@@ -255,7 +264,10 @@ return (
                               >
                                   K-Pop
                               </Link>
-                              <FaCirclePlay className=" pl-1 text-4xl fill-purple-500"/>
+                                <div className="relative mx-2">
+                                    <FaCirclePlay className="text-4xl fill-purple-500 hover:fill-purple-600" />
+                                    <FaPlay className="absolute inset-0 m-auto text-white" size={18}/>
+                                </div>
                           </div>
                           <div className="mb-[15px]">
                               {chartPageData?.weekChart?.korea?.items

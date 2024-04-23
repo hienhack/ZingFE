@@ -4,7 +4,6 @@ import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { FaPlay } from 'react-icons/fa';
 import { LiaMicrophoneAltSolid } from "react-icons/lia";
-import { FaRegHeart } from "react-icons/fa";
 import { SlOptions } from "react-icons/sl";
 // import { setCurrSongId } from '../../../store/actions';
 import PremiumIcon from './PremiumIcon';
@@ -24,6 +23,9 @@ function ZingChartSongSmall({ songInfo, index }) {
     const artistsLength = songInfo?.artists?.length;
     const titleLength = 9;
 
+    const [showTooltip1, setShowTooltip1] = useState(false);
+    const [showTooltip2, setShowTooltip2] = useState(false);
+
     return (
         <div
             // onDoubleClick={handleClickSong}
@@ -32,20 +34,20 @@ function ZingChartSongSmall({ songInfo, index }) {
             className={`flex justify-between select-none p-[10px] rounded-[4px] group  hover:bg-[rgba(61,45,76,1)]`}
         >
             <div className="flex items-center flex-5 ">
-                <span className="text-shadow-4 mr-[5px] w-[25px] flex items-center justify-center text-[32px] text-[rgba(139,57,121,0.9)] ">
+                <span className="text-shadow-4 mr-[5px] w-[25px] flex items-center justify-center text-[32px] text-[rgba(61,45,76,1)] font-extrabold  ">
                     {index + 1}
                 </span>
                 <div className="flex flex-col justify-center items-center px-2 text-lg text-gray-400">
                     {songInfo?.rakingStatus > 0 ? (
-                    <div className="text-green-500 flex flex-col items-center font-inter text-xs">
-                        <FiTriangle className='fill-green-500' />
+                    <div className="text-white flex flex-col items-center font-inter text-xs font-extrabold">
+                        <FiTriangle className='fill-green-500 text-green-500' />
                         <div> {songInfo?.rakingStatus} </div>
                     </div>
                     ) : songInfo?.rakingStatus === 0 ? (
                         <span className="mx-1">-</span>
                     ) : (
-                    <div className=" text-red-500 flex flex-col items-center font-inter text-xs">
-                        <TbTriangleInverted className='fill-red-500'/>
+                    <div className=" text-white flex flex-col items-center font-inter text-xs font-extrabold">
+                        <TbTriangleInverted className='fill-red-500 text-red-500'/>
                         <div> {Math.abs(songInfo?.rakingStatus)} </div>
                     </div>
                     )}
@@ -60,13 +62,13 @@ function ZingChartSongSmall({ songInfo, index }) {
                             alt={songInfo.title}
                         />
                     </div>
-                    <span className="absolute top-[50%] right-[50%] translate-x-[50%] translate-y-[-50%] text-text-color-2 cursor-pointer hidden group-hover:block">
+                    <span className="absolute top-[50%] right-[50%] translate-x-[50%] translate-y-[-50%]  cursor-pointer hidden group-hover:block">
                             <FaPlay size={16} />
                     </span>
                 </div>
                 <div className="flex flex-col ">
                     <div className='flex row max-h-5'>
-                        <span className="text-sm font-semibold leading-5 text-text-color-2 ">
+                        <span className="text-sm font-semibold leading-5 hover:text-purple-500">
                             {songInfo?.title.length > titleLength
                                 ? `${songInfo?.title.slice(0, titleLength)}...`
                                 : songInfo?.title}
@@ -75,12 +77,12 @@ function ZingChartSongSmall({ songInfo, index }) {
                             {songInfo?.isWorldWide === false && <PremiumIcon/>}
                         </span>
                     </div>
-                    <h3 className="text-xs font-medium leading-5 text-text-color-3 truncate max-w-[125px] overflow-ellipsis-2-line">
+                    <h3 className="text-xs font-medium leading-5  truncate max-w-[125px] overflow-ellipsis-2-line hover:text-purple-500">
                         {songInfo?.artists?.map((artist, index) => (
                             <Link
                                 key={artist?.link}
                                 to={artist?.link}
-                                className="cursor-pointer hover:underline hover:text-text-color-primary-2 text-slate-400"
+                                className="cursor-pointer hover:underline hover:text-purple-500 text-slate-400"
                             >
                                 {index === artistsLength - 1
                                     ? `${artist?.name}`
@@ -96,14 +98,42 @@ function ZingChartSongSmall({ songInfo, index }) {
             </div>
             <span className="text-xs font-medium leading-5 flex-1 flex justify-end items-center mr-1 text-slate-400">
                 {isHovered ? (
-                    <div className="flex space-x-2 items-center">
-                        <div className="relative group flex items-center justify-center w-8 h-8">
-                            <div className="absolute  w-4 h-4 rounded-full group-hover:bg-[rgba(72,60,76,1)] transition-all duration-300"></div>
-                            <LiaMicrophoneAltSolid size={16} className=" z-10 text-text-color-2" />
+                    <div className="flex space-x-4 items-center">
+                        <div 
+                            onMouseEnter={() => setShowTooltip1(true)}
+                            onMouseLeave={() => setShowTooltip1(false)}
+                            className="relative group flex items-center justify-center w-10 h-10 rounded-full hover:bg-[rgba(72,60,76,1)]">
+                            <div className="absolute  w-8 h-8   transition-all duration-300"></div>
+                            <LiaMicrophoneAltSolid size={16} className=" z-10 text-white" />
+                            {/* <span className="absolute -top-12 left-1/2 transform -translate-x-1/2 min-w-[8rem] max-w-xs px-2 py-1 bg-[rgba(48,36,60,0.9)] text-white text-xs rounded opacity-0 group-hover:opacity-100 whitespace-nowrap">
+                                Phát cùng lời bài hát
+                            </span> */}
+                            <div
+                                
+                                className="absolute -top-12 left-1/2 transform -translate-x-1/2 px-2 py-1 bg-[rgba(48,36,60,0.9)] text-white text-xs rounded whitespace-nowrap"
+                                style={{ opacity: showTooltip1 ? 1 : 0 }}>
+                                Phát cùng lời bài hát
+                                <div className="absolute left-1/2 transform -translate-x-1/2 bottom-0 mb-[-9px] w-0 h-0 border-x-[10px] border-x-transparent border-t-[10px] border-t-[rgba(48,36,60,0.9)]"></div>
+                            </div>
+
                         </div>
-                        <div className="relative group flex items-center justify-center w-8 h-8">
-                        <div className="absolute  w-4 h-4 rounded-full group-hover:bg-[rgba(72,60,76,1)] transition-all duration-3000"></div>
-                            <SlOptions size={16} className=" z-10 text-text-color-2" />
+                        <div 
+                            onMouseEnter={() => setShowTooltip2(true)}
+                            onMouseLeave={() => setShowTooltip2(false)}
+                            className="relative group flex items-center justify-center w-10 h-10 rounded-full hover:bg-[rgba(72,60,76,1)]">
+                            <div className="absolute  w-8 h-8   transition-all duration-300"></div>
+                            <SlOptions size={16} className=" z-10 text-white" />
+                            {/* <span className="absolute -top-12 left-1/2 transform -translate-x-1/2 min-w-[8rem] max-w-xs px-2 py-1 bg-[rgba(48,36,60,0.9)] text-white text-xs rounded opacity-0 group-hover:opacity-100 whitespace-nowrap">
+                                Phát cùng lời bài hát
+                            </span> */}
+                            <div
+                                
+                                className="absolute -top-12 left-1/2 transform -translate-x-1/2 px-2 py-1 bg-[rgba(48,36,60,0.9)] text-white text-xs rounded whitespace-nowrap"
+                                style={{ opacity: showTooltip2 ? 1 : 0 }}>
+                                Khác
+                                <div className="absolute left-1/2 transform -translate-x-1/2 bottom-0 mb-[-9px] w-0 h-0 border-x-[10px] border-x-transparent border-t-[10px] border-t-[rgba(48,36,60,0.9)]"></div>
+                            </div>
+
                         </div>
                     </div>
                 ) : (

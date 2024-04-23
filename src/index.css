@@ -101,3 +101,31 @@ button:hover {
 .text-shadow-4 {
   text-shadow: 1px 1px 0 #ffffff, -1px 1px 0 #ffffff, -1px -1px 0 #ffffff, 1px -1px 0 #ffffff;
 }
+
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-radius: 4px;
+  padding: 5px;
+  background: rgba(48, 36, 60, 0.9);
+  color: white;
+  text-align: center;
+  visibility: hidden; /* Hide tooltip by default and show on hover */
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip::after {
+  content: "";
+  position: absolute;
+  bottom: 100%; /* Position it at the bottom of the tooltip */
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent rgba(48, 36, 60, 0.9) transparent;
+  /* This creates a triangle pointing down */
+}
+
+/* Show the tooltip text when hovering over the container */
