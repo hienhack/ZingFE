@@ -156,9 +156,9 @@ function TopicPage() {
 
   return (
     <div className="px-[--padding-section] ">
-      <div className="mr-[330px]">
+      <div className="">
         {/* banner */}
-        <div className="pt-[20px] w-[1163px]  flex     ">
+        <div className="pt-[20px]  flex     ">
           <img src={banner} alt=""  className="rounded-md cursor-pointer"/>
         </div>
 
