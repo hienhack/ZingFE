@@ -98,11 +98,11 @@ function ZingChartSongSmall({ songInfo, index }) {
             </div>
             <span className="text-xs font-medium leading-5 flex-1 flex justify-end items-center mr-1 text-slate-400">
                 {isHovered ? (
-                    <div className="flex space-x-4 items-center">
+                    <div className="flex space-x-2 items-center">
                         <div 
                             onMouseEnter={() => setShowTooltip1(true)}
                             onMouseLeave={() => setShowTooltip1(false)}
-                            className="relative group flex items-center justify-center w-10 h-10 rounded-full hover:bg-[rgba(72,60,76,1)]">
+                            className="relative group flex items-center justify-center w-7 h-7 rounded-full hover:bg-[rgba(72,60,76,1)]">
                             <div className="absolute  w-8 h-8   transition-all duration-300"></div>
                             <LiaMicrophoneAltSolid size={16} className=" z-10 text-white" />
                             {/* <span className="absolute -top-12 left-1/2 transform -translate-x-1/2 min-w-[8rem] max-w-xs px-2 py-1 bg-[rgba(48,36,60,0.9)] text-white text-xs rounded opacity-0 group-hover:opacity-100 whitespace-nowrap">
@@ -120,7 +120,7 @@ function ZingChartSongSmall({ songInfo, index }) {
                         <div 
                             onMouseEnter={() => setShowTooltip2(true)}
                             onMouseLeave={() => setShowTooltip2(false)}
-                            className="relative group flex items-center justify-center w-10 h-10 rounded-full hover:bg-[rgba(72,60,76,1)]">
+                            className="relative group flex items-center justify-center w-7 h-7 rounded-full hover:bg-[rgba(72,60,76,1)]">
                             <div className="absolute  w-8 h-8   transition-all duration-300"></div>
                             <SlOptions size={16} className=" z-10 text-white" />
                             {/* <span className="absolute -top-12 left-1/2 transform -translate-x-1/2 min-w-[8rem] max-w-xs px-2 py-1 bg-[rgba(48,36,60,0.9)] text-white text-xs rounded opacity-0 group-hover:opacity-100 whitespace-nowrap">
