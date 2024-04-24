@@ -1,19 +1,24 @@
 import React, { useState, useEffect } from 'react'
 import { useSelector } from 'react-redux'
-import { SongItem } from '../SongItem/songitem'
-import DataNewReLease from './datanewrelease.json'
-const NewRelease = () => {
-    const { newRelease } = useSelector(state => state.app)
+import { SongItem } from '../SongItem/songitems'
+import DataNewReLease from './data.json'
+import classNames from 'classnames'
+export const NewRelease = () => {
     const [isActived, setIsActived] = useState(0)
     const [songs, setSongs] = useState([])
-
+/*
     useEffect(() => {
-        isActived ? setSongs(newRelease?.items?.others) : setSongs(newRelease?.items?.vPop)
-    }, [isActived, newRelease])
+        isActived ? setSongs(DataNewReLease?.isWorldWide?.vPop) : setSongs(DataNewReLease?.isWorldWide?.others)
+    }, [isActived, DataNewReLease])
+*/
     return (
+        <div></div>
+/*
         <div className='mt-12 px-[59px] flex flex-col gap-5'>
+
             <div className='flex items-center justify-between'>
-                <h3 className='text-[20px] font-bold'>{newRelease?.title}</h3>
+
+                <h3 className='text-[20px] font-bold'>{DataNewReLease?.title}</h3>
                 <span className='text-xs'>TẤT CẢ</span>
             </div>
             <div className='flex items-center gap-5 text-xs'>
@@ -33,21 +38,20 @@ const NewRelease = () => {
                 </button>
             </div>
             <div className='flex flex-wrap w-full justify-between'>
-                {DataNewReLease?.map(item => (
-                    <div key={item.encodeId} className='w-[45%] min-[1024px]:w-[30%]'>
-                        <SongItem
-                            thumbnail={item.thumbnail}
-                            title={item.title}
-                            artists={item.artistsNames}
-                            releaseDate={item.releaseDate}
-                            sid={item.encodeId}
-                        />
-
-                    </div>
+                {songs?.map(item => (
+                    <SongItem
+                        key={item.encodeId}
+                        thumbnail={item.thumbnail}
+                        title={item.title}
+                        artists={item.artistsNames}
+                        releaseDate={item.releaseDate}
+                        sid={item.encodeId}
+                    />
                 ))}
             </div>
+
         </div>
+*/
     )
 }
-
-export default NewRelease
+ 

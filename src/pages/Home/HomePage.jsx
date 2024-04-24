@@ -8,19 +8,25 @@ import {Radio_Live} from '../Radio/RadioSection'
 import {Slider} from '../../components/Slider/Slider'
 import { HiChevronRight } from "react-icons/hi2";
 
-
 function HomePage() {
   const [open, setOpen] = useState(false);
   //const {newRelease } = useSelector (state => state.app)
 
   return (
     <div className='px-[--padding-section]'>
+    <div className='Slider'>
     <Slider/>
-      <div className='flex flex-col'>
-        <div className='NewRelease  mt-[48px]'>
+    </div>
+   
+
+    <div className='NewRelease  mt-[48px]'>
+          
           <h1 className="text-white mb-[20px] text-[20px] font-bold flex"> Mới Phát Hành </h1>
-          ...
         </div>
+    
+      <div className='flex flex-col'>
+      
+        
         <div className='Radio  mt-[48px]'>
           <h1 className="text-white mb-[20px] text-[20px] font-bold flex"> Radio Nổi Bật
           <div className='group top-9 flex place-items-center'>
