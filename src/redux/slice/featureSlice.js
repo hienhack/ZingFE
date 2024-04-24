@@ -4,6 +4,7 @@ export const featureSlice = createSlice({
     name: 'feature',
     initialState: {
         currentSong: null,
+        createdPlaylist: [],
     },
     reducers: {
         setCurrentSong: (state, action) => {
