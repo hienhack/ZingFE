@@ -8,16 +8,16 @@ export function Radio_Live() {
     const rightref = useRef  (null);
     function rightscroll() {
         var element = document.getElementById("Radios");
-        element.scrollLeft += 900;
+        element.scrollLeft += 172;
     }
     function leftscroll() {
         var element = document.getElementById("Radios");
-        element.scrollLeft -= 900;
+        element.scrollLeft -= 172;
     }
 
     return (
     <div className="">  
-        <div id="Radios" className="flex w-[1178px] overflow-hidden "> 
+        <div id="Radios" className="flex w-full overflow-hidden "> 
             <div className="place-content-center mb-[85px] z-40">
                 <button className="bg-[#ffffff] bg-[length:38px_38px] rounded-full border-[8.5px] border-white absolute left-[40px] " 
                 //onClick={() => {rightref.current?.scrollIntoView()}}
