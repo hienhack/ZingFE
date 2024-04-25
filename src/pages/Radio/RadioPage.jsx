@@ -7,7 +7,7 @@ function RadioPage() {
 
       <div className="px-[--padding-section]">
       <h1 className="text-white mt-[110px] font-bold text-[40px] mb-[25px]"> Radio</h1>
-      <Radio_Live></Radio_Live>
+      <Radio_Live className="w-[1178px] "></Radio_Live>
       </div>
       
     );
