@@ -95,3 +95,10 @@ button:hover {
   cursor: none;
   user-select: none;
 }
+
+button:disabled {
+  opacity: .5;
+  pointer-events: none;
+  cursor: none;
+  user-select: none;
+}

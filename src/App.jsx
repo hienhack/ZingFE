@@ -16,7 +16,6 @@ import MyPlaylistPage from './pages/MyPlaylist/MyPLaylistPage';
 import { MyMusicPage, FavoriteSong, UploadSong, Song } from './pages/MyMusic';
 import { useSelector, useDispatch } from 'react-redux';
 import { setAuthenticate } from './redux/slice/userSlice';
-import Modal from './components/Modal/Modal';
 import AuthForm from './components/Form/AuthForm';
 
 function App() {

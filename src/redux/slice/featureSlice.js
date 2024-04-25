@@ -9,9 +9,19 @@ export const featureSlice = createSlice({
     reducers: {
         setCurrentSong: (state, action) => {
             state.currentSong = action.payload;
+        },
+
+        createPlaylist: (state, action) => {
+            const temp = state.createdPlaylist.slice();
+            temp.push(action.payload);
+            state.createdPlaylist = temp;
+        },
+
+        setCreatedPlaylist: (state, action) => {
+            state.createdPlaylist = action.payload;
         }
     }
 });
 
-export const { setCurrentSong } = featureSlice.actions;
+export const { setCurrentSong, createPlaylist, setCreatedPlaylist } = featureSlice.actions;
 export default featureSlice.reducer;

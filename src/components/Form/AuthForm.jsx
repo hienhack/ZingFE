@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Modal from '../Modal/Modal';
 import Login from './Login';
 import Register from './Register';
@@ -6,6 +6,12 @@ import './style.scss';
 
 function AuthForm({ open, handleOpen }) {
   const [formType, setFormType] = useState('login');
+
+  useEffect(() => {
+    return () => {
+      console.log('unmount');
+    };
+  }, []);
 
   return (
     <Modal open={open} handleOpen={handleOpen}>

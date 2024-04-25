@@ -13,7 +13,10 @@ function UserMenu() {
   }
 
   function handleLogout() {
-    dispatch(logout());
+    // dispatch(logout());
+    console.log('logout');
+    localStorage.removeItem('token');
+    location.reload();
   }
 
   return (
@@ -121,15 +124,13 @@ function UserMenu() {
                     <div className="h-[1px] bg-[--border-primary] w-[calc(100%-24px)] my-2.5 mx-auto"></div>
                   </li>
                   <li className="menu-item">
-                    <a>
-                      <button
-                        className="flex items-center h-11 px-2.5 py-3 gap-3"
-                        onClick={handleLogout}
-                      >
-                        <FiLogOut className="w-5 h-5" />
-                        <span>Đăng xuất</span>
-                      </button>
-                    </a>
+                    <button
+                      className="flex items-center h-11 px-2.5 py-3 gap-3 w-full"
+                      onClick={handleLogout}
+                    >
+                      <FiLogOut className="w-5 h-5" />
+                      <span>Đăng xuất</span>
+                    </button>
                   </li>
                 </ul>
               </>

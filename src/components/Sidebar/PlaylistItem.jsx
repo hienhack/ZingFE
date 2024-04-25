@@ -2,7 +2,7 @@ import { HiOutlineDotsHorizontal } from 'react-icons/hi';
 
 function PlaylistItem({ path, title }) {
   return (
-    <a className="playlist" href={path}>
+    <a className="playlist hover:cursor-pointer">
       <span>{title}</span>
       <button className="size-6 flex items-center justify-center rounded-full hover:bg-[--alpha-bg]">
         <HiOutlineDotsHorizontal className="text-white size-4.5" />

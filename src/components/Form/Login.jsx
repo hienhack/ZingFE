@@ -1,9 +1,14 @@
 import { useForm } from 'react-hook-form';
 import FormInput from './FormInput';
 import { ErrorMessage } from '@hookform/error-message';
-import axios from 'axios';
+import { authRequest } from '../../api';
+import { useState } from 'react';
+import { login, setAuthenticate } from '../../redux/slice/userSlice';
+import { useDispatch } from 'react-redux';
 
 function Login({ toRegister }) {
+  const [error, setError] = useState(null);
+  const dispatch = useDispatch;
   const {
     register,
     handleSubmit,
@@ -14,15 +19,24 @@ function Login({ toRegister }) {
   });
 
   function onSubmit(data) {
-    axios
-      .post('http://nxc-hcmus.me:8081/api/auth/authenticate', {
+    authRequest
+      .post('/auth/token', {
+        client_id: 'user-service',
+        client_secret: 'jSLIfcd5eq2t6e0CzNid3QKUaQNP1m0x',
+        grant_type: 'password',
         username: data.email,
         password: data.password,
       })
-      .then((data) => {
-        console.log(data);
+      .then((res) => {
+        localStorage.setItem('token', res.data.access_token);
+        location.reload();
       })
-      .catch((error) => console.log(error));
+      .catch((error) => {
+        console.log(error);
+        if (error.response.status == 401) {
+          setError('Email hoặc mật khẩu không đúng');
+        }
+      });
   }
 
   return (
@@ -31,6 +45,7 @@ function Login({ toRegister }) {
       <h6 className="mt-5 text-gray-400 font-medium text-sm">
         Nhập email và mật khẩu của bạn để đăng nhập
       </h6>
+      <small className="text-red-600 italic block my-1">{error}</small>
       <form onSubmit={handleSubmit(onSubmit)}>
         <div className="mt-6 flex flex-col gap-5">
           <div>
