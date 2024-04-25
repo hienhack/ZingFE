@@ -1,5 +1,16 @@
+import React from "react"
+import { useSelector} from 'react-redux'
+import {Radio_Live} from './RadioSection'
+
 function RadioPage() {
-  return <div className="text-white h-[1000px]">This is RadioPage</div>;
-}
+    return (
+
+      <div className="px-[--padding-section]">
+      <h1 className="text-white mt-[110px] font-bold text-[40px] mb-[25px]"> Radio</h1>
+      <Radio_Live></Radio_Live>
+      </div>
+      
+    );
+  }
 
 export default RadioPage;
