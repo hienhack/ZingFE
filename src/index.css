@@ -102,3 +102,48 @@ button:disabled {
   cursor: none;
   user-select: none;
 }
+
+
+.text-shadow-1 {
+  text-shadow: 1px 1px 0 #4a90e2, -1px 1px 0 #4a90e2, -1px -1px 0 #4a90e2, 1px -1px 0 #4a90e2;
+}
+
+.text-shadow-2 {
+  text-shadow: 1px 1px 0 #27bd9c, -1px 1px 0 #27bd9c, -1px -1px 0 #27bd9c, 1px -1px 0 #27bd9c;
+}
+
+.text-shadow-3 {
+  text-shadow: 1px 1px 0 #e35050, -1px 1px 0 #e35050, -1px -1px 0 #e35050, 1px -1px 0 #e35050;
+}
+
+.text-shadow-4 {
+  text-shadow: 1px 1px 0 #ffffff, -1px 1px 0 #ffffff, -1px -1px 0 #ffffff, 1px -1px 0 #ffffff;
+}
+
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-radius: 4px;
+  padding: 5px;
+  background: rgba(48, 36, 60, 0.9);
+  color: white;
+  text-align: center;
+  visibility: hidden; /* Hide tooltip by default and show on hover */
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip::after {
+  content: "";
+  position: absolute;
+  bottom: 100%; /* Position it at the bottom of the tooltip */
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent rgba(48, 36, 60, 0.9) transparent;
+  /* This creates a triangle pointing down */
+}
+
+/* Show the tooltip text when hovering over the container */
