@@ -81,7 +81,7 @@ function ZingChartSong({ songInfo, index = "Gợi ý" }) {
                         />
                     </div>
                     
-                    <span className="absolute top-[50%] right-[50%] translate-x-[50%] translate-y-[-50%] text-text-color-2 cursor-pointer hidden group-hover:block">
+                    <span className="absolute top-[50%] right-[50%] translate-x-[50%] translate-y-[-50%]  cursor-pointer hidden group-hover:block">
                             <FaPlay size={16} />
                     </span>
                 </div>
@@ -137,10 +137,10 @@ function ZingChartSong({ songInfo, index = "Gợi ý" }) {
                             </span> */}
                             <div
                                 
-                                className="absolute -top-9 left-1/2 transform -translate-x-1/2 px-2 py-1 bg-[rgba(77,70,80,0.9)] text-white text-xs rounded whitespace-nowrap"
+                                className="absolute -top-9 left-1/2 transform -translate-x-1/2 px-2 py-1 bg-[rgba(60,60,52,0.9)] text-white text-xs rounded whitespace-nowrap"
                                 style={{ opacity: showTooltip1 ? 1 : 0 }}>
                                 Phát cùng lời bài hát
-                                <div className="absolute left-1/2 transform -translate-x-1/2 bottom-0 mb-[-9px] w-0 h-0 border-x-[10px] border-x-transparent border-t-[10px] border-t-[rgba(77,70,80,0.9)]"></div>
+                                <div className="absolute left-1/2 transform -translate-x-1/2 bottom-0 mb-[-9px] w-0 h-0 border-x-[10px] border-x-transparent border-t-[10px] border-t-[rgba(60,60,52,0.9)]"></div>
                             </div>
 
                         </div>
@@ -155,10 +155,10 @@ function ZingChartSong({ songInfo, index = "Gợi ý" }) {
                             </span> */}
                             <div
                                 
-                                className="absolute -top-9 left-1/2 transform -translate-x-1/2 px-2 py-1 bg-[rgba(77,70,80,0.9)] text-white text-xs rounded whitespace-nowrap"
+                                className="absolute -top-9 left-1/2 transform -translate-x-1/2 px-2 py-1 bg-[rgba(60,60,52,0.9)] text-white text-xs rounded whitespace-nowrap"
                                 style={{ opacity: showTooltip2 ? 1 : 0 }}>
                                 Thêm vào thư viện
-                                <div className="absolute left-1/2 transform -translate-x-1/2 bottom-0 mb-[-9px] w-0 h-0 border-x-[10px] border-x-transparent border-t-[10px] border-t-[rgba(77,70,80,0.9)]"></div>
+                                <div className="absolute left-1/2 transform -translate-x-1/2 bottom-0 mb-[-9px] w-0 h-0 border-x-[10px] border-x-transparent border-t-[10px] border-t-[rgba(60,60,52,0.9)]"></div>
                             </div>
                         </div>
                         <div 
@@ -172,10 +172,10 @@ function ZingChartSong({ songInfo, index = "Gợi ý" }) {
                             </span> */}
                             <div
                                 
-                                className="absolute -top-9 left-1/2 transform -translate-x-1/2 px-2 py-1 bg-[rgba(77,70,80,0.9)] text-white text-xs rounded whitespace-nowrap"
+                                className="absolute -top-9 left-1/2 transform -translate-x-1/2 px-2 py-1 bg-[rgba(60,60,52,0.9)] text-white text-xs rounded whitespace-nowrap"
                                 style={{ opacity: showTooltip3 ? 1 : 0 }}>
                                 Khác
-                                <div className="absolute left-1/2 transform -translate-x-1/2 bottom-0 mb-[-9px] w-0 h-0 border-x-[10px] border-x-transparent border-t-[10px] border-t-[rgba(77,70,80,0.9)]"></div>
+                                <div className="absolute left-1/2 transform -translate-x-1/2 bottom-0 mb-[-9px] w-0 h-0 border-x-[10px] border-x-transparent border-t-[10px] border-t-[rgba(60,60,52,0.9)]"></div>
                             </div>
                         </div>
                     </div>

@@ -31,7 +31,7 @@ function ZingChartSongSmall({ songInfo, index }) {
             // onDoubleClick={handleClickSong}
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
-            className={`flex justify-between select-none p-[10px] rounded-[4px] group  hover:bg-[rgba(61,45,76,1)]`}
+            className={`flex justify-between select-none p-[10px] rounded-[4px] group  hover:bg-[hsla(0,0%,80%,0.1)]`}
         >
             <div className="flex items-center flex-5 ">
                 <span className="text-shadow-4 mr-[5px] w-[25px] flex items-center justify-center text-[32px] text-[rgba(61,45,76,1)] font-extrabold  ">
@@ -74,7 +74,7 @@ function ZingChartSongSmall({ songInfo, index }) {
                                 : songInfo?.title}
                         </span>
                         <span className='flex  ml-1 mt-1'>
-                            {songInfo?.isWorldWide === false && <PremiumIcon/>}
+                            {songInfo?.streamingStatus === 2 && <PremiumIcon/>}
                         </span>
                     </div>
                     <h3 className="text-xs font-medium leading-5  truncate max-w-[125px] overflow-ellipsis-2-line hover:text-purple-500">
@@ -82,7 +82,7 @@ function ZingChartSongSmall({ songInfo, index }) {
                             <Link
                                 key={artist?.link}
                                 to={artist?.link}
-                                className="cursor-pointer hover:underline hover:text-purple-500 text-slate-400"
+                                className="cursor-pointer hover:underline  "
                             >
                                 {index === artistsLength - 1
                                     ? `${artist?.name}`
@@ -98,11 +98,11 @@ function ZingChartSongSmall({ songInfo, index }) {
             </div>
             <span className="text-xs font-medium leading-5 flex-1 flex justify-end items-center mr-1 text-slate-400">
                 {isHovered ? (
-                    <div className="flex space-x-4 items-center">
+                    <div className="flex space-x-2 items-center">
                         <div 
                             onMouseEnter={() => setShowTooltip1(true)}
                             onMouseLeave={() => setShowTooltip1(false)}
-                            className="relative group flex items-center justify-center w-10 h-10 rounded-full hover:bg-[rgba(72,60,76,1)]">
+                            className="relative group flex items-center justify-center w-7 h-7 rounded-full hover:bg-[rgba(72,60,76,1)]">
                             <div className="absolute  w-8 h-8   transition-all duration-300"></div>
                             <LiaMicrophoneAltSolid size={16} className=" z-10 text-white" />
                             {/* <span className="absolute -top-12 left-1/2 transform -translate-x-1/2 min-w-[8rem] max-w-xs px-2 py-1 bg-[rgba(48,36,60,0.9)] text-white text-xs rounded opacity-0 group-hover:opacity-100 whitespace-nowrap">
@@ -110,17 +110,17 @@ function ZingChartSongSmall({ songInfo, index }) {
                             </span> */}
                             <div
                                 
-                                className="absolute -top-9 left-1/2 transform -translate-x-1/2 px-2 py-1 bg-[rgba(77,70,80,0.9)] text-white text-xs rounded whitespace-nowrap"
+                                className="absolute -top-9 left-1/2 transform -translate-x-1/2 px-2 py-1 bg-[rgba(60,60,52,0.9)] text-white text-xs rounded whitespace-nowrap"
                                 style={{ opacity: showTooltip1 ? 1 : 0 }}>
                                 Phát cùng lời bài hát
-                                <div className="absolute left-1/2 transform -translate-x-1/2 bottom-0 mb-[-9px] w-0 h-0 border-x-[10px] border-x-transparent border-t-[10px] border-t-[rgba(77,70,80,0.9)]"></div>
+                                <div className="absolute left-1/2 transform -translate-x-1/2 bottom-0 mb-[-9px] w-0 h-0 border-x-[10px] border-x-transparent border-t-[10px] border-t-[rgba(60,60,52,0.9)]"></div>
                             </div>
 
                         </div>
                         <div 
                             onMouseEnter={() => setShowTooltip2(true)}
                             onMouseLeave={() => setShowTooltip2(false)}
-                            className="relative group flex items-center justify-center w-10 h-10 rounded-full hover:bg-[rgba(72,60,76,1)]">
+                            className="relative group flex items-center justify-center w-7 h-7 rounded-full hover:bg-[rgba(72,60,76,1)]">
                             <div className="absolute  w-8 h-8   transition-all duration-300"></div>
                             <SlOptions size={16} className=" z-10 text-white" />
                             {/* <span className="absolute -top-12 left-1/2 transform -translate-x-1/2 min-w-[8rem] max-w-xs px-2 py-1 bg-[rgba(48,36,60,0.9)] text-white text-xs rounded opacity-0 group-hover:opacity-100 whitespace-nowrap">
@@ -128,10 +128,10 @@ function ZingChartSongSmall({ songInfo, index }) {
                             </span> */}
                             <div
                                 
-                                className="absolute -top-9 left-1/2 transform -translate-x-1/2 px-2 py-1 bg-[rgba(77,70,80,0.9)] text-white text-xs rounded whitespace-nowrap"
+                                className="absolute -top-9 left-1/2 transform -translate-x-1/2 px-2 py-1 bg-[rgba(60,60,52,0.9)] text-white text-xs rounded whitespace-nowrap"
                                 style={{ opacity: showTooltip2 ? 1 : 0 }}>
                                 Khác
-                                <div className="absolute left-1/2 transform -translate-x-1/2 bottom-0 mb-[-9px] w-0 h-0 border-x-[10px] border-x-transparent border-t-[10px] border-t-[rgba(77,70,80,0.9)]"></div>
+                                <div className="absolute left-1/2 transform -translate-x-1/2 bottom-0 mb-[-9px] w-0 h-0 border-x-[10px] border-x-transparent border-t-[10px] border-t-[rgba(60,60,52,0.9)]"></div>
                             </div>
 
                         </div>

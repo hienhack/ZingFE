@@ -15,7 +15,7 @@ import ZingChartSong from './ZingChartSong';
 import ZingChartSongSmall from './ZingChartSongSmall';
 import chartPageData from './chartData2.json';
 import { FaCirclePlay } from "react-icons/fa6";
-import { IoIosPlay } from "react-icons/io";
+
 
 function ZingChartPage() {
 //   const [chartData, setChartData] = useState(null);
