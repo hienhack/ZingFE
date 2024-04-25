@@ -7,8 +7,8 @@ function ZingChartPage() {
   return (
     <div className="px-[--padding-section]">
       <h1 className="text-white">This is zingchart page</h1>
-      <h3 className='text-[40px] text-text-100 font-bold text-left text-transparent bg-clip-text bg-gradient-to-br from-orange-400 to-purple-800 bg-gradient-to-r from-teal-400 via-purple-500 flex items-center gap-2 mb-16'>#zingchart
-        <span className='rounded-full border bg-white text-main-500 hover:bg-[#ced5e3]'><BsFillPlayFill /></span></h3>
+      <h3 className="text-4xl text-text-100 font-bold text-left custom-gradient text-transparent flex items-center gap-2 mb-16 w-[214.59px]">#zingchart
+        <span className='rounded-full border bg-white text-black '><BsFillPlayFill size={35} className="pl-1" /></span></h3>
       <Chart chartitem={chartitem}/>
     </div>
   );

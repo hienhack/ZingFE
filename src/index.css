@@ -101,3 +101,13 @@ button:hover {
       1px -1px 0 rgb(148,55,62);
 }
 
+.custom-gradient {
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+  
+  line-height: 48px;
+  background: radial-gradient(50% 124.93% at 95.86% -10%, rgb(62, 250, 217) 0px, rgba(255, 255, 255, 0) 100%) text, linear-gradient(91.56deg, rgb(255, 147, 87) 1.54%, rgb(145, 0, 255) 98.71%);
+  background-clip: text;
+
+}
+
