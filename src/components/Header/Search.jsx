@@ -144,7 +144,7 @@ function Search() {
                       {line}
                     </SearchLine>
                   ))}
-                  <SearchLine handleClick={() => handleInsideClick(inputRef.current.value)}>
+                  <SearchLine handleClick={() => handleSearchLineClick(inputRef.current.value)}>
                     Tìm kiếm <span className="font-bold">{'"' + inputRef.current.value + '"'}</span>
                   </SearchLine>
                 </>
