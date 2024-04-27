@@ -4,6 +4,7 @@ import './style.scss';
 import UserMenu from './UserMenu';
 import { MdOutlineInstallDesktop, MdOutlineWest } from 'react-icons/md';
 import { GoArrowLeft, GoArrowRight, GoSearch } from 'react-icons/go';
+import Search from './Search';
 
 function Header({ isSticky }) {
   return (
@@ -15,19 +16,9 @@ function Header({ isSticky }) {
         <button className="min-w-11 disabled">
           <GoArrowRight className="size-6" />
         </button>
-        <form className="w-full">
-          <div className="flex items-center w-full max-w-[440px] h-10 rounded-full bg-[--alpha-bg] mr-2">
-            <button className="px-2 text-[--text-placeholder]">
-              <GoSearch className="size-6" />
-            </button>
-            <div className="w-full">
-              <input
-                className="bg-transparent outline-none text-sm w-full placeholder:text-[--text-placeholder] text-[--search-text]"
-                placeholder="Tìm kiếm bài hát, nghệ sĩ, lời bài hát..."
-              ></input>
-            </div>
-          </div>
-        </form>
+        <div className="max-w-[440px] w-full mr-2">
+          <Search></Search>
+        </div>
       </div>
       <div className="flex flex-row-reverse">
         <UserMenu></UserMenu>
