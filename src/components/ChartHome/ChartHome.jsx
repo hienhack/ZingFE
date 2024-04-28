@@ -83,4 +83,4 @@ function ChartHome() {
 
 
 
-export default memo(ChartHome);
+export default ChartHome;
