@@ -1,19 +1,38 @@
-import { Chart as ChartJS, defaults } from "chart.js/auto";
+import { Chart as ChartJS } from "chart.js/auto";
 import { Line } from "react-chartjs-2";
 import revenueData from "./revenueData.json"
-import React, { useState, memo, useRef } from "react";
+import React, { useState, memo, useRef, useEffect } from "react";
 import _ from 'lodash'
 
 
-function Chart({ chartitem }) {
-  console.log(chartitem)
+const Chart = ({ chartitem }) => {
   const chartRef = useRef()
+  const [data, setData] = useState(null);
+
   const [tooltip, setTooltip] = useState({
     opacity: 0,
     top: 0,
     left: 0,
   })
   const [tooltipData, setTooltipData] = useState(null)
+
+  useEffect(() => {
+    const datasets = []
+    const labels = revenueData.map((data) => data.label)
+    for (let i = 0; i < 3; i++) {
+      datasets.push({
+        data: revenueData.map((data) => data[`test${i + 1}`]), // Assuming test1, test2, test3, etc., are the data fields
+        borderColor: i === 0 ? '#4a90e2' : i === 1 ? '#50e3c2' : '#e35050',
+        borderWidth: 2,
+        pointBackgroundColor: 'white',
+        pointHoverRadius: 6,
+        pointBorderColor: i === 0 ? '#4a90e2' : i === 1 ? '#50e3c2' : '#e35050',
+        pointHoverBorderWidth: 4
+      })
+    }
+    setData({ labels, datasets })
+
+  }, [chartitem])
 
   const options = {
     responsive: true,
@@ -77,46 +96,19 @@ function Chart({ chartitem }) {
   return (
     <div className="">
       <div className="w-[full] h-[300px] mt-[1rem] relative">
-        <Line
-          ref={chartRef}
-          data={{
-            labels: revenueData.map((data) => data.label),
-            datasets: [
-              {
-                data: revenueData.map((data) => data.test1),
-                borderColor: "#4a90e2",
-                pointHoverRadius: 5,
-                pointBackgroundColor: 'white',
-                pointHoverBorderWidth: 4,
-                borderWidth: 2,
-
-              },
-              {
-                data: revenueData.map((data) => data.test2),
-                borderColor: "#50e3c2",
-                pointHoverRadius: 5,
-                pointBackgroundColor: 'white',
-                pointHoverBorderWidth: 4,
-                borderWidth: 2,
-              },
-              {
-                data: revenueData.map((data) => data.test3),
-                borderColor: "#e35050",
-                pointHoverRadius: 5,
-                pointBackgroundColor: 'white',
-                pointHoverBorderWidth: 4,
-                borderWidth: 2,
-              },
-            ],
-          }}
-          options={options}
-        />
+        {data && (
+          <Line
+            ref={chartRef}
+            data={data}
+            options={options}
+          />
+        )}
         <div className='tooltip' style={{ top: tooltip.top, left: tooltip.left, position: 'absolute', opacity: tooltip.opacity }}>
-          {<img src={chartitem.find(i => i.id === tooltipData)?.thumbnail} className='w-[100px] h-auto  ' />}
+          {<img src={chartitem.find(i => i.id === tooltipData)?.thumbnail} className='w-[50px] h-auto  ' />}
         </div>
       </div>
     </div>
   );
 }
 
-export default Chart
+export default memo(Chart)
