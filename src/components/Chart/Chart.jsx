@@ -108,7 +108,7 @@ const Chart = ({ chartitem }) => {
             {<img src={chartitem.find(i => i.id === tooltipData)?.thumbnail} className='w-[3rem] ml-1.5 rounded-md' />}
             <div className="ml-1">
               <p className=" font-bold text-[0.75rem] truncate overflow-hidden w-[10ch] text-white">{chartitem.find(i => i.id === tooltipData)?.title}</p>
-              <div className="flex truncate w-[8ch] overflow-hidden">
+              <div className="flex truncate w-[10ch] overflow-hidden">
                 {chartitem.find(i => i.id === tooltipData)?.artist.map((artist, index) => (
                   <div className="" key={index}>
                     <span className="text-[--text-secondary] text-[0.75rem] cursor-pointer ">
@@ -120,7 +120,7 @@ const Chart = ({ chartitem }) => {
               </div>
 
             </div>
-            <p className="ml-4 font-bold text-[0.75rem]  text-white">{chartitem.find(i => i.id === tooltipData)?.point}</p>
+            <p className=" font-bold text-[0.75rem]  text-white">{chartitem.find(i => i.id === tooltipData)?.point}</p>
 
           </div>
         </div>

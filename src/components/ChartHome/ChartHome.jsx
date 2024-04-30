@@ -4,9 +4,9 @@ import { Chart } from '../../components/Chart';
 import { BsFillPlayFill } from 'react-icons/bs'
 import { Link } from 'react-router-dom'
 export const chartitem = [
-  { id: 0, title: 'Chúng Ta Của Tương Lai', thumbnail: "https://photo-resize-zmp3.zmdcdn.me/w320_r1x1_jpeg/cover/7/e/7/b/7e7b8f07e9af15dc2fa3424d237bfff7.jpg", artist: ["Sơn Tùng MTP", "MONO"], point: '50%' },
-  { id: 1, title: 'Em Của Ngày Hôm Qua', thumbnail: "https://photo-resize-zmp3.zmdcdn.me/w320_r1x1_jpeg/cover/f/1/3/8/f138a02472481738a6660e97421ceff2.jpg", artist: ["Sơn Tùng MTP", "MONO"], point: '50%' },
-  { id: 2, title: 'Chúng Ta Của Hiện Tại', thumbnail: "https://photo-resize-zmp3.zmdcdn.me/w320_r1x1_jpeg/cover/6/4/7/9/64797af5fc5fa8aee8660d85a8cb3816.jpg", artist: ["Sơn Tùng MTP", "MONO"], point: '50%' },
+  { id: 0, title: 'Chúng Ta Của Tương Lai', thumbnail: "https://photo-resize-zmp3.zmdcdn.me/w320_r1x1_jpeg/cover/7/e/7/b/7e7b8f07e9af15dc2fa3424d237bfff7.jpg", artist: ["Sơn Tùng MTP"], point: '50%' },
+  { id: 1, title: 'Em Của Ngày Hôm Qua', thumbnail: "https://photo-resize-zmp3.zmdcdn.me/w320_r1x1_jpeg/cover/f/1/3/8/f138a02472481738a6660e97421ceff2.jpg", artist: ["Sơn Tùng MTP"], point: '50%' },
+  { id: 2, title: 'Chúng Ta Của Hiện Tại', thumbnail: "https://photo-resize-zmp3.zmdcdn.me/w320_r1x1_jpeg/cover/6/4/7/9/64797af5fc5fa8aee8660d85a8cb3816.jpg", artist: ["Sơn Tùng MTP"], point: '50%' },
 ];
 function ChartHome() {
   const [ishover, SetIsHover] = useState(null);
@@ -19,7 +19,7 @@ function ChartHome() {
   }
   return (
     <div className="">
-      <div className='mt-12 relative h-[414px] rounded-md overflow-hidden'>
+      <div className='mt-12 relative h-[26rem] rounded-md overflow-hidden'>
         <div className='absolute top-0 z-10 left-0 right-0 bg-[rgba(77,34,104,0.9)] bottom-0'></div>
         <div className='absolute top-0 z-20 left-[20px] right-[20px] bottom-0 flex flex-col '>
 
@@ -29,8 +29,8 @@ function ChartHome() {
               <BsFillPlayFill size={25} className='pl-0.5' />
             </span>
           </h3>
-          <div className='flex '>
-            <div className='flex flex-col mt-[1rem] gap-2 '>
+          <div className='flex w-full h-auto'>
+            <div className='flex flex-col mt-[1rem] gap-2 w-[40%]'>
               {chartitem.map((item, index) =>
                 <div onMouseEnter={() => handleHover(index)} onMouseLeave={() => handleLeave(index)}
                   key={item.id} className="flex rounded items-center  w-[full] px-[15px] py-[10px]	bg-[hsla(0,0%,100%,.07)] hover:bg-[#945EA7]">
@@ -71,7 +71,7 @@ function ChartHome() {
                 <div className='h-7 mt-4 flex items-center justify-center text-white'><span className='h-full w-[30%] rounded-full border flex items-center justify-center text-center cursor-pointer hover:bg-[#945EA7]'>Xem thêm</span></div>
               </Link>
             </div>
-            <div className=' w-[554px] h-[300px] ml-6'>
+            <div className=' w-[60%] h-[300px] ml-6'>
               <Chart chartitem={chartitem} />
             </div>
           </div>
