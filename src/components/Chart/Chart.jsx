@@ -103,8 +103,26 @@ const Chart = ({ chartitem }) => {
             options={options}
           />
         )}
-        <div className='tooltip' style={{ top: tooltip.top, left: tooltip.left, position: 'absolute', opacity: tooltip.opacity }}>
-          {<img src={chartitem.find(i => i.id === tooltipData)?.thumbnail} className='w-[50px] h-auto  ' />}
+        <div className='w-full' style={{ top: tooltip.top, left: tooltip.left, position: 'absolute', opacity: tooltip.opacity }}>
+          <div className={`${chartitem.find(i => i.id === tooltipData)?.id === 0 ? 'bg-[#4a90e2]' : chartitem.find(i => i.id === tooltipData)?.id === 1 ? 'bg-[#50e3c2]' : 'bg-[#e35050]'} w-[12rem] bg-[#4a90e2] h-[4rem] flex items-center rounded-md`} >
+            {<img src={chartitem.find(i => i.id === tooltipData)?.thumbnail} className='w-[3rem] ml-1.5 rounded-md' />}
+            <div className="ml-1">
+              <p className=" font-bold text-[0.75rem] truncate overflow-hidden w-[10ch] text-white">{chartitem.find(i => i.id === tooltipData)?.title}</p>
+              <div className="flex truncate w-[8ch] overflow-hidden">
+                {chartitem.find(i => i.id === tooltipData)?.artist.map((artist, index) => (
+                  <div className="" key={index}>
+                    <span className="text-[--text-secondary] text-[0.75rem] cursor-pointer ">
+                      {artist}
+                    </span>
+                    {index !== chartitem.find(i => i.id === tooltipData)?.artist.length - 1 && <span className="text-[--text-secondary]">,&nbsp;</span>}
+                  </div>
+                ))}
+              </div>
+
+            </div>
+            <p className="ml-4 font-bold text-[0.75rem]  text-white">{chartitem.find(i => i.id === tooltipData)?.point}</p>
+
+          </div>
         </div>
       </div>
     </div>
