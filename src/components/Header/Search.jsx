@@ -67,7 +67,7 @@ function Search() {
     inputRef.current.value = value;
     inputRef.current.blur();
     setShow(false);
-    navigate('/zing-chart');
+    navigate('/tim-kiem/tat-ca');
   }
 
   const handleOutsideClick = (event) => {

@@ -1,0 +1,1639 @@
+{
+  "top": {
+    "encodeId": "Z7U00WDE",
+    "title": "Thủy Triều",
+    "alias": "Thuy-Trieu-Quang-Hung-MasterD",
+    "isOffical": true,
+    "username": "",
+    "artistsNames": "Quang Hùng MasterD",
+    "artists": [
+      {
+        "id": "IWZAZFCO",
+        "name": "Quang Hùng MasterD",
+        "link": "/Quang-Hung-MasterD",
+        "spotlight": false,
+        "alias": "Quang-Hung-MasterD",
+        "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/avatars/4/7/9/a/479ad4670fa083908fcc0c88c0f05e5c.jpg",
+        "thumbnailM": "https://photo-resize-zmp3.zmdcdn.me/w360_r1x1_jpeg/avatars/4/7/9/a/479ad4670fa083908fcc0c88c0f05e5c.jpg",
+        "isOA": true,
+        "isOABrand": false,
+        "playlistId": "ZOEIUO67"
+      }
+    ],
+    "isWorldWide": true,
+    "thumbnailM": "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/cover/8/4/7/4/8474eb9fd1a3aa78b974b4c104ff45fc.jpg",
+    "link": "/bai-hat/Thuy-Trieu-Quang-Hung-MasterD/Z7U00WDE.html",
+    "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w94_r1x1_jpeg/cover/8/4/7/4/8474eb9fd1a3aa78b974b4c104ff45fc.jpg",
+    "duration": 186,
+    "zingChoice": false,
+    "isPrivate": false,
+    "preRelease": false,
+    "releaseDate": 1707742800,
+    "genreIds": [
+      "IWZ9Z08I",
+      "IWZ97FCD"
+    ],
+    "distributor": "Euphoria Media Vietnam",
+    "indicators": [],
+    "isIndie": false,
+    "streamingStatus": 1,
+    "allowAudioAds": true,
+    "hasLyric": true,
+    "objectType": "song"
+  },
+  "artists": [
+    {
+      "id": "IW88CBID",
+      "name": "Thủy Lê",
+      "link": "/nghe-si/Thuy-Le",
+      "spotlight": false,
+      "alias": "Thuy-Le",
+      "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/avatars/c/5/c/1/c5c1ca128676336474c149b3b7a5d297.jpg",
+      "thumbnailM": "https://photo-resize-zmp3.zmdcdn.me/w360_r1x1_jpeg/avatars/c/5/c/1/c5c1ca128676336474c149b3b7a5d297.jpg",
+      "isOA": false,
+      "isOABrand": false,
+      "playlistId": "6BCEODCZ",
+      "totalFollow": 648
+    },
+    {
+      "id": "IWZ9ZW6E",
+      "name": "Thủy Tiên",
+      "link": "/Thuy-Tien",
+      "spotlight": false,
+      "alias": "Thuy-Tien",
+      "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/avatars/0/f/f/b/0ffba0f68558d66030cad6f096dbbb44.jpg",
+      "thumbnailM": "https://photo-resize-zmp3.zmdcdn.me/w360_r1x1_jpeg/avatars/0/f/f/b/0ffba0f68558d66030cad6f096dbbb44.jpg",
+      "isOA": true,
+      "isOABrand": false,
+      "playlistId": "ZWZ9D096",
+      "totalFollow": 81017
+    },
+    {
+      "id": "IWZ9ZOE6",
+      "name": "Hương Thủy",
+      "link": "/nghe-si/Huong-Thuy",
+      "spotlight": false,
+      "alias": "Huong-Thuy",
+      "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/avatars/4/8/48de72a609baee48a00846da633cf7a0_1511153818.jpg",
+      "thumbnailM": "https://photo-resize-zmp3.zmdcdn.me/w360_r1x1_jpeg/avatars/4/8/48de72a609baee48a00846da633cf7a0_1511153818.jpg",
+      "isOA": false,
+      "isOABrand": false,
+      "playlistId": "ZWZBO7UZ",
+      "totalFollow": 13696
+    },
+    {
+      "id": "IWZ9ZCA6",
+      "name": "Thu Thủy",
+      "link": "/Nguyen-Thu-Thuy-Singer",
+      "spotlight": false,
+      "alias": "Nguyen-Thu-Thuy-Singer",
+      "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/avatars/7/e/f/7/7ef70a3523195ccb005bb08222070246.jpg",
+      "thumbnailM": "https://photo-resize-zmp3.zmdcdn.me/w360_r1x1_jpeg/avatars/7/e/f/7/7ef70a3523195ccb005bb08222070246.jpg",
+      "isOA": true,
+      "isOABrand": false,
+      "playlistId": "ZO698DO6",
+      "totalFollow": 19086
+    },
+    {
+      "id": "IWZ9ZW7E",
+      "name": "Lệ Thủy",
+      "link": "/nghe-si/Le-Thuy",
+      "spotlight": false,
+      "alias": "Le-Thuy",
+      "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/avatars/7/b/7b522f5734555a23017d2f37f1444917_1513911680.jpg",
+      "thumbnailM": "https://photo-resize-zmp3.zmdcdn.me/w360_r1x1_jpeg/avatars/7/b/7b522f5734555a23017d2f37f1444917_1513911680.jpg",
+      "isOA": false,
+      "isOABrand": false,
+      "playlistId": "ZOEIZOWA",
+      "totalFollow": 183640
+    },
+    {
+      "id": "IWZ9ZDIA",
+      "name": "Huỳnh Minh Thủy (Thủy Top)",
+      "link": "/nghe-si/Huynh-Minh-Thuy-Thuy-Top",
+      "spotlight": false,
+      "alias": "Huynh-Minh-Thuy-Thuy-Top",
+      "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/avatars/a/6/a64d099deaf3c3cd5dabacce24ee7b41_1516767621.jpg",
+      "thumbnailM": "https://photo-resize-zmp3.zmdcdn.me/w360_r1x1_jpeg/avatars/a/6/a64d099deaf3c3cd5dabacce24ee7b41_1516767621.jpg",
+      "isOA": false,
+      "isOABrand": false,
+      "playlistId": "6UW99W7C",
+      "totalFollow": 238
+    },
+    {
+      "id": "IWZ9C999",
+      "name": "Nhật Thủy",
+      "link": "/nghe-si/Nhat-Thuy",
+      "spotlight": false,
+      "alias": "Nhat-Thuy",
+      "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/avatars/3/d/7/9/3d79fc3a1c77d13c28483d49968d2c0b.jpg",
+      "thumbnailM": "https://photo-resize-zmp3.zmdcdn.me/w360_r1x1_jpeg/avatars/3/d/7/9/3d79fc3a1c77d13c28483d49968d2c0b.jpg",
+      "isOA": false,
+      "isOABrand": false,
+      "playlistId": "6UW9A6C9",
+      "totalFollow": 553
+    },
+    {
+      "id": "IWZAF77Z",
+      "name": "Thủy Nguyên",
+      "link": "/nghe-si/Thuy-Nguyen-Singer",
+      "spotlight": false,
+      "alias": "Thuy-Nguyen-Singer",
+      "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/avatars/1/a/2/7/1a27769dccc5d485f84a9b68bd666be0.jpg",
+      "thumbnailM": "https://photo-resize-zmp3.zmdcdn.me/w360_r1x1_jpeg/avatars/1/a/2/7/1a27769dccc5d485f84a9b68bd666be0.jpg",
+      "isOA": false,
+      "isOABrand": false,
+      "playlistId": "6B7W8CDA",
+      "totalFollow": 67
+    }
+  ],
+  "songs": [
+    {
+      "encodeId": "Z7U00WDE",
+      "title": "Thủy Triều",
+      "alias": "Thuy-Trieu-Quang-Hung-MasterD",
+      "isOffical": true,
+      "username": "",
+      "artistsNames": "Quang Hùng MasterD",
+      "artists": [
+        {
+          "id": "IWZAZFCO",
+          "name": "Quang Hùng MasterD",
+          "link": "/Quang-Hung-MasterD",
+          "spotlight": false,
+          "alias": "Quang-Hung-MasterD",
+          "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/avatars/4/7/9/a/479ad4670fa083908fcc0c88c0f05e5c.jpg",
+          "thumbnailM": "https://photo-resize-zmp3.zmdcdn.me/w360_r1x1_jpeg/avatars/4/7/9/a/479ad4670fa083908fcc0c88c0f05e5c.jpg",
+          "isOA": true,
+          "isOABrand": false,
+          "playlistId": "ZOEIUO67"
+        }
+      ],
+      "isWorldWide": true,
+      "thumbnailM": "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/cover/8/4/7/4/8474eb9fd1a3aa78b974b4c104ff45fc.jpg",
+      "link": "/bai-hat/Thuy-Trieu-Quang-Hung-MasterD/Z7U00WDE.html",
+      "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w94_r1x1_jpeg/cover/8/4/7/4/8474eb9fd1a3aa78b974b4c104ff45fc.jpg",
+      "duration": 186,
+      "zingChoice": false,
+      "isPrivate": false,
+      "preRelease": false,
+      "releaseDate": 1707742800,
+      "genreIds": [
+        "IWZ9Z08I",
+        "IWZ97FCD"
+      ],
+      "album": {
+        "encodeId": "6BF87FDW",
+        "title": "Thủy Triều (Single)",
+        "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w165_r1x1_jpeg/cover/8/4/7/4/8474eb9fd1a3aa78b974b4c104ff45fc.jpg",
+        "isoffical": true,
+        "link": "/album/Thuy-Trieu-Single-Quang-Hung-MasterD/6BF87FDW.html",
+        "isIndie": false,
+        "releaseDate": "12/02/2024",
+        "sortDescription": "",
+        "releasedAt": 1707742800000,
+        "genreIds": [
+          "IWZ9Z08I",
+          "IWZ97FCD"
+        ],
+        "PR": false,
+        "artists": [
+          {
+            "id": "IWZAZFCO",
+            "name": "Quang Hùng MasterD",
+            "link": "/Quang-Hung-MasterD",
+            "spotlight": false,
+            "alias": "Quang-Hung-MasterD",
+            "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/avatars/4/7/9/a/479ad4670fa083908fcc0c88c0f05e5c.jpg",
+            "thumbnailM": "https://photo-resize-zmp3.zmdcdn.me/w360_r1x1_jpeg/avatars/4/7/9/a/479ad4670fa083908fcc0c88c0f05e5c.jpg",
+            "isOA": true,
+            "isOABrand": false,
+            "playlistId": "ZOEIUO67",
+            "totalFollow": 44672
+          }
+        ],
+        "artistsNames": "Quang Hùng MasterD"
+      },
+      "distributor": "Euphoria Media Vietnam",
+      "indicators": [],
+      "isIndie": false,
+      "streamingStatus": 1,
+      "allowAudioAds": true,
+      "hasLyric": true
+    },
+    {
+      "encodeId": "Z6ZEWWZD",
+      "title": "Thủy Chung",
+      "alias": "Thuy-Chung-Thuong-Vo-K-ICM-ACV",
+      "isOffical": true,
+      "username": "",
+      "artistsNames": "Thương Võ, K-ICM, ACV",
+      "artists": [
+        {
+          "id": "IWZFEZIC",
+          "name": "Thương Võ",
+          "link": "/Thuong-Vo",
+          "spotlight": false,
+          "alias": "Thuong-Vo",
+          "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/avatars/8/d/3/c/8d3cd512d25619c27c320e2808745d05.jpg",
+          "thumbnailM": "https://photo-resize-zmp3.zmdcdn.me/w360_r1x1_jpeg/avatars/8/d/3/c/8d3cd512d25619c27c320e2808745d05.jpg",
+          "isOA": true,
+          "isOABrand": false,
+          "playlistId": "6UW9B6OD"
+        },
+        {
+          "id": "IWZFFOWB",
+          "name": "K-ICM",
+          "link": "/K-ICM",
+          "spotlight": false,
+          "alias": "K-ICM",
+          "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/avatars/4/c/e/a/4ceac8b6c213bcaf2841f5afa0709beb.jpg",
+          "thumbnailM": "https://photo-resize-zmp3.zmdcdn.me/w360_r1x1_jpeg/avatars/4/c/e/a/4ceac8b6c213bcaf2841f5afa0709beb.jpg",
+          "isOA": true,
+          "isOABrand": false,
+          "playlistId": "ZODE97IC"
+        },
+        {
+          "id": "IW6ZAAB8",
+          "name": "ACV",
+          "link": "/nghe-si/ACV-Music",
+          "spotlight": false,
+          "alias": "ACV-Music",
+          "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/avatars/5/e/0/6/5e06d48fb79175a096e059ecf3d8b1e8.jpg",
+          "thumbnailM": "https://photo-resize-zmp3.zmdcdn.me/w360_r1x1_jpeg/avatars/5/e/0/6/5e06d48fb79175a096e059ecf3d8b1e8.jpg",
+          "isOA": false,
+          "isOABrand": false,
+          "playlistId": "6UW9CWC9"
+        }
+      ],
+      "isWorldWide": true,
+      "thumbnailM": "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/cover/3/7/a/d/37add6166f88b015418a71e0875f3b44.jpg",
+      "link": "/bai-hat/Thuy-Chung-Thuong-Vo-K-ICM-ACV/Z6ZEWWZD.html",
+      "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w94_r1x1_jpeg/cover/3/7/a/d/37add6166f88b015418a71e0875f3b44.jpg",
+      "duration": 263,
+      "zingChoice": false,
+      "isPrivate": false,
+      "preRelease": false,
+      "releaseDate": 1673784000,
+      "genreIds": [
+        "IWZ9Z08I",
+        "IWZ97FCD"
+      ],
+      "album": {
+        "encodeId": "6B8O9IOD",
+        "title": "Thủy Chung (Single)",
+        "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w165_r1x1_jpeg/cover/3/7/a/d/37add6166f88b015418a71e0875f3b44.jpg",
+        "isoffical": true,
+        "link": "/album/Thuy-Chung-Single-Thuong-Vo-K-ICM/6B8O9IOD.html",
+        "isIndie": false,
+        "releaseDate": "15/01/2023",
+        "sortDescription": "",
+        "releasedAt": 1673784000000,
+        "genreIds": [
+          "IWZ9Z08I",
+          "IWZ97FCD"
+        ],
+        "PR": false,
+        "artists": [
+          {
+            "id": "IWZFEZIC",
+            "name": "Thương Võ",
+            "link": "/Thuong-Vo",
+            "spotlight": false,
+            "alias": "Thuong-Vo",
+            "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/avatars/8/d/3/c/8d3cd512d25619c27c320e2808745d05.jpg",
+            "thumbnailM": "https://photo-resize-zmp3.zmdcdn.me/w360_r1x1_jpeg/avatars/8/d/3/c/8d3cd512d25619c27c320e2808745d05.jpg",
+            "isOA": true,
+            "isOABrand": false,
+            "playlistId": "6UW9B6OD",
+            "totalFollow": 164468
+          },
+          {
+            "id": "IWZFFOWB",
+            "name": "K-ICM",
+            "link": "/K-ICM",
+            "spotlight": false,
+            "alias": "K-ICM",
+            "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/avatars/4/c/e/a/4ceac8b6c213bcaf2841f5afa0709beb.jpg",
+            "thumbnailM": "https://photo-resize-zmp3.zmdcdn.me/w360_r1x1_jpeg/avatars/4/c/e/a/4ceac8b6c213bcaf2841f5afa0709beb.jpg",
+            "isOA": true,
+            "isOABrand": false,
+            "playlistId": "ZODE97IC",
+            "totalFollow": 758143
+          }
+        ],
+        "artistsNames": "Thương Võ, K-ICM"
+      },
+      "distributor": "MIXUS",
+      "indicators": [],
+      "isIndie": false,
+      "streamingStatus": 1,
+      "allowAudioAds": true,
+      "hasLyric": true
+    },
+    {
+      "encodeId": "Z66IZAFB",
+      "title": "Thủy Chung (Bibo Remix)",
+      "alias": "Thuy-Chung-Bibo-Remix-Thuong-Vo",
+      "isOffical": true,
+      "username": "",
+      "artistsNames": "Thương Võ",
+      "artists": [
+        {
+          "id": "IWZFEZIC",
+          "name": "Thương Võ",
+          "link": "/Thuong-Vo",
+          "spotlight": false,
+          "alias": "Thuong-Vo",
+          "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/avatars/8/d/3/c/8d3cd512d25619c27c320e2808745d05.jpg",
+          "thumbnailM": "https://photo-resize-zmp3.zmdcdn.me/w360_r1x1_jpeg/avatars/8/d/3/c/8d3cd512d25619c27c320e2808745d05.jpg",
+          "isOA": true,
+          "isOABrand": false,
+          "playlistId": "6UW9B6OD"
+        }
+      ],
+      "isWorldWide": true,
+      "thumbnailM": "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/cover/9/c/9/8/9c98ebe923010cbb5be0e2cb8c1bb62e.jpg",
+      "link": "/bai-hat/Thuy-Chung-Bibo-Remix-Thuong-Vo/Z66IZAFB.html",
+      "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w94_r1x1_jpeg/cover/9/c/9/8/9c98ebe923010cbb5be0e2cb8c1bb62e.jpg",
+      "duration": 348,
+      "zingChoice": false,
+      "isPrivate": false,
+      "preRelease": false,
+      "releaseDate": 1674041100,
+      "genreIds": [
+        "IWZ9Z08I",
+        "IWZ9Z0CW"
+      ],
+      "album": {
+        "encodeId": "6B8ZIO6I",
+        "title": "Thủy Chung (Remix)",
+        "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w165_r1x1_jpeg/cover/9/c/9/8/9c98ebe923010cbb5be0e2cb8c1bb62e.jpg",
+        "isoffical": true,
+        "link": "/album/Thuy-Chung-Remix-Thuong-Vo/6B8ZIO6I.html",
+        "isIndie": false,
+        "releaseDate": "18/01/2023",
+        "sortDescription": "",
+        "releasedAt": 1674039900000,
+        "genreIds": [
+          "IWZ9Z08I",
+          "IWZ9Z0CW"
+        ],
+        "PR": false,
+        "artists": [
+          {
+            "id": "IWZFEZIC",
+            "name": "Thương Võ",
+            "link": "/Thuong-Vo",
+            "spotlight": false,
+            "alias": "Thuong-Vo",
+            "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/avatars/8/d/3/c/8d3cd512d25619c27c320e2808745d05.jpg",
+            "thumbnailM": "https://photo-resize-zmp3.zmdcdn.me/w360_r1x1_jpeg/avatars/8/d/3/c/8d3cd512d25619c27c320e2808745d05.jpg",
+            "isOA": true,
+            "isOABrand": false,
+            "playlistId": "6UW9B6OD",
+            "totalFollow": 164468
+          }
+        ],
+        "artistsNames": "Thương Võ"
+      },
+      "distributor": "MIXUS",
+      "indicators": [],
+      "isIndie": false,
+      "streamingStatus": 1,
+      "allowAudioAds": true,
+      "hasLyric": true
+    },
+    {
+      "encodeId": "Z66IZBW6",
+      "title": "Thủy Chung (Ciray Remix)",
+      "alias": "Thuy-Chung-Ciray-Remix-Thuong-Vo",
+      "isOffical": true,
+      "username": "",
+      "artistsNames": "Thương Võ",
+      "artists": [
+        {
+          "id": "IWZFEZIC",
+          "name": "Thương Võ",
+          "link": "/Thuong-Vo",
+          "spotlight": false,
+          "alias": "Thuong-Vo",
+          "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/avatars/8/d/3/c/8d3cd512d25619c27c320e2808745d05.jpg",
+          "thumbnailM": "https://photo-resize-zmp3.zmdcdn.me/w360_r1x1_jpeg/avatars/8/d/3/c/8d3cd512d25619c27c320e2808745d05.jpg",
+          "isOA": true,
+          "isOABrand": false,
+          "playlistId": "6UW9B6OD"
+        }
+      ],
+      "isWorldWide": true,
+      "thumbnailM": "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/cover/9/c/9/8/9c98ebe923010cbb5be0e2cb8c1bb62e.jpg",
+      "link": "/bai-hat/Thuy-Chung-Ciray-Remix-Thuong-Vo/Z66IZBW6.html",
+      "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w94_r1x1_jpeg/cover/9/c/9/8/9c98ebe923010cbb5be0e2cb8c1bb62e.jpg",
+      "duration": 236,
+      "zingChoice": false,
+      "isPrivate": false,
+      "preRelease": false,
+      "releaseDate": 1674041100,
+      "genreIds": [
+        "IWZ9Z08I",
+        "IWZ9Z0CW"
+      ],
+      "album": {
+        "encodeId": "6B8ZIO6I",
+        "title": "Thủy Chung (Remix)",
+        "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w165_r1x1_jpeg/cover/9/c/9/8/9c98ebe923010cbb5be0e2cb8c1bb62e.jpg",
+        "isoffical": true,
+        "link": "/album/Thuy-Chung-Remix-Thuong-Vo/6B8ZIO6I.html",
+        "isIndie": false,
+        "releaseDate": "18/01/2023",
+        "sortDescription": "",
+        "releasedAt": 1674039900000,
+        "genreIds": [
+          "IWZ9Z08I",
+          "IWZ9Z0CW"
+        ],
+        "PR": false,
+        "artists": [
+          {
+            "id": "IWZFEZIC",
+            "name": "Thương Võ",
+            "link": "/Thuong-Vo",
+            "spotlight": false,
+            "alias": "Thuong-Vo",
+            "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/avatars/8/d/3/c/8d3cd512d25619c27c320e2808745d05.jpg",
+            "thumbnailM": "https://photo-resize-zmp3.zmdcdn.me/w360_r1x1_jpeg/avatars/8/d/3/c/8d3cd512d25619c27c320e2808745d05.jpg",
+            "isOA": true,
+            "isOABrand": false,
+            "playlistId": "6UW9B6OD",
+            "totalFollow": 164468
+          }
+        ],
+        "artistsNames": "Thương Võ"
+      },
+      "distributor": "MIXUS",
+      "indicators": [],
+      "isIndie": false,
+      "streamingStatus": 1,
+      "allowAudioAds": true,
+      "hasLyric": true
+    },
+    {
+      "encodeId": "Z7ZWUO0U",
+      "title": "Con Tim Anh Thay Đổi",
+      "alias": "Con-Tim-Anh-Thay-Doi-Thuy-Le-ACV",
+      "isOffical": true,
+      "username": "",
+      "artistsNames": "Thủy Lê, ACV",
+      "artists": [
+        {
+          "id": "IW88CBID",
+          "name": "Thủy Lê",
+          "link": "/nghe-si/Thuy-Le",
+          "spotlight": false,
+          "alias": "Thuy-Le",
+          "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/avatars/c/5/c/1/c5c1ca128676336474c149b3b7a5d297.jpg",
+          "thumbnailM": "https://photo-resize-zmp3.zmdcdn.me/w360_r1x1_jpeg/avatars/c/5/c/1/c5c1ca128676336474c149b3b7a5d297.jpg",
+          "isOA": false,
+          "isOABrand": false,
+          "playlistId": "6BCEODCZ"
+        },
+        {
+          "id": "IW6ZAAB8",
+          "name": "ACV",
+          "link": "/nghe-si/ACV-Music",
+          "spotlight": false,
+          "alias": "ACV-Music",
+          "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/avatars/5/e/0/6/5e06d48fb79175a096e059ecf3d8b1e8.jpg",
+          "thumbnailM": "https://photo-resize-zmp3.zmdcdn.me/w360_r1x1_jpeg/avatars/5/e/0/6/5e06d48fb79175a096e059ecf3d8b1e8.jpg",
+          "isOA": false,
+          "isOABrand": false,
+          "playlistId": "6UW9CWC9"
+        }
+      ],
+      "isWorldWide": true,
+      "thumbnailM": "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/cover/b/c/e/c/bcec78c3282be04e2ae5243903c8bbec.jpg",
+      "link": "/bai-hat/Con-Tim-Anh-Thay-Doi-Thuy-Le-ACV/Z7ZWUO0U.html",
+      "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w94_r1x1_jpeg/cover/b/c/e/c/bcec78c3282be04e2ae5243903c8bbec.jpg",
+      "duration": 315,
+      "zingChoice": false,
+      "isPrivate": false,
+      "preRelease": false,
+      "releaseDate": 1709989200,
+      "genreIds": [
+        "IWZ9Z08I",
+        "IWZ97FCD"
+      ],
+      "album": {
+        "encodeId": "6BFFCOIU",
+        "title": "Con Tim Anh Thay Đổi (Single)",
+        "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w165_r1x1_jpeg/cover/b/c/e/c/bcec78c3282be04e2ae5243903c8bbec.jpg",
+        "isoffical": true,
+        "link": "/album/Con-Tim-Anh-Thay-Doi-Single-Thuy-Le-ACV/6BFFCOIU.html",
+        "isIndie": false,
+        "releaseDate": "09/03/2024",
+        "sortDescription": "",
+        "releasedAt": 1709989200000,
+        "genreIds": [
+          "IWZ9Z08I",
+          "IWZ97FCD"
+        ],
+        "PR": false,
+        "artists": [
+          {
+            "id": "IW88CBID",
+            "name": "Thủy Lê",
+            "link": "/nghe-si/Thuy-Le",
+            "spotlight": false,
+            "alias": "Thuy-Le",
+            "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/avatars/c/5/c/1/c5c1ca128676336474c149b3b7a5d297.jpg",
+            "thumbnailM": "https://photo-resize-zmp3.zmdcdn.me/w360_r1x1_jpeg/avatars/c/5/c/1/c5c1ca128676336474c149b3b7a5d297.jpg",
+            "isOA": false,
+            "isOABrand": false,
+            "playlistId": "6BCEODCZ",
+            "totalFollow": 648
+          },
+          {
+            "id": "IW6ZAAB8",
+            "name": "ACV",
+            "link": "/nghe-si/ACV-Music",
+            "spotlight": false,
+            "alias": "ACV-Music",
+            "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/avatars/5/e/0/6/5e06d48fb79175a096e059ecf3d8b1e8.jpg",
+            "thumbnailM": "https://photo-resize-zmp3.zmdcdn.me/w360_r1x1_jpeg/avatars/5/e/0/6/5e06d48fb79175a096e059ecf3d8b1e8.jpg",
+            "isOA": false,
+            "isOABrand": false,
+            "playlistId": "6UW9CWC9",
+            "totalFollow": 147830
+          }
+        ],
+        "artistsNames": "Thủy Lê, ACV"
+      },
+      "distributor": "MIXUS",
+      "indicators": [],
+      "isIndie": false,
+      "streamingStatus": 1,
+      "allowAudioAds": true,
+      "hasLyric": true
+    },
+    {
+      "encodeId": "ZW9B9U0O",
+      "title": "Nói Em Nghe Mãi Mãi Là Bao Xa",
+      "alias": "Noi-Em-Nghe-Mai-Mai-La-Bao-Xa-Thuy-Tien",
+      "isOffical": true,
+      "username": "",
+      "artistsNames": "Thủy Tiên",
+      "artists": [
+        {
+          "id": "IWZ9ZW6E",
+          "name": "Thủy Tiên",
+          "link": "/Thuy-Tien",
+          "spotlight": false,
+          "alias": "Thuy-Tien",
+          "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/avatars/0/f/f/b/0ffba0f68558d66030cad6f096dbbb44.jpg",
+          "thumbnailM": "https://photo-resize-zmp3.zmdcdn.me/w360_r1x1_jpeg/avatars/0/f/f/b/0ffba0f68558d66030cad6f096dbbb44.jpg",
+          "isOA": true,
+          "isOABrand": false,
+          "playlistId": "ZWZ9D096"
+        }
+      ],
+      "isWorldWide": true,
+      "thumbnailM": "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/cover/4/b/b/8/4bb81032e2709936f75281e82015695f.jpg",
+      "link": "/bai-hat/Noi-Em-Nghe-Mai-Mai-La-Bao-Xa-Thuy-Tien/ZW9B9U0O.html",
+      "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w94_r1x1_jpeg/cover/4/b/b/8/4bb81032e2709936f75281e82015695f.jpg",
+      "duration": 252,
+      "zingChoice": false,
+      "isPrivate": false,
+      "preRelease": false,
+      "releaseDate": 0,
+      "genreIds": [
+        "IWZ9Z08I",
+        "IWZ9Z088",
+        "IWZ97FCD"
+      ],
+      "album": {
+        "encodeId": "ZOBCIW6Z",
+        "title": "Nói Em Nghe Mãi Mãi Là Bao Xa (Single)",
+        "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w165_r1x1_jpeg/cover/4/b/b/8/4bb81032e2709936f75281e82015695f.jpg",
+        "isoffical": true,
+        "link": "/album/Noi-Em-Nghe-Mai-Mai-La-Bao-Xa-Single-Thuy-Tien/ZOBCIW6Z.html",
+        "isIndie": false,
+        "releaseDate": "2018",
+        "sortDescription": "",
+        "releasedAt": 1546189200000,
+        "genreIds": [
+          "IWZ9Z08I",
+          "IWZ9Z088"
+        ],
+        "PR": false,
+        "artists": [
+          {
+            "id": "IWZ9ZW6E",
+            "name": "Thủy Tiên",
+            "link": "/Thuy-Tien",
+            "spotlight": false,
+            "alias": "Thuy-Tien",
+            "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/avatars/0/f/f/b/0ffba0f68558d66030cad6f096dbbb44.jpg",
+            "thumbnailM": "https://photo-resize-zmp3.zmdcdn.me/w360_r1x1_jpeg/avatars/0/f/f/b/0ffba0f68558d66030cad6f096dbbb44.jpg",
+            "isOA": true,
+            "isOABrand": false,
+            "playlistId": "ZWZ9D096",
+            "totalFollow": 81017
+          }
+        ],
+        "artistsNames": "Thủy Tiên"
+      },
+      "distributor": "Thủy Tiên",
+      "indicators": [],
+      "radioId": 1285887344,
+      "isIndie": false,
+      "mvlink": "/video-clip/Noi-Em-Nghe-Mai-Mai-La-Bao-Xa-Thuy-Tien/ZW9B9U0O.html",
+      "streamingStatus": 1,
+      "allowAudioAds": true,
+      "hasLyric": true
+    },
+    {
+      "encodeId": "ZW789AWU",
+      "title": "Dành Cả Thanh Xuân Để Yêu Ai Đó",
+      "alias": "Danh-Ca-Thanh-Xuan-De-Yeu-Ai-Do-Thuy-Tien",
+      "isOffical": true,
+      "username": "",
+      "artistsNames": "Thủy Tiên",
+      "artists": [
+        {
+          "id": "IWZ9ZW6E",
+          "name": "Thủy Tiên",
+          "link": "/Thuy-Tien",
+          "spotlight": false,
+          "alias": "Thuy-Tien",
+          "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/avatars/0/f/f/b/0ffba0f68558d66030cad6f096dbbb44.jpg",
+          "thumbnailM": "https://photo-resize-zmp3.zmdcdn.me/w360_r1x1_jpeg/avatars/0/f/f/b/0ffba0f68558d66030cad6f096dbbb44.jpg",
+          "isOA": true,
+          "isOABrand": false,
+          "playlistId": "ZWZ9D096"
+        }
+      ],
+      "isWorldWide": true,
+      "thumbnailM": "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/covers/f/b/fb71d72831219ef9716a539353696ae9_1480038587.jpg",
+      "link": "/bai-hat/Danh-Ca-Thanh-Xuan-De-Yeu-Ai-Do-Thuy-Tien/ZW789AWU.html",
+      "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w94_r1x1_jpeg/covers/f/b/fb71d72831219ef9716a539353696ae9_1480038587.jpg",
+      "duration": 281,
+      "zingChoice": false,
+      "isPrivate": false,
+      "preRelease": false,
+      "releaseDate": 0,
+      "genreIds": [
+        "IWZ9Z08I",
+        "IWZ9Z088",
+        "IWZ97FCD"
+      ],
+      "album": {
+        "encodeId": "ZOU7ZA86",
+        "title": "Dành Cả Thanh Xuân Để Yêu Ai Đó (Single)",
+        "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w165_r1x1_jpeg/covers/f/b/fb71d72831219ef9716a539353696ae9_1480038587.jpg",
+        "isoffical": true,
+        "link": "/album/Danh-Ca-Thanh-Xuan-De-Yeu-Ai-Do-Single-Thuy-Tien/ZOU7ZA86.html",
+        "isIndie": false,
+        "releaseDate": "2016",
+        "sortDescription": "Ca khúc mới nhất Hamlet Trương sáng tác riêng cho chất giọng trong veo cao vút của Thủy Tiên, mang đầy hoài niệm về mối tình đầu thầm lặng của một cô gái trẻ. Dành hết thanh xuân để yêu một ai đó là điều ai trong chúng ta đã từng làm, có khi không bao giờ chúng ta nói ra, nhưng người đó chính là tuổi trẻ tuyệt đẹp của chúng ta!",
+        "releasedAt": 1483117200000,
+        "genreIds": [
+          "IWZ9Z08I",
+          "IWZ9Z088"
+        ],
+        "PR": false,
+        "artists": [
+          {
+            "id": "IWZ9ZW6E",
+            "name": "Thủy Tiên",
+            "link": "/Thuy-Tien",
+            "spotlight": false,
+            "alias": "Thuy-Tien",
+            "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/avatars/0/f/f/b/0ffba0f68558d66030cad6f096dbbb44.jpg",
+            "thumbnailM": "https://photo-resize-zmp3.zmdcdn.me/w360_r1x1_jpeg/avatars/0/f/f/b/0ffba0f68558d66030cad6f096dbbb44.jpg",
+            "isOA": true,
+            "isOABrand": false,
+            "playlistId": "ZWZ9D096",
+            "totalFollow": 81017
+          }
+        ],
+        "artistsNames": "Thủy Tiên"
+      },
+      "distributor": "MIXUS",
+      "indicators": [],
+      "radioId": 1285274216,
+      "isIndie": false,
+      "mvlink": "/video-clip/Danh-Ca-Thanh-Xuan-De-Yeu-Ai-Do-Thuy-Tien/ZW789AWU.html",
+      "streamingStatus": 1,
+      "allowAudioAds": true,
+      "hasLyric": true
+    },
+    {
+      "encodeId": "ZWADBDU0",
+      "title": "Từng Có Người Yêu Tôi Như Sinh Mệnh",
+      "alias": "Tung-Co-Nguoi-Yeu-Toi-Nhu-Sinh-Menh-Thuy-Tien",
+      "isOffical": true,
+      "username": "",
+      "artistsNames": "Thủy Tiên",
+      "artists": [
+        {
+          "id": "IWZ9ZW6E",
+          "name": "Thủy Tiên",
+          "link": "/Thuy-Tien",
+          "spotlight": false,
+          "alias": "Thuy-Tien",
+          "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/avatars/0/f/f/b/0ffba0f68558d66030cad6f096dbbb44.jpg",
+          "thumbnailM": "https://photo-resize-zmp3.zmdcdn.me/w360_r1x1_jpeg/avatars/0/f/f/b/0ffba0f68558d66030cad6f096dbbb44.jpg",
+          "isOA": true,
+          "isOABrand": false,
+          "playlistId": "ZWZ9D096"
+        }
+      ],
+      "isWorldWide": true,
+      "thumbnailM": "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/cover/9/7/f/2/97f28660fc37b53d6dd195ec63c5d70b.jpg",
+      "link": "/bai-hat/Tung-Co-Nguoi-Yeu-Toi-Nhu-Sinh-Menh-Thuy-Tien/ZWADBDU0.html",
+      "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w94_r1x1_jpeg/cover/9/7/f/2/97f28660fc37b53d6dd195ec63c5d70b.jpg",
+      "duration": 259,
+      "zingChoice": false,
+      "isPrivate": false,
+      "preRelease": false,
+      "releaseDate": 0,
+      "genreIds": [
+        "IWZ9Z08I",
+        "IWZ9Z088",
+        "IWZ97FCD"
+      ],
+      "album": {
+        "encodeId": "ZUEUI8CU",
+        "title": "Từng Có Người Yêu Tôi Như Sinh Mệnh (Single)",
+        "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w165_r1x1_jpeg/cover/9/7/f/2/97f28660fc37b53d6dd195ec63c5d70b.jpg",
+        "isoffical": true,
+        "link": "/album/Tung-Co-Nguoi-Yeu-Toi-Nhu-Sinh-Menh-Single-Thuy-Tien/ZUEUI8CU.html",
+        "isIndie": false,
+        "releaseDate": "2019",
+        "sortDescription": "",
+        "releasedAt": 1577725200000,
+        "genreIds": [
+          "IWZ9Z08I",
+          "IWZ9Z088",
+          "IWZ97FCD"
+        ],
+        "PR": false,
+        "artists": [
+          {
+            "id": "IWZ9ZW6E",
+            "name": "Thủy Tiên",
+            "link": "/Thuy-Tien",
+            "spotlight": false,
+            "alias": "Thuy-Tien",
+            "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/avatars/0/f/f/b/0ffba0f68558d66030cad6f096dbbb44.jpg",
+            "thumbnailM": "https://photo-resize-zmp3.zmdcdn.me/w360_r1x1_jpeg/avatars/0/f/f/b/0ffba0f68558d66030cad6f096dbbb44.jpg",
+            "isOA": true,
+            "isOABrand": false,
+            "playlistId": "ZWZ9D096",
+            "totalFollow": 81017
+          }
+        ],
+        "artistsNames": "Thủy Tiên"
+      },
+      "distributor": "MIXUS",
+      "indicators": [],
+      "radioId": 1286767241,
+      "isIndie": false,
+      "mvlink": "/video-clip/Tung-Co-Nguoi-Yeu-Toi-Nhu-Sinh-Menh-Thuy-Tien/ZWADBDU0.html",
+      "streamingStatus": 1,
+      "allowAudioAds": true,
+      "hasLyric": true
+    },
+    {
+      "encodeId": "ZW6I0788",
+      "title": "Tình Nhỏ Mau Quên",
+      "alias": "Tinh-Nho-Mau-Quen-Quang-Le-Huong-Thuy",
+      "isOffical": true,
+      "username": "mp3",
+      "artistsNames": "Quang Lê, Hương Thủy",
+      "artists": [
+        {
+          "id": "IWZ9ZOBC",
+          "name": "Quang Lê",
+          "link": "/Quang-Le",
+          "spotlight": false,
+          "alias": "Quang-Le",
+          "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/avatars/9/f/3/c/9f3cb9a7e75438f0cb6c8064f54a0668.jpg",
+          "thumbnailM": "https://photo-resize-zmp3.zmdcdn.me/w360_r1x1_jpeg/avatars/9/f/3/c/9f3cb9a7e75438f0cb6c8064f54a0668.jpg",
+          "isOA": true,
+          "isOABrand": false,
+          "playlistId": "ZWZ9CD67"
+        },
+        {
+          "id": "IWZ9ZOE6",
+          "name": "Hương Thủy",
+          "link": "/nghe-si/Huong-Thuy",
+          "spotlight": false,
+          "alias": "Huong-Thuy",
+          "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/avatars/4/8/48de72a609baee48a00846da633cf7a0_1511153818.jpg",
+          "thumbnailM": "https://photo-resize-zmp3.zmdcdn.me/w360_r1x1_jpeg/avatars/4/8/48de72a609baee48a00846da633cf7a0_1511153818.jpg",
+          "isOA": false,
+          "isOABrand": false,
+          "playlistId": "ZWZBO7UZ"
+        }
+      ],
+      "isWorldWide": false,
+      "thumbnailM": "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/cover/6/d/1/5/6d1599495bf1fc37735fd2294f43f3c1.jpg",
+      "link": "/bai-hat/Tinh-Nho-Mau-Quen-Quang-Le-Huong-Thuy/ZW6I0788.html",
+      "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w94_r1x1_jpeg/cover/6/d/1/5/6d1599495bf1fc37735fd2294f43f3c1.jpg",
+      "duration": 286,
+      "zingChoice": false,
+      "isPrivate": false,
+      "preRelease": false,
+      "releaseDate": 1104512400,
+      "genreIds": [
+        "IWZ9Z08I",
+        "IWZ9Z08B"
+      ],
+      "distributor": "Thúy Nga",
+      "indicators": [],
+      "radioId": 1282990301,
+      "isIndie": false,
+      "streamingStatus": 1,
+      "allowAudioAds": true,
+      "hasLyric": true
+    }
+  ],
+  "videos": [
+    {
+      "encodeId": "ZWZAAEU7",
+      "title": "Muộn Màng",
+      "alias": "Muon-Mang-Thuy-Tien",
+      "isOffical": true,
+      "username": "mp3",
+      "artistsNames": "Thủy Tiên",
+      "artists": [
+        {
+          "id": "IWZ9ZW6E",
+          "name": "Thủy Tiên",
+          "link": "/Thuy-Tien",
+          "spotlight": false,
+          "alias": "Thuy-Tien",
+          "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/avatars/0/f/f/b/0ffba0f68558d66030cad6f096dbbb44.jpg",
+          "thumbnailM": "https://photo-resize-zmp3.zmdcdn.me/w360_r1x1_jpeg/avatars/0/f/f/b/0ffba0f68558d66030cad6f096dbbb44.jpg",
+          "isOA": true,
+          "isOABrand": false,
+          "playlistId": "ZWZ9D096"
+        }
+      ],
+      "isWorldWide": true,
+      "thumbnailM": "https://photo-resize-zmp3.zmdcdn.me/w600_r300x169_jpeg/thumb_video/4/c/4c99c999e0983f314e104c5821c48193_1302675833.jpg",
+      "link": "/video-clip/Muon-Mang-Thuy-Tien/ZWZAAEU7.html",
+      "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w240_r16x9_jpeg/thumb_video/4/c/4c99c999e0983f314e104c5821c48193_1302675833.jpg",
+      "duration": 217,
+      "streamingStatus": 1,
+      "artist": {
+        "id": "IWZ9ZW6E",
+        "name": "Thủy Tiên",
+        "link": "/nghe-si/Thuy-Tien",
+        "spotlight": false,
+        "alias": "Thuy-Tien",
+        "playlistId": "ZWZ9D096",
+        "cover": "https://photo-zmp3.zmdcdn.me/cover_artist/6/6/5/d/665d385501490f0f208fcdfe66e3e4e8.jpg",
+        "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/avatars/0/f/f/b/0ffba0f68558d66030cad6f096dbbb44.jpg"
+      }
+    },
+    {
+      "encodeId": "ZW6WWOD6",
+      "title": "Ký Ức Ngọt Ngào",
+      "alias": "Ky-Uc-Ngot-Ngao-Thuy-Tien",
+      "isOffical": true,
+      "username": "mp3",
+      "artistsNames": "Thủy Tiên",
+      "artists": [
+        {
+          "id": "IWZ9ZW6E",
+          "name": "Thủy Tiên",
+          "link": "/Thuy-Tien",
+          "spotlight": false,
+          "alias": "Thuy-Tien",
+          "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/avatars/0/f/f/b/0ffba0f68558d66030cad6f096dbbb44.jpg",
+          "thumbnailM": "https://photo-resize-zmp3.zmdcdn.me/w360_r1x1_jpeg/avatars/0/f/f/b/0ffba0f68558d66030cad6f096dbbb44.jpg",
+          "isOA": true,
+          "isOABrand": false,
+          "playlistId": "ZWZ9D096"
+        }
+      ],
+      "isWorldWide": true,
+      "thumbnailM": "https://photo-resize-zmp3.zmdcdn.me/w600_r300x169_jpeg/thumb_video/5/9/590173f467abebfebadfc07b99c61a9e_1383550126.jpg",
+      "link": "/video-clip/Ky-Uc-Ngot-Ngao-Thuy-Tien/ZW6WWOD6.html",
+      "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w240_r16x9_jpeg/thumb_video/5/9/590173f467abebfebadfc07b99c61a9e_1383550126.jpg",
+      "duration": 272,
+      "streamingStatus": 1,
+      "artist": {
+        "id": "IWZ9ZW6E",
+        "name": "Thủy Tiên",
+        "link": "/nghe-si/Thuy-Tien",
+        "spotlight": false,
+        "alias": "Thuy-Tien",
+        "playlistId": "ZWZ9D096",
+        "cover": "https://photo-zmp3.zmdcdn.me/cover_artist/6/6/5/d/665d385501490f0f208fcdfe66e3e4e8.jpg",
+        "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/avatars/0/f/f/b/0ffba0f68558d66030cad6f096dbbb44.jpg"
+      }
+    },
+    {
+      "encodeId": "ZW7I9I8B",
+      "title": "Sài Gòn Bận Lắm",
+      "alias": "Sai-Gon-Ban-Lam-Thuy-Tien",
+      "isOffical": true,
+      "username": "mp3",
+      "artistsNames": "Thủy Tiên",
+      "artists": [
+        {
+          "id": "IWZ9ZW6E",
+          "name": "Thủy Tiên",
+          "link": "/Thuy-Tien",
+          "spotlight": false,
+          "alias": "Thuy-Tien",
+          "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/avatars/0/f/f/b/0ffba0f68558d66030cad6f096dbbb44.jpg",
+          "thumbnailM": "https://photo-resize-zmp3.zmdcdn.me/w360_r1x1_jpeg/avatars/0/f/f/b/0ffba0f68558d66030cad6f096dbbb44.jpg",
+          "isOA": true,
+          "isOABrand": false,
+          "playlistId": "ZWZ9D096"
+        }
+      ],
+      "isWorldWide": true,
+      "thumbnailM": "https://photo-resize-zmp3.zmdcdn.me/w600_r300x169_jpeg/thumb_video/a/9/a9901e4e333044a0f46d3db4e9ff7514_1436241095.jpg",
+      "link": "/video-clip/Sai-Gon-Ban-Lam-Thuy-Tien/ZW7I9I8B.html",
+      "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w240_r16x9_jpeg/thumb_video/a/9/a9901e4e333044a0f46d3db4e9ff7514_1436241095.jpg",
+      "duration": 306,
+      "streamingStatus": 1,
+      "artist": {
+        "id": "IWZ9ZW6E",
+        "name": "Thủy Tiên",
+        "link": "/nghe-si/Thuy-Tien",
+        "spotlight": false,
+        "alias": "Thuy-Tien",
+        "playlistId": "ZWZ9D096",
+        "cover": "https://photo-zmp3.zmdcdn.me/cover_artist/6/6/5/d/665d385501490f0f208fcdfe66e3e4e8.jpg",
+        "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/avatars/0/f/f/b/0ffba0f68558d66030cad6f096dbbb44.jpg"
+      }
+    },
+    {
+      "encodeId": "ZWZAA8WD",
+      "title": "Em Đã Quên",
+      "alias": "Em-Da-Quen-Thuy-Tien",
+      "isOffical": true,
+      "username": "mp3",
+      "artistsNames": "Thủy Tiên",
+      "artists": [
+        {
+          "id": "IWZ9ZW6E",
+          "name": "Thủy Tiên",
+          "link": "/Thuy-Tien",
+          "spotlight": false,
+          "alias": "Thuy-Tien",
+          "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/avatars/0/f/f/b/0ffba0f68558d66030cad6f096dbbb44.jpg",
+          "thumbnailM": "https://photo-resize-zmp3.zmdcdn.me/w360_r1x1_jpeg/avatars/0/f/f/b/0ffba0f68558d66030cad6f096dbbb44.jpg",
+          "isOA": true,
+          "isOABrand": false,
+          "playlistId": "ZWZ9D096"
+        }
+      ],
+      "isWorldWide": true,
+      "thumbnailM": "https://photo-resize-zmp3.zmdcdn.me/w600_r300x169_jpeg/thumb_video/d/7/d768a7882059aa0ccca236588cd9f737_1377751822.jpg",
+      "link": "/video-clip/Em-Da-Quen-Thuy-Tien/ZWZAA8WD.html",
+      "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w240_r16x9_jpeg/thumb_video/d/7/d768a7882059aa0ccca236588cd9f737_1377751822.jpg",
+      "duration": 309,
+      "streamingStatus": 1,
+      "artist": {
+        "id": "IWZ9ZW6E",
+        "name": "Thủy Tiên",
+        "link": "/nghe-si/Thuy-Tien",
+        "spotlight": false,
+        "alias": "Thuy-Tien",
+        "playlistId": "ZWZ9D096",
+        "cover": "https://photo-zmp3.zmdcdn.me/cover_artist/6/6/5/d/665d385501490f0f208fcdfe66e3e4e8.jpg",
+        "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/avatars/0/f/f/b/0ffba0f68558d66030cad6f096dbbb44.jpg"
+      }
+    },
+    {
+      "encodeId": "ZWZ97EU9",
+      "title": "Quay Về Đi",
+      "alias": "Quay-Ve-Di-Thuy-Tien-Noo-Phuoc-Thinh",
+      "isOffical": true,
+      "username": "mp3",
+      "artistsNames": "Thủy Tiên, Noo Phước Thịnh",
+      "artists": [
+        {
+          "id": "IWZ9ZW6E",
+          "name": "Thủy Tiên",
+          "link": "/Thuy-Tien",
+          "spotlight": false,
+          "alias": "Thuy-Tien",
+          "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/avatars/0/f/f/b/0ffba0f68558d66030cad6f096dbbb44.jpg",
+          "thumbnailM": "https://photo-resize-zmp3.zmdcdn.me/w360_r1x1_jpeg/avatars/0/f/f/b/0ffba0f68558d66030cad6f096dbbb44.jpg",
+          "isOA": true,
+          "isOABrand": false,
+          "playlistId": "ZWZ9D096"
+        },
+        {
+          "id": "IWZ9ZUU6",
+          "name": "Noo Phước Thịnh",
+          "link": "/Noo-Phuoc-Thinh",
+          "spotlight": false,
+          "alias": "Noo-Phuoc-Thinh",
+          "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/avatars/0/7/e/c/07eca16c7f0a778b35d1a6f17f4f388f.jpg",
+          "thumbnailM": "https://photo-resize-zmp3.zmdcdn.me/w360_r1x1_jpeg/avatars/0/7/e/c/07eca16c7f0a778b35d1a6f17f4f388f.jpg",
+          "isOA": true,
+          "isOABrand": false,
+          "playlistId": "ZWZ9CFEI"
+        }
+      ],
+      "isWorldWide": true,
+      "thumbnailM": "https://photo-resize-zmp3.zmdcdn.me/w600_r300x169_jpeg/thumb_video/7/3/738b8290842597d65d9bbc59a8fb12d0_1504755261.jpg",
+      "link": "/video-clip/Quay-Ve-Di-Thuy-Tien-Noo-Phuoc-Thinh/ZWZ97EU9.html",
+      "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w240_r16x9_jpeg/thumb_video/7/3/738b8290842597d65d9bbc59a8fb12d0_1504755261.jpg",
+      "duration": 232,
+      "streamingStatus": 1,
+      "artist": {
+        "id": "IWZ9ZW6E",
+        "name": "Thủy Tiên",
+        "link": "/nghe-si/Thuy-Tien",
+        "spotlight": false,
+        "alias": "Thuy-Tien",
+        "playlistId": "ZWZ9D096",
+        "cover": "https://photo-zmp3.zmdcdn.me/cover_artist/6/6/5/d/665d385501490f0f208fcdfe66e3e4e8.jpg",
+        "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/avatars/0/f/f/b/0ffba0f68558d66030cad6f096dbbb44.jpg"
+      }
+    },
+    {
+      "encodeId": "ZWZ97EUD",
+      "title": "Chợt Là Nỗi Đau",
+      "alias": "Chot-La-Noi-Dau-Thuy-Tien",
+      "isOffical": true,
+      "username": "mp3",
+      "artistsNames": "Thủy Tiên",
+      "artists": [
+        {
+          "id": "IWZ9ZW6E",
+          "name": "Thủy Tiên",
+          "link": "/Thuy-Tien",
+          "spotlight": false,
+          "alias": "Thuy-Tien",
+          "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/avatars/0/f/f/b/0ffba0f68558d66030cad6f096dbbb44.jpg",
+          "thumbnailM": "https://photo-resize-zmp3.zmdcdn.me/w360_r1x1_jpeg/avatars/0/f/f/b/0ffba0f68558d66030cad6f096dbbb44.jpg",
+          "isOA": true,
+          "isOABrand": false,
+          "playlistId": "ZWZ9D096"
+        }
+      ],
+      "isWorldWide": true,
+      "thumbnailM": "https://photo-resize-zmp3.zmdcdn.me/w600_r300x169_jpeg/images/uploads/2010/01_08/1262946919.jpg",
+      "link": "/video-clip/Chot-La-Noi-Dau-Thuy-Tien/ZWZ97EUD.html",
+      "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w240_r16x9_jpeg/images/uploads/2010/01_08/1262946919.jpg",
+      "duration": 197,
+      "streamingStatus": 1,
+      "artist": {
+        "id": "IWZ9ZW6E",
+        "name": "Thủy Tiên",
+        "link": "/nghe-si/Thuy-Tien",
+        "spotlight": false,
+        "alias": "Thuy-Tien",
+        "playlistId": "ZWZ9D096",
+        "cover": "https://photo-zmp3.zmdcdn.me/cover_artist/6/6/5/d/665d385501490f0f208fcdfe66e3e4e8.jpg",
+        "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/avatars/0/f/f/b/0ffba0f68558d66030cad6f096dbbb44.jpg"
+      }
+    },
+    {
+      "encodeId": "ZWZ97EUB",
+      "title": "Ngôi Nhà Hạnh Phúc",
+      "alias": "Ngoi-Nha-Hanh-Phuc-Thuy-Tien",
+      "isOffical": true,
+      "username": "",
+      "artistsNames": "Thủy Tiên",
+      "artists": [
+        {
+          "id": "IWZ9ZW6E",
+          "name": "Thủy Tiên",
+          "link": "/Thuy-Tien",
+          "spotlight": false,
+          "alias": "Thuy-Tien",
+          "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/avatars/0/f/f/b/0ffba0f68558d66030cad6f096dbbb44.jpg",
+          "thumbnailM": "https://photo-resize-zmp3.zmdcdn.me/w360_r1x1_jpeg/avatars/0/f/f/b/0ffba0f68558d66030cad6f096dbbb44.jpg",
+          "isOA": true,
+          "isOABrand": false,
+          "playlistId": "ZWZ9D096"
+        }
+      ],
+      "isWorldWide": true,
+      "thumbnailM": "https://photo-resize-zmp3.zmdcdn.me/w600_r300x169_jpeg/images/uploads/2010/01_08/1262944912.jpg",
+      "link": "/video-clip/Ngoi-Nha-Hanh-Phuc-Thuy-Tien/ZWZ97EUB.html",
+      "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w240_r16x9_jpeg/images/uploads/2010/01_08/1262944912.jpg",
+      "duration": 343,
+      "streamingStatus": 1,
+      "artist": {
+        "id": "IWZ9ZW6E",
+        "name": "Thủy Tiên",
+        "link": "/nghe-si/Thuy-Tien",
+        "spotlight": false,
+        "alias": "Thuy-Tien",
+        "playlistId": "ZWZ9D096",
+        "cover": "https://photo-zmp3.zmdcdn.me/cover_artist/6/6/5/d/665d385501490f0f208fcdfe66e3e4e8.jpg",
+        "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/avatars/0/f/f/b/0ffba0f68558d66030cad6f096dbbb44.jpg"
+      }
+    },
+    {
+      "encodeId": "ZW6U8A67",
+      "title": "Mặc Kệ",
+      "alias": "Mac-Ke-Huynh-Minh-Thuy-Thuy-Top",
+      "isOffical": true,
+      "username": "",
+      "artistsNames": "Huỳnh Minh Thủy (Thủy Top)",
+      "artists": [
+        {
+          "id": "IWZ9ZDIA",
+          "name": "Huỳnh Minh Thủy (Thủy Top)",
+          "link": "/nghe-si/Huynh-Minh-Thuy-Thuy-Top",
+          "spotlight": false,
+          "alias": "Huynh-Minh-Thuy-Thuy-Top",
+          "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/avatars/a/6/a64d099deaf3c3cd5dabacce24ee7b41_1516767621.jpg",
+          "thumbnailM": "https://photo-resize-zmp3.zmdcdn.me/w360_r1x1_jpeg/avatars/a/6/a64d099deaf3c3cd5dabacce24ee7b41_1516767621.jpg",
+          "isOA": false,
+          "isOABrand": false,
+          "playlistId": "6UW99W7C"
+        }
+      ],
+      "isWorldWide": false,
+      "thumbnailM": "https://photo-resize-zmp3.zmdcdn.me/w600_r300x169_jpeg/thumb_video/e/3/e306f10142f13812269a4011e09ba9f6_1362995265.jpg",
+      "link": "/video-clip/Mac-Ke-Huynh-Minh-Thuy-Thuy-Top/ZW6U8A67.html",
+      "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w240_r16x9_jpeg/thumb_video/e/3/e306f10142f13812269a4011e09ba9f6_1362995265.jpg",
+      "duration": 254,
+      "streamingStatus": 1,
+      "artist": {
+        "id": "IWZ9ZDIA",
+        "name": "Huỳnh Minh Thủy (Thủy Top)",
+        "link": "/nghe-si/Huynh-Minh-Thuy-Thuy-Top",
+        "spotlight": false,
+        "alias": "Huynh-Minh-Thuy-Thuy-Top",
+        "playlistId": "6UW99W7C",
+        "cover": "https://photo-zmp3.zmdcdn.me/cover_artist/3/1/3171a3ed08723d070e48f4a22607d51a_1511760072.jpg",
+        "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/avatars/a/6/a64d099deaf3c3cd5dabacce24ee7b41_1516767621.jpg"
+      }
+    }
+  ],
+  "playlists": [
+    {
+      "encodeId": "ZWZ99UDZ",
+      "title": "Thủy Tiên",
+      "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w165_r1x1_jpeg/covers/2/7/2760735506a5bc187a35f6c829fae70d_1305170411.jpg",
+      "isoffical": true,
+      "link": "/album/Thuy-Tien-Thuy-Tien/ZWZ99UDZ.html",
+      "isIndie": false,
+      "releaseDate": "2005",
+      "sortDescription": "Nếu như ở đĩa Ngọt và Đắng (2005) , Thủy Tiên được nhạc sĩ Quốc Bảo hướng theo dòng punk thì ở Thủy Tiên Vol 2, cô hát thuần chất goth hơn: mềm mại ,êm ả và đầy suy tư. Album này ngoài các ca khúc nhạc sĩ Quốc Bảo viết riêng cho Thủy Tiên, đĩa nhạc còn chưa 3 bài hát do chính cô sáng tác. Mơ, Con Sông Mồ Côi và Quên.\r\n\r\nAlbum Thủy Tiên tập hợp các chất liệu âm thanh nhân tạo từ máy tính và đàn phím xén với các nhạc cụ thật (violin,guitar) và cả giọng oprera nam. Thủy Tiên và Producer của cô – Quốc Bảo – đã xây dựng một không gian âm nhạc trẻ trung mà vẫn chất chứa tâm trạng. Trong album, cảm xúc giọng hát được kìm nén đến mức tối đa, vì thế không thể phân biệt đâu là cách hát thì thào và đâu là bức phá giọng ở cao trào. Tất cả một màu, một cảm xúc, một thái độ thể hiện, như một dòng chảy miên man không dứt của tiềm thức.\r\n\r\nĐể thể hiện được không khí gothic cho bìa đĩa, nhà đồ họa Thái Feeling đã phải gia công rất nhiều bằng các thủ thuật máy tính.Các bức ảnh được xử lý lại để có hiệu quả như những tranh vẽ thời Phục Hưng với màu nâu u trầm và những vệt màu như vẽ trên toan. ",
+      "releasedAt": 1135962000000,
+      "genreIds": [
+        "IWZ9Z08I",
+        "IWZ9Z088"
+      ],
+      "PR": false,
+      "artists": [
+        {
+          "id": "IWZ9ZW6E",
+          "name": "Thủy Tiên",
+          "link": "/Thuy-Tien",
+          "spotlight": false,
+          "alias": "Thuy-Tien",
+          "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/avatars/0/f/f/b/0ffba0f68558d66030cad6f096dbbb44.jpg",
+          "thumbnailM": "https://photo-resize-zmp3.zmdcdn.me/w360_r1x1_jpeg/avatars/0/f/f/b/0ffba0f68558d66030cad6f096dbbb44.jpg",
+          "isOA": true,
+          "isOABrand": false,
+          "playlistId": "ZWZ9D096",
+          "totalFollow": 81017
+        }
+      ],
+      "artistsNames": "Thủy Tiên",
+      "playItemMode": 2,
+      "subType": 1,
+      "uid": 0,
+      "thumbnailM": "https://photo-resize-zmp3.zmdcdn.me/w320_r1x1_jpeg/covers/2/7/2760735506a5bc187a35f6c829fae70d_1305170411.jpg",
+      "isShuffle": false,
+      "isPrivate": false,
+      "userName": "Zing MP3",
+      "isAlbum": true,
+      "textType": "Album",
+      "isSingle": false,
+      "isOwner": true,
+      "canEdit": true,
+      "canDelete": true
+    },
+    {
+      "encodeId": "ZWZ9D096",
+      "title": "Những Bài Hát Hay Nhất Của Thủy Tiên",
+      "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w165_r1x1_jpeg/images/f/f/5/3/ff537069c3ba5653f240a48762bba945.jpg",
+      "isoffical": true,
+      "link": "/album/Nhung-Bai-Hat-Hay-Nhat-Cua-Thuy-Tien-Thuy-Tien/ZWZ9D096.html",
+      "isIndie": false,
+      "releaseDate": "2011",
+      "sortDescription": "Tập hợp các ca khúc hay nhất của Thủy Tiên.",
+      "releasedAt": 0,
+      "genreIds": [
+        "IWZ9Z08I",
+        "IWZ9Z088"
+      ],
+      "PR": false,
+      "artists": [
+        {
+          "id": "IWZ9ZW6E",
+          "name": "Thủy Tiên",
+          "link": "/Thuy-Tien",
+          "spotlight": false,
+          "alias": "Thuy-Tien",
+          "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/avatars/0/f/f/b/0ffba0f68558d66030cad6f096dbbb44.jpg",
+          "thumbnailM": "https://photo-resize-zmp3.zmdcdn.me/w360_r1x1_jpeg/avatars/0/f/f/b/0ffba0f68558d66030cad6f096dbbb44.jpg",
+          "isOA": true,
+          "isOABrand": false,
+          "playlistId": "ZWZ9D096",
+          "totalFollow": 81017
+        }
+      ],
+      "artistsNames": "Thủy Tiên",
+      "playItemMode": 0,
+      "subType": 20,
+      "uid": 0,
+      "thumbnailM": "https://photo-resize-zmp3.zmdcdn.me/w320_r1x1_jpeg/images/f/f/5/3/ff537069c3ba5653f240a48762bba945.jpg",
+      "isShuffle": true,
+      "isPrivate": false,
+      "userName": "Zing MP3",
+      "isAlbum": false,
+      "textType": "Playlist",
+      "isSingle": false,
+      "isOwner": true,
+      "canEdit": true,
+      "canDelete": true
+    },
+    {
+      "encodeId": "6BF87FDW",
+      "title": "Thủy Triều (Single)",
+      "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w165_r1x1_jpeg/cover/8/4/7/4/8474eb9fd1a3aa78b974b4c104ff45fc.jpg",
+      "isoffical": true,
+      "link": "/album/Thuy-Trieu-Single-Quang-Hung-MasterD/6BF87FDW.html",
+      "isIndie": false,
+      "releaseDate": "12/02/2024",
+      "sortDescription": "",
+      "releasedAt": 1707742800000,
+      "genreIds": [
+        "IWZ9Z08I",
+        "IWZ97FCD"
+      ],
+      "PR": false,
+      "artists": [
+        {
+          "id": "IWZAZFCO",
+          "name": "Quang Hùng MasterD",
+          "link": "/Quang-Hung-MasterD",
+          "spotlight": false,
+          "alias": "Quang-Hung-MasterD",
+          "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/avatars/4/7/9/a/479ad4670fa083908fcc0c88c0f05e5c.jpg",
+          "thumbnailM": "https://photo-resize-zmp3.zmdcdn.me/w360_r1x1_jpeg/avatars/4/7/9/a/479ad4670fa083908fcc0c88c0f05e5c.jpg",
+          "isOA": true,
+          "isOABrand": false,
+          "playlistId": "ZOEIUO67",
+          "totalFollow": 44672
+        }
+      ],
+      "artistsNames": "Quang Hùng MasterD",
+      "playItemMode": 0,
+      "subType": 1,
+      "uid": 456,
+      "thumbnailM": "https://photo-resize-zmp3.zmdcdn.me/w320_r1x1_jpeg/cover/8/4/7/4/8474eb9fd1a3aa78b974b4c104ff45fc.jpg",
+      "isShuffle": false,
+      "isPrivate": false,
+      "userName": "Zing MP3",
+      "isAlbum": true,
+      "textType": "Single",
+      "isSingle": true,
+      "isOwner": false,
+      "canEdit": false,
+      "canDelete": false
+    },
+    {
+      "encodeId": "ZWZ9E0FF",
+      "title": "Vẫn Mãi Yêu Anh",
+      "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w165_r1x1_jpeg/covers/d/6/d6b9b6c55fd6c260668f1f0b83e4d788_1324356019.jpg",
+      "isoffical": true,
+      "link": "/album/Van-Mai-Yeu-Anh-Thuy-Tien/ZWZ9E0FF.html",
+      "isIndie": false,
+      "releaseDate": "2011",
+      "sortDescription": "Album Vẫn mãi yêu anh của ca sĩ Thủy Tiên gồm 6 ca khúc mới là những nhạc phẩm thấm đẫn tinh thần lạc quan, yêu đời và sự mạnh mẽ vượt qua mọi trắc trở trong cuộc sống. Dance pop hiện đại là dòng nhạc chủ đạo của album.\r\n\r\nVẫn mãi yêu anh là mạch cảm xúc được xây dựng nối kết giữa các track nhạc. Sau 4 bài hát đầu tiên sôi động là track thứ 5 kết hợp giữa những giai điệu trầm buồn và dance pop mạnh mẽ nhằm tạo cho người nghe cảm giác thư giãn. Tiếp theo là ca khúc cuối cùng mang giai điệu pop ballad trữ tình, lắng đọng, làm dịu cảm giác cho người nghe trước khi kết thúc album.\r\n\r\nKhác với các album trước, trong Vol 6, Thủy Tiên sẽ hát nhạc phẩm của một số tác giả khác chứ không chỉ của mình. Cô chỉ góp vào album 2 ca khúc Vẫn mãi yêu anh và Giấc mơ diệu kỳ. Đi kèm với album là video clip “Muộn Màng” và đặc biệt là ca khúc chủ đề “Vẫn mãi yêu anh” được quay rất công phu và có sự đầu tư rất lớn về máy quay, ánh sáng, hậu trường, trang phục…",
+      "releasedAt": 1325264400000,
+      "genreIds": [
+        "IWZ9Z08I",
+        "IWZ9Z088"
+      ],
+      "PR": false,
+      "artists": [
+        {
+          "id": "IWZ9ZW6E",
+          "name": "Thủy Tiên",
+          "link": "/Thuy-Tien",
+          "spotlight": false,
+          "alias": "Thuy-Tien",
+          "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/avatars/0/f/f/b/0ffba0f68558d66030cad6f096dbbb44.jpg",
+          "thumbnailM": "https://photo-resize-zmp3.zmdcdn.me/w360_r1x1_jpeg/avatars/0/f/f/b/0ffba0f68558d66030cad6f096dbbb44.jpg",
+          "isOA": true,
+          "isOABrand": false,
+          "playlistId": "ZWZ9D096",
+          "totalFollow": 81017
+        }
+      ],
+      "artistsNames": "Thủy Tiên",
+      "playItemMode": 2,
+      "subType": 1,
+      "uid": 0,
+      "thumbnailM": "https://photo-resize-zmp3.zmdcdn.me/w320_r1x1_jpeg/covers/d/6/d6b9b6c55fd6c260668f1f0b83e4d788_1324356019.jpg",
+      "isShuffle": false,
+      "isPrivate": false,
+      "userName": "Zing MP3",
+      "isAlbum": true,
+      "textType": "Album",
+      "isSingle": false,
+      "isOwner": true,
+      "canEdit": true,
+      "canDelete": true
+    },
+    {
+      "encodeId": "ZWZ9B6UE",
+      "title": "Nếu Mai Rời Xa",
+      "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w165_r1x1_jpeg/covers/f/c/fcfa7bd6c5ec49054702dfddd44182f6_1313381429.jpg",
+      "isoffical": true,
+      "link": "/album/Neu-Mai-Roi-Xa-Thuy-Tien-V-Music/ZWZ9B6UE.html",
+      "isIndie": false,
+      "releaseDate": "2011",
+      "sortDescription": "Nếu mai rời xa tập hợp 6 ca khúc viết về tình yêu khá lãng mạn, trong số 6 bài hát này có 4 ca khúc mới toanh của các nhạc sỹ Hoài An, Nguyễn Hồng Thuận, Hoàng Tôn và Kiên Trần, trong số những bài hát này Thủy Tiên và V.Music kết hợp cùng nhau 2 ca khúc với hai màu sắc khác nhau. Hầu hết (5/6) các ca khúc trong album là những bài tình ca buồn man mác với những lời tự sự đầy da diết.\r\n\r\nVới sản phẩm âm nhạc này khán giả đang chờ đợi sự quay trở lại với âm nhạc của Thủy Tiên sau một thời gian dành thời gian cho Bước nhảy hoàn vũ. Song song đó 4 chàng trai của V.Music cũng đang gặt hái rất nhiều thành công đáng mơ ước chỉ trong một thời gian ngắn đã có một nền tảng vững chắn chính điều đó khán giả cũng đang chờ đợi sự thay đổi tiếp theo của nhóm trong album lần này.",
+      "releasedAt": 1325264400000,
+      "genreIds": [
+        "IWZ9Z08I",
+        "IWZ9Z088"
+      ],
+      "PR": false,
+      "artists": [
+        {
+          "id": "IWZ9ZW6E",
+          "name": "Thủy Tiên",
+          "link": "/Thuy-Tien",
+          "spotlight": false,
+          "alias": "Thuy-Tien",
+          "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/avatars/0/f/f/b/0ffba0f68558d66030cad6f096dbbb44.jpg",
+          "thumbnailM": "https://photo-resize-zmp3.zmdcdn.me/w360_r1x1_jpeg/avatars/0/f/f/b/0ffba0f68558d66030cad6f096dbbb44.jpg",
+          "isOA": true,
+          "isOABrand": false,
+          "playlistId": "ZWZ9D096",
+          "totalFollow": 81017
+        },
+        {
+          "id": "IWZ96U6W",
+          "name": "V.Music",
+          "link": "/nghe-si/V-Music",
+          "spotlight": false,
+          "alias": "V-Music",
+          "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/avatars/9/b/6/e/9b6e551f1eba5f528acc60f49cbe70be.jpg",
+          "thumbnailM": "https://photo-resize-zmp3.zmdcdn.me/w360_r1x1_jpeg/avatars/9/b/6/e/9b6e551f1eba5f528acc60f49cbe70be.jpg",
+          "isOA": false,
+          "isOABrand": false,
+          "playlistId": "ZWZ9DWU6",
+          "totalFollow": 10780
+        }
+      ],
+      "artistsNames": "Thủy Tiên,V.Music",
+      "playItemMode": 2,
+      "subType": 1,
+      "uid": 0,
+      "thumbnailM": "https://photo-resize-zmp3.zmdcdn.me/w320_r1x1_jpeg/covers/f/c/fcfa7bd6c5ec49054702dfddd44182f6_1313381429.jpg",
+      "isShuffle": false,
+      "isPrivate": false,
+      "userName": "Zing MP3",
+      "isAlbum": true,
+      "textType": "Album",
+      "isSingle": false,
+      "isOwner": true,
+      "canEdit": true,
+      "canDelete": true
+    },
+    {
+      "encodeId": "ZOZW9O0O",
+      "title": "Song Ca Việt Hay Nhất 2000s",
+      "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w165_r1x1_jpeg/cover/9/3/f/d/93fdf6434f06ad3e3ef42bf3548a9ff8.jpg",
+      "isoffical": true,
+      "link": "/album/Song-Ca-Viet-Hay-Nhat-2000s-Dan-Truong-Cam-Ly-Thu-Thuy-Quang-Vinh/ZOZW9O0O.html",
+      "isIndie": false,
+      "releaseDate": "",
+      "sortDescription": "Những cặp song ca đình đám những năm 2000 và những ca khúc nổi bật của họ.",
+      "releasedAt": 0,
+      "genreIds": [
+        "IWZ9Z08I"
+      ],
+      "PR": false,
+      "artists": [
+        {
+          "id": "IWZ9Z0CW",
+          "name": "Đan Trường",
+          "link": "/Dan-Truong",
+          "spotlight": false,
+          "alias": "Dan-Truong",
+          "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/avatars/e/2/4/0/e240de7a7e11f77c30670c3f536f490a.jpg",
+          "thumbnailM": "https://photo-resize-zmp3.zmdcdn.me/w360_r1x1_jpeg/avatars/e/2/4/0/e240de7a7e11f77c30670c3f536f490a.jpg",
+          "isOA": true,
+          "isOABrand": false,
+          "playlistId": "ZWZ9D08C",
+          "totalFollow": 322830
+        },
+        {
+          "id": "IWZ9Z0F0",
+          "name": "Cẩm Ly",
+          "link": "/Cam-Ly",
+          "spotlight": false,
+          "alias": "Cam-Ly",
+          "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/avatars/a/5/3/e/a53e95551cdc52a921e3872b2c68cc30.jpg",
+          "thumbnailM": "https://photo-resize-zmp3.zmdcdn.me/w360_r1x1_jpeg/avatars/a/5/3/e/a53e95551cdc52a921e3872b2c68cc30.jpg",
+          "isOA": true,
+          "isOABrand": false,
+          "playlistId": "ZOBZ9CIB",
+          "totalFollow": 361764
+        },
+        {
+          "id": "IWZ9ZCA6",
+          "name": "Thu Thủy",
+          "link": "/Nguyen-Thu-Thuy-Singer",
+          "spotlight": false,
+          "alias": "Nguyen-Thu-Thuy-Singer",
+          "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/avatars/7/e/f/7/7ef70a3523195ccb005bb08222070246.jpg",
+          "thumbnailM": "https://photo-resize-zmp3.zmdcdn.me/w360_r1x1_jpeg/avatars/7/e/f/7/7ef70a3523195ccb005bb08222070246.jpg",
+          "isOA": true,
+          "isOABrand": false,
+          "playlistId": "ZO698DO6",
+          "totalFollow": 19086
+        },
+        {
+          "id": "IWZ9Z0A6",
+          "name": "Quang Vinh",
+          "link": "/Tran-Quang-Vinh",
+          "spotlight": false,
+          "alias": "Tran-Quang-Vinh",
+          "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/avatars/f/2/8/d/f28d80ff4eca2403eff48dcbbf7fcb11.jpg",
+          "thumbnailM": "https://photo-resize-zmp3.zmdcdn.me/w360_r1x1_jpeg/avatars/f/2/8/d/f28d80ff4eca2403eff48dcbbf7fcb11.jpg",
+          "isOA": true,
+          "isOABrand": false,
+          "playlistId": "ZWZ9D09Z",
+          "totalFollow": 33207
+        }
+      ],
+      "artistsNames": "Nhiều nghệ sĩ",
+      "playItemMode": 0,
+      "subType": 1,
+      "uid": 88,
+      "thumbnailM": "https://photo-resize-zmp3.zmdcdn.me/w320_r1x1_jpeg/cover/9/3/f/d/93fdf6434f06ad3e3ef42bf3548a9ff8.jpg",
+      "isShuffle": true,
+      "isPrivate": false,
+      "userName": "Zing MP3",
+      "isAlbum": false,
+      "textType": "Playlist",
+      "isSingle": false,
+      "isOwner": false,
+      "canEdit": false,
+      "canDelete": false
+    },
+    {
+      "encodeId": "ZWZAFCZO",
+      "title": "Thủy Ngân",
+      "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w165_r1x1_jpeg/covers/1/2/125f530ddf4b141274d4b7b0eab3ed4e_1382689603.jpg",
+      "isoffical": true,
+      "link": "/album/Thuy-Ngan-Huong-Giang-Idol/ZWZAFCZO.html",
+      "isIndie": false,
+      "releaseDate": "2013",
+      "sortDescription": "Album Thủy Ngân tập hợp những màu sắc âm nhạc phong phú, từ dịu dàng cho đến gợi cảm. Các ca khúc trong album là những trăn trở, nỗ lực, suy nghĩ của Hương Giang về cuộc sống, tình cảm cũng như công việc. Nữ ca sĩ cũng đầu tư thực hiện một MV khá hoành tráng cho ca khúc Send It On (Thông điệp). \r\n\r\nVề lý do đặt tên cho album vol 1 là Thủy ngân, Hương Giang Idol cho biết: \"Thủy ngân là một nguyên tố trong bảng tuần hoàn hóa học có ký hiệu là Hg và nó cũng trùng với hai chữ cái đầu tiên trong tên của Hương Giang. Bên cạnh đó, thủy ngân cũng là một nguyên tố khá hiếm hoi, nhìn thủy ngân tưởng chừng mong manh nhưng ẩn sau nó là 1 sức tấn công mạnh mẽ và đầy bí ẩn.\"",
+      "releasedAt": 1388422800000,
+      "genreIds": [
+        "IWZ9Z08I",
+        "IWZ9Z088"
+      ],
+      "PR": false,
+      "artists": [
+        {
+          "id": "IWZ9CUWA",
+          "name": "Hương Giang",
+          "link": "/Huong-Giang-Idol",
+          "spotlight": false,
+          "alias": "Huong-Giang-Idol",
+          "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/avatars/9/1/5/3/91537f29c887976ad485d769c22f1019.jpg",
+          "thumbnailM": "https://photo-resize-zmp3.zmdcdn.me/w360_r1x1_jpeg/avatars/9/1/5/3/91537f29c887976ad485d769c22f1019.jpg",
+          "isOA": true,
+          "isOABrand": false,
+          "playlistId": "ZWZBBFZB",
+          "totalFollow": 181904
+        }
+      ],
+      "artistsNames": "Hương Giang Idol",
+      "playItemMode": 2,
+      "subType": 1,
+      "uid": 0,
+      "thumbnailM": "https://photo-resize-zmp3.zmdcdn.me/w320_r1x1_jpeg/covers/1/2/125f530ddf4b141274d4b7b0eab3ed4e_1382689603.jpg",
+      "isShuffle": false,
+      "isPrivate": false,
+      "userName": "Zing MP3",
+      "isAlbum": true,
+      "textType": "Album",
+      "isSingle": false,
+      "isOwner": true,
+      "canEdit": true,
+      "canDelete": true
+    },
+    {
+      "encodeId": "ZUOF9C66",
+      "title": "Trích Đoạn Cải Lương Hay Nhất",
+      "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w165_r1x1_jpeg/cover/3/e/2/3/3e23992732430c4138796c212daf8000.jpg",
+      "isoffical": true,
+      "link": "/album/Trich-Doan-Cai-Luong-Hay-Nhat-Minh-Vuong-Le-Thuy-Phuong-Lien-Manh-Quynh/ZUOF9C66.html",
+      "isIndie": false,
+      "releaseDate": "",
+      "sortDescription": "Cùng Zing MP3 nghe lại những trích đoạn cải lương hay nhất nhé.",
+      "releasedAt": 0,
+      "genreIds": [
+        "IWZ9Z08I",
+        "IWZ9Z0C6"
+      ],
+      "PR": false,
+      "artists": [
+        {
+          "id": "IWZ9ZDAO",
+          "name": "Minh Vương",
+          "link": "/nghe-si/Minh-Vuong",
+          "spotlight": false,
+          "alias": "Minh-Vuong",
+          "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/avatars/d/f/df45e8e990ef7e3b39025df4a8b2a008_1515570951.jpg",
+          "thumbnailM": "https://photo-resize-zmp3.zmdcdn.me/w360_r1x1_jpeg/avatars/d/f/df45e8e990ef7e3b39025df4a8b2a008_1515570951.jpg",
+          "isOA": false,
+          "isOABrand": false,
+          "playlistId": "6UW99OIA",
+          "totalFollow": 93070
+        },
+        {
+          "id": "IWZ9ZW7E",
+          "name": "Lệ Thủy",
+          "link": "/nghe-si/Le-Thuy",
+          "spotlight": false,
+          "alias": "Le-Thuy",
+          "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/avatars/7/b/7b522f5734555a23017d2f37f1444917_1513911680.jpg",
+          "thumbnailM": "https://photo-resize-zmp3.zmdcdn.me/w360_r1x1_jpeg/avatars/7/b/7b522f5734555a23017d2f37f1444917_1513911680.jpg",
+          "isOA": false,
+          "isOABrand": false,
+          "playlistId": "ZOEIZOWA",
+          "totalFollow": 183640
+        },
+        {
+          "id": "IWZ960UB",
+          "name": "Phượng Liên",
+          "link": "/nghe-si/Phuong-Lien",
+          "spotlight": false,
+          "alias": "Phuong-Lien",
+          "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/avatars/3/5/35f28e2277be4c0d3a88daad0801aaf5_1515571686.jpg",
+          "thumbnailM": "https://photo-resize-zmp3.zmdcdn.me/w360_r1x1_jpeg/avatars/3/5/35f28e2277be4c0d3a88daad0801aaf5_1515571686.jpg",
+          "isOA": false,
+          "isOABrand": false,
+          "playlistId": "6UW99UUE",
+          "totalFollow": 33877
+        },
+        {
+          "id": "IWZ9ZWUO",
+          "name": "Mạnh Quỳnh",
+          "link": "/Manh-Quynh",
+          "spotlight": false,
+          "alias": "Manh-Quynh",
+          "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/avatars/d/d/4/8/dd480f10893eb35ade277cbe1bd2bd8a.jpg",
+          "thumbnailM": "https://photo-resize-zmp3.zmdcdn.me/w360_r1x1_jpeg/avatars/d/d/4/8/dd480f10893eb35ade277cbe1bd2bd8a.jpg",
+          "isOA": true,
+          "isOABrand": false,
+          "playlistId": "ZO698D76",
+          "totalFollow": 331872
+        }
+      ],
+      "artistsNames": "Nhiều nghệ sĩ",
+      "playItemMode": 0,
+      "subType": 1,
+      "uid": 133,
+      "thumbnailM": "https://photo-resize-zmp3.zmdcdn.me/w320_r1x1_jpeg/cover/3/e/2/3/3e23992732430c4138796c212daf8000.jpg",
+      "isShuffle": true,
+      "isPrivate": false,
+      "userName": "Zing MP3",
+      "isAlbum": false,
+      "textType": "Playlist",
+      "isSingle": false,
+      "isOwner": false,
+      "canEdit": false,
+      "canDelete": false
+    }
+  ],
+  "counter": {
+    "song": 6244,
+    "artist": 319,
+    "playlist": 96647,
+    "video": 276
+  },
+  "sectionId": "search"
+}

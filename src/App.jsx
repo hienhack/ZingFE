@@ -17,6 +17,11 @@ import { MyMusicPage, FavoriteSong, UploadSong, Song } from './pages/MyMusic';
 import { useSelector, useDispatch } from 'react-redux';
 import { setAuthenticate } from './redux/slice/userSlice';
 import AuthForm from './components/Form/AuthForm';
+import Search from './components/Search/Search';
+import { AllSearch } from './components/Search/AllSearch';
+import { SongsSearch } from './components/Search/SongsSearch';
+import { AlbumsSearch } from './components/Search/AlbumsSearch';
+import { SingersSearch } from './components/Search/SingersSearch';
 
 function App() {
   const authenticate = useSelector((state) => state.user.authenticate);
@@ -49,6 +54,13 @@ function App() {
           <Route path="/mymusic/album" element={<MyMusicPage />}></Route>
           <Route path="/" element={<MyMusicPage />}></Route>
           <Route path="/mymusic/song/upload" element={<MyMusicPage />}></Route>
+          {/*Tìm kiếm*/}
+          <Route path="/tim-kiem/tat-ca" element={<Search />}>
+            <Route index element={<AllSearch />} />
+            <Route path="bai-hat" element={<SongsSearch />} />
+            <Route path="playlist" element={<AlbumsSearch />} />
+            <Route path="artist" element={<SingersSearch />} />
+          </Route>
         </Route>
       </Routes>
       <AuthForm open={authenticate} handleOpen={() => dispacth(setAuthenticate(false))} />
