@@ -38,7 +38,7 @@ const Chart = ({ chartitem }) => {
     responsive: true,
     pointRadius: 0,
     maintainAspectRatio: false,
-
+  
     elements: {
       line: {
         tension: 0.5,
@@ -48,26 +48,49 @@ const Chart = ({ chartitem }) => {
       y: {
         ticks: { display: false },
         grid: { color: 'rgba(900,900,900,0.2)', drawTicks: false },
-        border: { dash: [3, 4] }
+        border: { dash: [3, 4], width: 0 }
       },
       x: {
         ticks: { color: 'white' },
-        grid: { color: 'transparent' }
+        grid: {
+          color: function(context) {
+            if (context.chart.tooltip) {
+              const activeTooltip = context.chart.tooltip._active;
+              if (activeTooltip && activeTooltip.length > 0) {
+                console.log(activeTooltip[0].datasetIndex);
+                const dataIndex = activeTooltip[0].index;
+                if (dataIndex === context.index && activeTooltip[0].datasetIndex === 0) {
+                  return 'rgb(74, 144, 226)'; // Màu sắc của grid khi hover
+                }
+                else if (dataIndex === context.index && activeTooltip[0].datasetIndex === 1) {
+                  return 'rgb(39, 189, 156)'; // Màu sắc của grid khi hover
+                }
+                else if (dataIndex === context.index && activeTooltip[0].datasetIndex === 2) {
+                  return 'rgb(227, 80, 80)'; // Màu sắc của grid khi hover
+                }
+              }
+            }
+            return 'transparent'; // Màu sắc của grid khi không hover
+          },
+          drawTicks: false
+        },      
       }
     },
+    
     plugins: {
       legend: false,
+      
       tooltip: {
         enabled: false,
         external: (ctx) => {
-          if (!chartRef || !chartRef.current) return
-          const tooltipModel = ctx.tooltip
-          if (tooltipModel.opacity === 0) {
+          if (!chartRef || !chartRef.current) return;
+          const tooltipModel = ctx.tooltip;
+          if (tooltipModel && tooltipModel.opacity === 0) {
             if (tooltip.opacity !== 0)
-              setTooltip(prev => ({ ...prev, opacity: 0 }))
-            return
+              setTooltip(prev => ({ ...prev, opacity: 0 }));
+            return;
           }
-          const data = []
+          const data = [];
           for (let i = 0; i < 3; i++)
             data.push({
               id: chartitem[i].id,
@@ -76,14 +99,14 @@ const Chart = ({ chartitem }) => {
               title: chartitem[i].title,
               artist: chartitem[i].artist
             });
-          const foundItem = data.find(i => i.id === +tooltipModel.dataPoints[0].datasetIndex)?.id
+          const foundItem = data.find(i => i.id === +tooltipModel.dataPoints[0].datasetIndex)?.id;
           setTooltipData(foundItem != null ? foundItem : null);
           const newTooltipData = {
             opacity: 1,
             left: tooltipModel.caretX,
             top: tooltipModel.caretY,
-          }
-          if (!_.isEqual(tooltip, newTooltipData)) setTooltip(newTooltipData)
+          };
+          if (!_.isEqual(tooltip, newTooltipData)) setTooltip(newTooltipData);
         }
       }
     },
@@ -91,8 +114,10 @@ const Chart = ({ chartitem }) => {
       mode: "dataset",
       intersect: false,
     },
-
-  }
+  };
+  
+  
+  
   return (
     <div className="">
       <div className="w-[full] h-[300px] mt-[1rem] relative">
