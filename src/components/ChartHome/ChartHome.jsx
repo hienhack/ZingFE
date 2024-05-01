@@ -3,6 +3,7 @@ import DiscoveryBtn from '../../components/DiscoveryBtn/DiscoveryBtn';
 import { Chart } from '../../components/Chart';
 import { BsFillPlayFill } from 'react-icons/bs'
 import { Link } from 'react-router-dom'
+import Weekchart from './WeekChart';
 export const chartitem = [
   { id: 0, title: 'Chúng Ta Của Tương Lai', thumbnail: "https://photo-resize-zmp3.zmdcdn.me/w320_r1x1_jpeg/cover/7/e/7/b/7e7b8f07e9af15dc2fa3424d237bfff7.jpg", artist: ["Sơn Tùng MTP"], point: '50%' },
   { id: 1, title: 'Em Của Ngày Hôm Qua', thumbnail: "https://photo-resize-zmp3.zmdcdn.me/w320_r1x1_jpeg/cover/f/1/3/8/f138a02472481738a6660e97421ceff2.jpg", artist: ["Sơn Tùng MTP"], point: '50%' },
@@ -35,17 +36,19 @@ function ChartHome() {
                 <div onMouseEnter={() => handleHover(index)} onMouseLeave={() => handleLeave(index)}
                   key={item.id} className="flex rounded items-center  w-[full] px-[15px] py-[10px]	bg-[hsla(0,0%,100%,.07)] hover:bg-[#945EA7]">
                   <div className='flex items-center  cursor-pointer w-[20rem]'>
-                    <span className={`${index === 0 ? 'text-shadow-no1' : index === 1 ? 'text-shadow-no2' : 'text-shadow-no3'} text-[32px] mr-[20px] text-[rgba(77,34,104,0.9)]`}>{index + 1} <br /></span>
+                    <div className='w-[2rem]'>
+                      <span className={`${index === 0 ? 'text-shadow-no1' : index === 1 ? 'text-shadow-no2' : 'text-shadow-no3'} text-[32px] mr-[20px] text-[rgba(77,34,104,0.9)]`}>{index + 1} <br /></span>
+                    </div>
                     <div className="flex ">
                       <div className='relative '>
-                      {ishover === index && 
-                        <div className='absolute top-0 bottom-0 z-40 left-0 right-0 bg-overlay-30 rounded-[4px] text-white flex items-center justify-center bg-[rgba(0,0,0,0.3)]'>
-                          <span
-                            className='p-1'
-                          >
-                            <BsFillPlayFill size={33} className='pl-0.5' />
-                          </span>
-                        </div>}
+                        {ishover === index &&
+                          <div className='absolute top-0 bottom-0 z-40 left-0 right-0 bg-overlay-30 rounded-[4px] text-white flex items-center justify-center bg-[rgba(0,0,0,0.3)]'>
+                            <span
+                              className='p-1'
+                            >
+                              <BsFillPlayFill size={33} className='pl-0.5' />
+                            </span>
+                          </div>}
                         <img className="w-[60px] h-[60px] rounded-md " src={item.thumbnail} alt="Logo" />
                       </div>
                       <div className="ml-[0.5rem] m-auto">
@@ -77,6 +80,8 @@ function ChartHome() {
           </div>
         </div>
       </div>
+      <Weekchart />
+
     </div>
   );
 }
