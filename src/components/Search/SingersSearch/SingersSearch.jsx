@@ -1,4 +1,5 @@
 
+import searchResult from '../search.json'
 
 import { ArtistSearchItem } from '../SingersSearch';
 

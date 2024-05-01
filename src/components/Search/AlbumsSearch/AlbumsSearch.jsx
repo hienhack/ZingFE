@@ -1,10 +1,9 @@
 import { useSelector } from 'react-redux';
-
+import searchResult from '../search.json'
 import { AlbumSearchItem } from '.';
 
 function AlbumsSearch() {
-    const { searchResult } = useSelector((state) => state.music);
-    // const { screenWidthRedux } = useSelector((state) => state.app);
+    
     return (
         <div
             className={`w-full flex flex-col px-[59px]`}

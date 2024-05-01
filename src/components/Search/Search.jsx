@@ -19,9 +19,6 @@ function Search() {
     return (
         <div
             className={`w-full relative flex flex-col mt-[70px] h-[calc(100vh-160px)] overflow-x-hidden overflow-y-auto overflow-y-overlay scrollbar max-w-full `
-            // ${
-            //     screenWidthRedux < 480 ? `max-w-[${screenWidthRedux}px]` : ''
-            // }`
         }
         >
             {/* {isSearching && (
@@ -31,7 +28,7 @@ function Search() {
                     </div>
                 </div>
             )} */}
-            <div className="border-b-[0.5px] border-gray-800  bg-[rgba(32,15,53,0.9)]">
+            <div className="border-b-[0.5px] border-gray-800  bg-[#180c24]">
                 <div
                     className={`w-full flex h-[50px] items-center px-[59px] `
                     
@@ -46,7 +43,7 @@ function Search() {
                     </h3>
                     <div className="flex items-center">
                         <NavLink
-                            to={`/tim-kiem/tat-ca?q=`
+                            to={`/tim-kiem/tat-ca`
                             // ${searchParams}
                             }
                             className={({ isActive }) => (isActive ? activeStyle : nonActiveStyle)}
@@ -54,7 +51,7 @@ function Search() {
                             TẤT CẢ
                         </NavLink>
                         <NavLink
-                            to={`/tim-kiem/bai-hat?q=`
+                            to={`bai-hat`
                             // ${searchParams}
                         }
                             className={({ isActive }) => (isActive ? activeStyle : nonActiveStyle)}
@@ -62,7 +59,7 @@ function Search() {
                             BÀI HÁT
                         </NavLink>
                         <NavLink
-                            to={`/tim-kiem/playlist?q=`
+                            to={`playlist`
                             // ${searchParams}
                         }
                             className={({ isActive }) => (isActive ? activeStyle : nonActiveStyle)}
@@ -70,7 +67,7 @@ function Search() {
                             PLAYLIST/ALBUM
                         </NavLink>
                         <NavLink
-                            to={`/tim-kiem/artist?q=`
+                            to={`artist`
                             // ${searchParams}
                         }
                             className={({ isActive }) => (isActive ? activeStyle : nonActiveStyle)}

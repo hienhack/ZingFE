@@ -22,7 +22,7 @@ function AllSearch() {
     
     return (
         <div
-            className={`w-full pt-7 flex flex-col px-[59px] bg-[rgba(32,15,53,0.9)]`}
+            className={`w-full pt-7 flex flex-col px-[59px] bg-[#180c24]`}
         >
             {(searchResult?.songs || searchResult?.artists) && (
                 <div className="flex flex-col">
