@@ -48,6 +48,8 @@ function Sidebar() {
   }, []);
 
   useEffect(() => {
+    if (!isLoggedIn) return;
+
     request
       .get('/playlist/my-playlist')
       .then((res) => {

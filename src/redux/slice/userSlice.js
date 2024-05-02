@@ -4,6 +4,7 @@ import { getObject, saveObject } from '../../util';
 export const userSlice = createSlice({
     name: 'user',
     initialState: {
+        user: null,
         token: localStorage.getItem('token') || null,
         isLoggedIn: localStorage.getItem('token') != null,
         authenticate: false,

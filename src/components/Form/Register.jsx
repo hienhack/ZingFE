@@ -25,6 +25,8 @@ function Register({ toSignin }) {
         name: data.name,
         email: data.email,
         password: data.password,
+        clientId: 'user-service',
+        clientSecret: 'jSLIfcd5eq2t6e0CzNid3QKUaQNP1m0x',
       })
       .then((data) => {
         reset();
