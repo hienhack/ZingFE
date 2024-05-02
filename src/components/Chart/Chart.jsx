@@ -8,6 +8,7 @@ import _ from 'lodash'
 const Chart = ({ chartitem }) => {
   const chartRef = useRef()
   const [data, setData] = useState(null);
+  const [currentPoint, setCurrentPoint] = useState(null);
 
   const [tooltip, setTooltip] = useState({
     opacity: 0,
@@ -17,6 +18,7 @@ const Chart = ({ chartitem }) => {
   const [tooltipData, setTooltipData] = useState(null)
 
   useEffect(() => {
+
     const datasets = []
     const labels = revenueData.map((data) => data.label)
     for (let i = 0; i < 3; i++) {
@@ -38,7 +40,7 @@ const Chart = ({ chartitem }) => {
     responsive: true,
     pointRadius: 0,
     maintainAspectRatio: false,
-  
+
     elements: {
       line: {
         tension: 0.5,
@@ -53,7 +55,7 @@ const Chart = ({ chartitem }) => {
       x: {
         ticks: { color: 'white' },
         grid: {
-          color: function(context) {
+          color: function (context) {
             if (context.chart.tooltip) {
               const activeTooltip = context.chart.tooltip._active;
               if (activeTooltip && activeTooltip.length > 0) {
@@ -73,13 +75,13 @@ const Chart = ({ chartitem }) => {
             return 'transparent'; // Màu sắc của grid khi không hover
           },
           drawTicks: false
-        },      
+        },
       }
     },
-    
+
     plugins: {
       legend: false,
-      
+
       tooltip: {
         enabled: false,
         external: (ctx) => {
@@ -115,9 +117,6 @@ const Chart = ({ chartitem }) => {
       intersect: false,
     },
   };
-  
-  
-  
   return (
     <div className="">
       <div className="w-[full] h-[300px] mt-[1rem] relative">
