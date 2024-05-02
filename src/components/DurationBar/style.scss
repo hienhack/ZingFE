@@ -1,0 +1,46 @@
+.duration-bar {
+    width: 100%;
+    height: 16px;
+    display: flex;
+    // justify-content: center;
+    position: relative;
+    cursor: pointer;
+
+    .slider-bar {
+        width: 100%;
+        height: 4px;
+        border-radius: 4px;
+        align-self: center;
+        border: none;
+    }
+
+    .limit {
+        position: absolute;
+        background: var(--progressbar-active-bg);
+        width: 4px;
+        height: 8px;
+        top: 4px;
+        left: calc(25.8621% - 2px);
+    }
+
+    .handler {
+        border-radius: 50%;
+        background-color: var(--progressbar-active-bg);
+        width: 10px;
+        height: 10px;
+        position: absolute;
+        top: 3px;
+        visibility: hidden;
+    }
+
+    &:hover .slider-bar {
+        height: 6px;
+    }
+
+    &:hover .handler {
+        width: 12px;
+        height: 12px;
+        visibility: visible;
+        top: 2px;
+    }
+}

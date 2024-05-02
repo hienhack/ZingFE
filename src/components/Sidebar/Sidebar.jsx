@@ -117,9 +117,12 @@ function Sidebar() {
       </div>
       <div className="min-h-[1px] bg-[--border-primary] w-[calc(100%-48px)] mx-auto"></div>
       <div
-        className={clsx('head h-[15px] min-h-[15px] w-[240px] relative', isScrolled && 'scrolled')}
+        className={clsx(
+          'head h-[15px] min-h-[15px] w-[240px] relative z-0',
+          isScrolled && 'scrolled'
+        )}
       >
-        <div className="bg-[--sidebar-bg] z-10 absolute h-full w-full"></div>
+        <div className="bg-[--sidebar-bg] z-[2] absolute h-full w-full"></div>
       </div>
       <div className="scrollable-container h-full max-h-full overflow-y-auto" ref={ref}>
         <div>
