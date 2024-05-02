@@ -1,7 +1,18 @@
 .player {
-    height: 90px;
-    width: 100%;
-    background-color: var(--player-bg);
-    border-top: solid 1px var(--border-player);
-    box-sizing: border-box;
+    position: relative;
+
+    .wrapper {
+        height: 90px;
+        width: 100%;
+        background: var(--player-bg);
+        border-top: solid 1px var(--border-player);
+        box-sizing: border-box;
+        padding: 0 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        user-select: none;
+        position: relative;
+        z-index: 10;
+    }
 }
