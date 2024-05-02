@@ -70,6 +70,7 @@
   --premium-package: #dca519;
   --black: #32323d;
   --dark-alpha-50: rgba(0,0,0,0.5);
+  --font-size-topic: 26px;
 }
 
 * {
