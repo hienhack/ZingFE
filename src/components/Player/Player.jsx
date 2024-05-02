@@ -23,7 +23,7 @@ import { SiSongkick } from 'react-icons/si';
 function Player() {
   const isPlaying = useSelector((state) => state.status.isPlaying);
   // const audioRef = useRef(null);
-  const { audioRef } = useContext(AudioContext);
+  const { audioRef, skipForward, skipBackward } = useContext(AudioContext);
   const showQueue = useSelector((state) => state.layout.showQueue);
   const currentSong = useSelector((state) => state.feature.currentSong);
   const { repeat, repeatOne, shuffle } = useSelector((state) => state.status);
@@ -64,20 +64,40 @@ function Player() {
             </div>
             <div className="mr-2.5">
               <Link to="/">
-                <span className="text-sm font-medium text-clip overflow-visible text-[--player-text] flex items-center hover:text-[--link-text-hover]">
-                  {currentSong.name}
-                  <i className="ml-2">
-                    <PremiumIcon />
-                  </i>
+                <span className="text-sm font-medium text-clip overflow-visible text-[--player-text] flex items-center">
+                  {currentSong?.title}
+                  {currentSong?.isPremium && (
+                    <i className="ml-2">
+                      <PremiumIcon />
+                    </i>
+                  )}
                 </span>
               </Link>
-              <Link to={'/'}>
+              {/* <Link to={'/'}>
                 <h3 className="text-[--text-secondary] mt-[1px] text-[12px]">
                   <span className="hover:text-[--link-text-hover] hover:underline">
                     {currentSong.singers[0].name}
                   </span>
                 </h3>
-              </Link>
+              </Link> */}
+              <h3 className="text-[--text-secondary] mt-[1px] text-[12px]">
+                {currentSong &&
+                  currentSong.artists?.map((a, index) => (
+                    <>
+                      <Link
+                        key={index}
+                        className={clsx(
+                          'hover:underline text-xs inline-block p-0',
+                          'hover:text-[--link-text-hover]'
+                        )}
+                        to={'/nghe-si/'}
+                      >
+                        {a.name}
+                      </Link>
+                      {index < currentSong.artists.length - 1 && ', '}
+                    </>
+                  ))}
+              </h3>
             </div>
             <div className="ml-2.5 flex items-center justify-between w-[72px]">
               <IconButton>
@@ -98,7 +118,7 @@ function Player() {
             >
               <RxShuffle></RxShuffle>
             </IconButton>
-            <IconButton className="mx-[7px]">
+            <IconButton className="mx-[7px]" onClick={skipBackward}>
               <IoPlaySkipBackSharp />
             </IconButton>
             <button
@@ -108,7 +128,7 @@ function Player() {
               {!isPlaying && <IoPlay className="ml-0.5 size-5" />}
               {isPlaying && <MdPause className="size-6" />}
             </button>
-            <IconButton className="mx-[7px]">
+            <IconButton className="mx-[7px]" onClick={skipForward}>
               <IoPlaySkipForwardSharp />
             </IconButton>
             {!repeatOne && (

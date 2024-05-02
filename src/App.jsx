@@ -50,11 +50,11 @@ function App() {
           <Route path="/" element={<MyMusicPage />}></Route>
           <Route path="/mymusic/song/upload" element={<MyMusicPage />}></Route>
           {/*Tìm kiếm*/}
-          <Route path="/tim-kiem/tat-ca" element={<Search />}>
-            <Route index element={<AllSearch />} />
+          <Route path="/tim-kiem" element={<Search />}>
+            <Route index path="tat-ca" element={<AllSearch />} />
             <Route path="bai-hat" element={<SongsSearch />} />
             <Route path="playlist" element={<AlbumsSearch />} />
-            <Route path="artist" element={<SingersSearch />} />
+            <Route path="nghe-si" element={<SingersSearch />} />
           </Route>
         </Route>
       </Routes>

@@ -7,9 +7,13 @@ import { GoChevronRight, GoDownload, GoHeart, GoTrash } from 'react-icons/go';
 import clsx from 'clsx';
 import { PremiumIcon } from '../Icon';
 import { useDispatch, useSelector } from 'react-redux';
-import { QueueTab, showHistory, showSongQueue } from '../../redux/slice/layoutSlice';
+import { QueueTab, setShowQueue, showHistory, showSongQueue } from '../../redux/slice/layoutSlice';
 import Thumbnail from '../Media/Thumbnail';
 import Tippy from '@tippyjs/react';
+import { setCurrentSong, setQueue } from '../../redux/slice/featureSlice';
+import { setPlaying } from '../../redux/slice/statusSlice';
+import { useContext } from 'react';
+import { AudioContext } from '../../Context/AudioContext';
 
 function Media({ song, active }) {
   return (
@@ -26,12 +30,12 @@ function Media({ song, active }) {
         <div className="flex flex-col justify-center overflow-hidden w-full">
           <Link to="/">
             <div className="text-white font-semibold text-sm hover:text-[--link-text-hover] text-ellipsis align-text-top truncate">
-              <span>{song.name}</span>
+              <span>{song.title}</span>
               {song.isPremium && <PremiumIcon className="ml-[5px] inline" />}
             </div>
           </Link>
           <div className="truncate text-[hsla(0,0%,100%,.6)] leading-[1.33] p-0 mt-[3px] text-xs">
-            {song.singers.map((s, index) => (
+            {song.artists.map((s, index) => (
               <>
                 <Link
                   key={index}
@@ -43,7 +47,7 @@ function Media({ song, active }) {
                 >
                   {s.name}
                 </Link>
-                {index < song.singers.length - 1 && ', '}
+                {index < song.artists.length - 1 && ', '}
               </>
             ))}
           </div>
@@ -65,72 +69,19 @@ function Media({ song, active }) {
   );
 }
 
-const songs = [
-  {
-    id: 1,
-    thumbnail:
-      'https://photo-resize-zmp3.zadn.vn/w600_r1x1_jpeg/cover/5/f/a/2/5fa229dc30ca9b5e680f1755afdab812.jpg',
-    name: 'Chua Quen Nguoi Yeu Cũ',
-    singers: [
-      {
-        id: 1,
-        name: 'Ha Nhi',
-      },
-    ],
-    isPremium: false,
-    streaming: {
-      url128kps:
-        'https://vnso-pt-15-tf-a320-z3.zmdcdn.me/36459e2c7ad6a02e2bc1e8a53e6115a9?authen=exp=1714761594~acl=/36459e2c7ad6a02e2bc1e8a53e6115a9/*~hmac=6142947c35d97e9e285032482738a7e7',
-    },
-    duration: 302,
-  },
-  {
-    id: 2,
-    thumbnail: 'https://images.genius.com/55e1d2b5376243566e951f899768cd3e.1000x1000x1.jpg',
-    name: 'One of the girls',
-    singers: [
-      {
-        id: 2,
-        name: 'Jennie',
-      },
-      {
-        id: 2,
-        name: 'The Weekend',
-      },
-    ],
-    isPremium: true,
-    streaming: {
-      url128kps:
-        'https://vnso-pt-15-tf-a320-z3.zmdcdn.me/36459e2c7ad6a02e2bc1e8a53e6115a9?authen=exp=1714761594~acl=/36459e2c7ad6a02e2bc1e8a53e6115a9/*~hmac=6142947c35d97e9e285032482738a7e7',
-    },
-    duration: 303,
-  },
-  {
-    id: 3,
-    thumbnail: 'https://upload.wikimedia.org/wikipedia/vi/3/3c/Summertime_Sadness_-_Single.png',
-    name: 'Summertime Sadness',
-    singers: [
-      {
-        id: 4,
-        name: 'Lana Del Rey',
-      },
-    ],
-    isPremium: true,
-    streaming: {
-      url128kps:
-        'https://vnso-pt-15-tf-a320-z3.zmdcdn.me/36459e2c7ad6a02e2bc1e8a53e6115a9?authen=exp=1714761594~acl=/36459e2c7ad6a02e2bc1e8a53e6115a9/*~hmac=6142947c35d97e9e285032482738a7e7',
-    },
-    duration: 304,
-  },
-];
-
 function PlayerQueue() {
   const dispatch = useDispatch();
-  const currentSong = useSelector((state) => state.feature.currentSong);
+  const { currentSong, queue } = useSelector((state) => state.feature);
   const queueTab = useSelector((state) => state.layout.queueTab);
   const currentPlaylist = useSelector((state) => state.feature.currentPlaylist);
+  const { pause } = useContext(AudioContext);
 
-  function removeQueue() {}
+  function removeQueue() {
+    pause();
+    dispatch(setShowQueue(false));
+    dispatch(setQueue([]));
+    dispatch(setCurrentSong(null));
+  }
 
   return (
     <div className="player-queue">
@@ -205,7 +156,7 @@ function PlayerQueue() {
       </div>
       <div className="h-full overflow-y-scroll relative scrollable-container px-2">
         {queueTab == QueueTab.SONG_QUEUE &&
-          songs.map((song, index) => (
+          queue.map((song, index) => (
             <div
               key={index}
               className={clsx(
@@ -227,7 +178,7 @@ function PlayerQueue() {
             </div>
           ))}
         {queueTab == QueueTab.HISTORY &&
-          songs.map((song, index) => (
+          queue.map((song, index) => (
             <div key={index}>
               <Media song={song} active={song.id == currentSong.id} />
             </div>

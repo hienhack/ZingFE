@@ -4,7 +4,9 @@ import { AiOutlineClockCircle } from 'react-icons/ai';
 import { GoSearch } from 'react-icons/go';
 import { PiTrendUpBold } from 'react-icons/pi';
 import { VscClose } from 'react-icons/vsc';
+import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
+import { addSearchHistory } from '../../redux/slice/userSlice';
 
 function SearchLine({ variant, children, handleClick }) {
   return (
@@ -28,28 +30,19 @@ function SearchLine({ variant, children, handleClick }) {
 
 function Search() {
   const [show, setShow] = useState(false);
-  const [suggestion, setSuggestion] = useState([]);
-  const [result, setResult] = useState([1]);
+  const [suggestion, setSuggestion] = useState();
+  const [result, setResult] = useState([]);
   const [related, setRelated] = useState([]);
-  const [history, setHistory] = useState();
+  // const [history, setHistory] = useState();
+  const { searchHistory: history } = useSelector((state) => state.user);
   const inputRef = useRef();
   const [isEmpty, setEmpty] = useState(true);
   const timer = useRef();
   const navigate = useNavigate();
+  const dispatch = useDispatch();
 
   function handleChange() {
-    clearTimeout(timer.current);
-    timer.current = setTimeout(() => {
-      if (inputRef.current.value != '') {
-        setEmpty(false);
-        // find in localstorage a matched search
-
-        // fetch realted keyword here
-        setRelated(['hien thai', 'thai hien', 'a', 'b', 'c', 'd', 'e', 'adsf', 'adsf']);
-      } else {
-        setEmpty(true);
-      }
-    }, 300);
+    // call api to get search suggestions
   }
 
   function removeText() {
@@ -78,10 +71,19 @@ function Search() {
     event.stopPropagation();
   };
 
-  useEffect(() => {
-    // fetch suggestion here
-    setSuggestion(['Taylor Swift', 'Sau lời từ khước', 'Thủy triều']);
-  }, []);
+  // useEffect(() => {
+  //   // fetch suggestion here
+  //   setSuggestion(['Taylor Swift', 'Sau lời từ khước', 'Thủy triều']);
+  // }, []);
+
+  function handleSubmit(e) {
+    e.preventDefault();
+    const key = inputRef.current.value;
+    if (key.trim() !== '') {
+      dispatch(addSearchHistory(key));
+      navigate('/tim-kiem/tat-ca?q=' + key);
+    }
+  }
 
   useEffect(() => {
     if (show) {
@@ -92,7 +94,7 @@ function Search() {
   }, [show]);
 
   return (
-    <form className="w-full">
+    <form className="w-full" onSubmit={handleSubmit}>
       <div className="relative" onClick={handleInsideClick}>
         <div
           className={clsx(
@@ -121,8 +123,8 @@ function Search() {
         {show && (
           <div className="absolute top-full left-0 w-full max-h-[540px] overflow-y-scroll scrollable-container rounded-b-[20px]">
             <ul className="bg-[--primary-bg] px-2.5 py-[13px] rounded-b-[20px]">
-              <h3 className="text-sm font-bold px-2.5 pb-2">Đề xuất cho bạn</h3>
-              {isEmpty &&
+              {/* <h3 className="text-sm font-bold px-2.5 pb-2">Đề xuất cho bạn</h3> */}
+              {/* {isEmpty &&
                 suggestion.map((line, index) => (
                   <SearchLine
                     key={index}
@@ -131,7 +133,24 @@ function Search() {
                   >
                     {line}
                   </SearchLine>
+                ))} */}
+              <h3 className="text-sm font-bold px-2.5 pb-2">Lịch sử tìm kiếm</h3>
+              {isEmpty &&
+                history.length > 0 &&
+                history.map((line, index) => (
+                  <SearchLine
+                    key={index}
+                    variant="his"
+                    handleClick={() => handleSearchLineClick(line)}
+                  >
+                    {line}
+                  </SearchLine>
                 ))}
+              {isEmpty && history.length == 0 && (
+                <h3 className="text-[--text-secondary] text-sm px-2.5">
+                  Không có lịch sử tìm kiếm
+                </h3>
+              )}
               {!isEmpty && (
                 <>
                   {history && <SearchLine variant="his">{history}</SearchLine>}

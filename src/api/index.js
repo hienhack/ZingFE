@@ -19,3 +19,8 @@ export const request = axios.create({
         }
     }
 })
+
+export const guest = axios.create({
+    baseURL: 'http://nxc-hcmus.me:8081/api',
+    timeout: 10000,
+})
