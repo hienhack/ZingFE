@@ -19,6 +19,7 @@ function Login({ toRegister }) {
   });
 
   function onSubmit(data) {
+    console.log(data);
     authRequest
       .post('/auth/token', {
         client_id: 'user-service',

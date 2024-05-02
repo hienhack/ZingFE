@@ -1,10 +1,10 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useSelector } from 'react-redux';
 import { NavLink, Outlet, useLocation } from 'react-router-dom';
 
 function Search() {
   const { search } = useLocation();
-  const [query, setQuery] = useState(new URLSearchParams(search).get('q'));
+  const query = new URLSearchParams(search).get('q');
 
   const nonActiveStyle =
     'mx-5 py-[15px] cursor-pointer text-sm font-medium text-[#DADADA] truncate hover:text-white';

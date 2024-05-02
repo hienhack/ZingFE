@@ -3,6 +3,7 @@ import { FiLogOut, FiUpload, FiUser } from 'react-icons/fi';
 import { MdBlockFlipped } from 'react-icons/md';
 import { useDispatch, useSelector } from 'react-redux';
 import { setAuthenticate, logout } from '../../redux/slice/userSlice';
+import { authRequest } from '../../api';
 
 function UserMenu() {
   const isLoggedIn = useSelector((state) => state.user.isLoggedIn);
@@ -18,6 +19,10 @@ function UserMenu() {
     localStorage.removeItem('token');
     location.reload();
   }
+
+  // useEffect(() => {
+  //   authRequest.post
+  // }, [])
 
   return (
     <Tippy

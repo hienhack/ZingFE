@@ -60,7 +60,7 @@ function Search() {
     inputRef.current.value = value;
     inputRef.current.blur();
     setShow(false);
-    navigate('/tim-kiem/tat-ca');
+    navigate('/tim-kiem/tat-ca?q=' + value);
   }
 
   const handleOutsideClick = (event) => {
