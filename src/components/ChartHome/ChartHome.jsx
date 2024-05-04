@@ -29,7 +29,9 @@ function ChartHome() {
             <span className='rounded-full border bg-white text-black hover:bg-[#ced5e3]'>
               <BsFillPlayFill size={25} className='pl-0.5' />
             </span>
+         
           </h3>
+
           <div className='flex w-full h-auto'>
             <div className='flex flex-col mt-[1rem] gap-2 w-[40%]'>
               {chartitem.map((item, index) =>
