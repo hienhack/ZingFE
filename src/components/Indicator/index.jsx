@@ -10,3 +10,7 @@ export function PlayingIndicator() {
     </div>
   );
 }
+
+export function LoadingIndicator() {
+  return <div class="loading-indicator"></div>;
+}

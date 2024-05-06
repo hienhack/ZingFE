@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import DiscoveryBtn from '../../components/DiscoveryBtn/DiscoveryBtn';
 import NewRelease from '../NewRelease/NewReleasePage';
 import React from 'react';
 import { useSelector } from 'react-redux';
@@ -8,7 +7,6 @@ import { Link } from 'react-router-dom';
 import { Radio_Live } from '../Radio/RadioSection';
 import { Slider } from '../../components/Slider/Slider';
 import { HiChevronRight } from 'react-icons/hi2';
-import { PlaylistCard } from '../../components/PlaylistCard';
 
 const title1 = 'Nghe Gần đây';
 const title2 = 'Tâm Trạng Tan Chậm';
@@ -107,7 +105,7 @@ function HomePage() {
         </div>
       </div>
       <div className="mb-[100px]"></div>
-      <PlaylistCard
+      {/* <PlaylistCard
         playlist={playlist}
         num={5}
         title={title1}
@@ -130,7 +128,7 @@ function HomePage() {
         istitle={true}
         isdescribe={false}
         isartist={true}
-      />
+      /> */}
     </div>
   );
 }

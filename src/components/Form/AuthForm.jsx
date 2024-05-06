@@ -8,9 +8,7 @@ function AuthForm({ open, handleOpen }) {
   const [formType, setFormType] = useState('login');
 
   useEffect(() => {
-    return () => {
-      console.log('unmount');
-    };
+    return () => {};
   }, []);
 
   return (
