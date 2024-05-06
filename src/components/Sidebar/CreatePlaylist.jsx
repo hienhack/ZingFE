@@ -4,6 +4,8 @@ import { MdOutlineClose } from 'react-icons/md';
 import { request } from '../../api';
 import { useDispatch } from 'react-redux';
 import { createPlaylist } from '../../redux/slice/featureSlice';
+import { ToggleButton } from '../Button';
+import Tooltip from '../Tooltip';
 
 function CreatePlaylist({ open, handleOpen }) {
   const dispatch = useDispatch();
@@ -19,22 +21,26 @@ function CreatePlaylist({ open, handleOpen }) {
   });
 
   function onSubmit(data) {
-    request
-      .post('/playlist', data)
-      .then((res) => {
-        dispatch(createPlaylist(res.data));
-        reset();
-        handleOpen();
-      })
-      .catch((e) => console.log(e));
+    console.log(data);
+
+    // request
+    //   .post('/playlist', data)
+    //   .then((res) => {
+    //     dispatch(createPlaylist(res.data));
+    //     reset();
+    //     handleOpen();
+    //   })
+    //   .catch((e) => console.log(e));
   }
 
   return (
     <Modal open={open} handleOpen={handleOpen}>
       <div className="w-[330px] bg-[--primary-bg] rounded-lg relative p-5">
-        <button className="absolute right-3 top-3" onClick={handleOpen}>
-          <MdOutlineClose className="size-6 text-[--text-primary]"></MdOutlineClose>
-        </button>
+        <Tooltip content="Đóng">
+          <button className="absolute right-3 top-3" onClick={handleOpen}>
+            <MdOutlineClose className="size-6 text-[--text-primary]"></MdOutlineClose>
+          </button>
+        </Tooltip>
         <form onSubmit={handleSubmit(onSubmit)}>
           <h1 className="text-[--text-primary] font-bold text-lg text-center mb-2.5">
             Tạo playlist mới
@@ -42,7 +48,7 @@ function CreatePlaylist({ open, handleOpen }) {
           <div>
             <input
               {...register('name', { required: true })}
-              className="rounded-full h-10 px-[15px] text-sm bg-[--alpha-bg] text-[--text-primary] outline-none border border-[--border-primary] w-full"
+              className="rounded-full h-10 px-[15px] text-sm bg-[--alpha-bg] text-[--text-primary] outline-none border border-[--border-primary] w-full focus:border-slate-500"
               placeholder="Nhập tên playlist"
             ></input>
           </div>
@@ -54,10 +60,7 @@ function CreatePlaylist({ open, handleOpen }) {
               </h3>
             </div>
             <div className="h-[21px]">
-              <label class="inline-flex items-center cursor-pointer">
-                <input {...register('isPublic')} type="checkbox" class="sr-only peer" />
-                <div class="relative w-6 h-[15px] bg-gray-500 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[1px] after:start-[1px] after:bg-white after:border-gray-300 after:border after:rounded-full after:size-[13px] after:transition-all dark:border-gray-600 peer-checked:bg-purple-700"></div>
-              </label>
+              <ToggleButton {...register('isPublic')} />
             </div>
           </div>
           <div className="px-[15px] pt-5 w-full flex justify-between items-center">
@@ -66,14 +69,11 @@ function CreatePlaylist({ open, handleOpen }) {
                 Phát ngẫu nhiên
               </h3>
               <h3 className="text-[12px] text-[--text-secondary] font-normal">
-                Luôn phát ngẫu nhiên tất cả các bài hát
+                Luôn phát ngẫu nhiên tất cả bài hát
               </h3>
             </div>
             <div className="h-[21px]">
-              <label class="inline-flex items-center cursor-pointer">
-                <input {...register('isRandomPlaying')} type="checkbox" class="sr-only peer" />
-                <div class="relative w-6 h-[15px] bg-gray-500 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[1px] after:start-[1px] after:bg-white after:border-gray-300 after:border after:rounded-full after:size-[13px] after:transition-all dark:border-gray-600 peer-checked:bg-purple-700"></div>
-              </label>
+              <ToggleButton {...register('isRandomPlaying')} />
             </div>
           </div>
           <button

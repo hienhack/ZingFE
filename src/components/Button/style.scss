@@ -1,0 +1,6 @@
+.toggle-btn div {
+    &:after {
+        height: calc(100% - 2px);
+        aspect-ratio: 1/1;
+    }
+}
