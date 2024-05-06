@@ -36,7 +36,11 @@ function DefaultLayout() {
         <div className="w-[240px] min-w-[240px]">
           <Sidebar />
         </div>
-        <div className="scrollable-container overflow-y-scroll w-full relative z-10" ref={main}>
+        <div
+          id="main"
+          className="scrollable-container overflow-y-scroll w-full relative z-10"
+          ref={main}
+        >
           <Header isSticky={isScrolled}></Header>
           <div className="mt-[70px]">
             <Outlet />

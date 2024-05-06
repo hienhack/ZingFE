@@ -71,10 +71,12 @@
   --black: #32323d;
   --dark-alpha-50: rgba(0,0,0,0.5);
   --font-size-topic: 26px;
+  --hover-tooltip-opacity: hsla(0,0%,100%,0.3);
 }
 
 * {
   font-family: 'Inter';
+  user-select: none;
 }
 
 
@@ -148,4 +150,9 @@ button:disabled {
   /* This creates a triangle pointing down */
 }
 
-/* Show the tooltip text when hovering over the container */
+.tippy-box[data-theme~=root] .tippy-content {
+  padding: 4px;
+  font-size: 11px;
+  line-height: 1.3;
+  padding: 5px 9px;
+}
