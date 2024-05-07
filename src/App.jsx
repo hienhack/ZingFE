@@ -2,7 +2,6 @@ import { Routes, Route } from 'react-router-dom';
 import { DefaultLayout } from './layouts';
 import HomePage from './pages/Home/HomePage';
 import ZingChartPage from './pages/ZingChart/ZingChartPage';
-import RadioPage from './pages/Radio/RadioPage';
 import NewReleasePage from './pages/NewRelease/NewReleasePage';
 import TopicPage from './pages/Topic/TopicPage';
 import Top100Page from './pages/Top100/Top100Page';
@@ -37,7 +36,6 @@ function App() {
           </Route>
           <Route index={true} path="/" element={<HomePage />}></Route>
           <Route path="/zing-chart" element={<ZingChartPage />}></Route>
-          <Route path="/radio" element={<RadioPage />}></Route>
           <Route path="/moi-phat-hanh" element={<NewReleasePage />}></Route>
           <Route path="/hub" element={<TopicPage />}></Route>
           <Route path="/top100" element={<Top100Page />}></Route>
