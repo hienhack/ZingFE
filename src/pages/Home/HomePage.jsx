@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom';
 
 import { Radio_Live } from '../Radio/RadioSection';
 import { Slider } from '../../components/Slider/Slider';
+import { ChartHome } from '../../components/ChartHome';
 import { HiChevronRight } from 'react-icons/hi2';
 
 const title1 = 'Nghe Gần đây';
@@ -104,6 +105,7 @@ function HomePage() {
           <Radio_Live />
         </div>
       </div>
+      <ChartHome />
       <div className="mb-[100px]"></div>
       {/* <PlaylistCard
         playlist={playlist}
