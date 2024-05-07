@@ -7,7 +7,7 @@ import { LiaMicrophoneAltSolid } from 'react-icons/lia';
 
 import { FaPlay } from 'react-icons/fa';
 import { clsx } from 'clsx';
-import Thumbnail from '../../Media/Thumbnail';
+import Thumbnail from '../../../components/Media/Thumbnail';
 
 function SongSearchItem({ songInfo, active }) {
   const [isHovered, setIsHovered] = useState(false);

@@ -15,7 +15,6 @@ function UserMenu() {
 
   function handleLogout() {
     // dispatch(logout());
-    console.log('logout');
     localStorage.removeItem('token');
     location.reload();
   }

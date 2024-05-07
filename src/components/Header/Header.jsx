@@ -20,9 +20,7 @@ function Header({ isSticky }) {
         client_secret: 'jSLIfcd5eq2t6e0CzNid3QKUaQNP1m0x',
         grant_type: 'password',
       })
-      .then((res) => {
-        console.log(res);
-      })
+      .then((res) => {})
       .catch((error) => {});
   }, []);
 
@@ -44,13 +42,6 @@ function Header({ isSticky }) {
         <button className="w-10 h-10 rounded-full bg-[--alpha-bg] bg-opacity-25 flex items-center justify-center mr-2.5">
           <FiSettings className="text-slate-300 size-[18px]"></FiSettings>
         </button>
-        <a
-          className="h-10 rounded-full w-fit px-6 bg-[--alpha-bg] bg-opacity-90 flex items-center text-[--link-text-hover] gap-1 mr-3"
-          href="#"
-        >
-          <MdOutlineInstallDesktop className="size-5" />
-          <span className="font-semibold text-sm">Tải bản Windows</span>
-        </a>
         <a
           className="h-10 rounded-full w-fit px-5 py-2.5 flex items-center bg-purple-500 hover:opacity-90 mr-3"
           href="#"

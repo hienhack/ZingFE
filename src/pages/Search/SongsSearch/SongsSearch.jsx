@@ -1,5 +1,5 @@
 import { useSelector } from 'react-redux';
-import { SongSearchItem } from '../SongsSearch';
+import { SongSearchItem } from '.';
 import { useLocation } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import { guest } from '../../../api';
@@ -17,7 +17,6 @@ function SongsSearch() {
         },
       })
       .then((res) => {
-        console.log(res);
         setSongs(standardize(res.data));
       })
       .catch((error) => {})

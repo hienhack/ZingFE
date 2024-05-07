@@ -12,11 +12,11 @@ import { MyMusicPage, FavoriteSong, UploadSong, Song } from './pages/MyMusic';
 import { useSelector, useDispatch } from 'react-redux';
 import { setAuthenticate } from './redux/slice/userSlice';
 import AuthForm from './components/Form/AuthForm';
-import Search from './components/Search/Search';
-import { AllSearch } from './components/Search/AllSearch';
-import { SongsSearch } from './components/Search/SongsSearch';
-import { AlbumsSearch } from './components/Search/AlbumsSearch';
-import { SingersSearch } from './components/Search/SingersSearch';
+import Search from './pages/Search/Search';
+import { AllSearch } from './pages/Search/AllSearch';
+import { SongsSearch } from './pages/Search/SongsSearch';
+import { AlbumsSearch } from './pages/Search/AlbumsSearch';
+import { SingersSearch } from './pages/Search/SingersSearch';
 
 function App() {
   const authenticate = useSelector((state) => state.user.authenticate);

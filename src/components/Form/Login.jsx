@@ -19,7 +19,6 @@ function Login({ toRegister }) {
   });
 
   function onSubmit(data) {
-    console.log(data);
     authRequest
       .post('/auth/token', {
         client_id: 'user-service',
@@ -33,7 +32,6 @@ function Login({ toRegister }) {
         location.reload();
       })
       .catch((error) => {
-        console.log(error);
         if (error.response.status == 401) {
           setError('Email hoặc mật khẩu không đúng');
         }

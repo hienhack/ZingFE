@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 
 import { Radio_Live } from '../Radio/RadioSection';
 import { Slider } from '../../components/Slider/Slider';
-import { ChartHome } from '../../components/ChartHome';
+import { ChartHome } from './ChartHome';
 import { HiChevronRight } from 'react-icons/hi2';
 
 const title1 = 'Nghe Gần đây';

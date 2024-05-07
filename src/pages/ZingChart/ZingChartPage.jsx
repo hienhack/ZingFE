@@ -18,7 +18,7 @@ import { FaCirclePlay } from 'react-icons/fa6';
 
 import { Chart } from '../../components/Chart';
 import { BsFillPlayFill } from 'react-icons/bs';
-import { chartitem } from '../../components/ChartHome/ChartHome';
+import { chartitem } from '../Home/ChartHome/ChartHome';
 
 function ZingChartPage() {
   const [randomSong, setRandomSong] = useState(null);

@@ -21,8 +21,6 @@ function CreatePlaylist({ open, handleOpen }) {
   });
 
   function onSubmit(data) {
-    console.log(data);
-
     // request
     //   .post('/playlist', data)
     //   .then((res) => {
