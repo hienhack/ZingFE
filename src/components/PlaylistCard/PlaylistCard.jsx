@@ -172,7 +172,7 @@ function PlaylistCard({
 }
 
 PlaylistCard.propTypes = {
-  playlist: PropTypes.object,
+  playlist: PropTypes.array,
   titile: PropTypes.bool,
   description: PropTypes.bool,
   artist: PropTypes.bool,
