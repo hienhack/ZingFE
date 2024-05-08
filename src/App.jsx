@@ -52,7 +52,7 @@ function App() {
             <Route index path="tat-ca" element={<AllSearch />} />
             <Route path="bai-hat" element={<SongsSearch />} />
             <Route path="playlist" element={<AlbumsSearch />} />
-            <Route path="nghe-si" element={<SingersSearch />} />
+            <Route path="artist" element={<SingersSearch />} />
           </Route>
         </Route>
       </Routes>
