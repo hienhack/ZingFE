@@ -12,6 +12,7 @@ function Popover({
   onHide,
   onShow,
   autoClose,
+  trigger,
   children,
 }) {
   const handlerRef = useRef(null);
@@ -40,7 +41,7 @@ function Popover({
       interactive
       animation={false}
       appendTo={document.body}
-      trigger="click"
+      trigger={trigger ? trigger : 'click'}
       onShow={handleShow}
       onHide={handleHide}
       offset={offset}

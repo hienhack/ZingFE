@@ -8,6 +8,7 @@ import Search from './Search';
 import { authRequest, request } from '../../api';
 import { useEffect } from 'react';
 import { useSelector } from 'react-redux';
+import SettingMenu from './SettingMenu';
 
 function Header({ isSticky }) {
   const isLoggedIn = useSelector((state) => state.user.isLoggedIn);
@@ -38,10 +39,8 @@ function Header({ isSticky }) {
         </div>
       </div>
       <div className="flex flex-row-reverse">
-        <UserMenu></UserMenu>
-        <button className="w-10 h-10 rounded-full bg-[--alpha-bg] bg-opacity-25 flex items-center justify-center mr-2.5">
-          <FiSettings className="text-slate-300 size-[18px]"></FiSettings>
-        </button>
+        <UserMenu />
+        <SettingMenu />
         <a
           className="h-10 rounded-full w-fit px-5 py-2.5 flex items-center bg-purple-500 hover:opacity-90 mr-3"
           href="#"

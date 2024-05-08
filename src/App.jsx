@@ -7,7 +7,7 @@ import TopicPage from './pages/Topic/TopicPage';
 import Top100Page from './pages/Top100/Top100Page';
 import HistoryPage from './pages/History/HistoryPage';
 import MyPlaylistPage from './pages/MyPlaylist/MyPLaylistPage';
-import { MyMusicPage, FavoriteSong, UploadSong, Song } from './pages/MyMusic';
+import { MyMusicPage, FavoriteSong, Song } from './pages/MyMusic';
 import { useSelector, useDispatch } from 'react-redux';
 import { setAuthenticate } from './redux/slice/userSlice';
 import AuthForm from './components/Form/AuthForm';
@@ -29,7 +29,6 @@ function App() {
             <Route path="/mymusic/song" element={<Song />}>
               <Route index path="/mymusic/song" element={<FavoriteSong />} />
               <Route path="/mymusic/song/favorite" element={<FavoriteSong />} />
-              <Route path="/mymusic/song/upload" element={<UploadSong />} />
             </Route>
             <Route path="/mymusic/mv" element={<MyMusicPage />} />
             <Route path="/mymusic/album" element={<MyMusicPage />} />
