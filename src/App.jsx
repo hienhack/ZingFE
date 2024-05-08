@@ -46,7 +46,6 @@ function App() {
 
           <Route path="/mymusic/album" element={<MyMusicPage />}></Route>
           <Route path="/" element={<MyMusicPage />}></Route>
-          <Route path="/mymusic/song/upload" element={<MyMusicPage />}></Route>
           {/*Tìm kiếm*/}
           <Route path="/tim-kiem" element={<Search />}>
             <Route index path="tat-ca" element={<AllSearch />} />

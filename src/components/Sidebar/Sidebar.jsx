@@ -20,7 +20,6 @@ import {
   PlaylistIcon,
   Top100Icon,
   TopicIcon,
-  UploadIcon,
   ZingChartIcon,
 } from '../Icon';
 
@@ -170,12 +169,6 @@ function Sidebar() {
                   <SidebarItem path="/mymusic/album" active={false}>
                     <AlbumIcon />
                     <span>Album</span>
-                  </SidebarItem>
-                </li>
-                <li>
-                  <SidebarItem path="/mymusic/song/upload" active={false}>
-                    <UploadIcon />
-                    <span>Đã tải lên</span>
                   </SidebarItem>
                 </li>
               </ul>
