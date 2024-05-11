@@ -12,6 +12,7 @@ import { FiLink } from 'react-icons/fi';
 import clsx from 'clsx';
 import { IoCloseOutline } from 'react-icons/io5';
 import { useState } from 'react';
+import { PlaylistMenu } from '../Menu';
 
 function PlaylistCard({
   playlist,
@@ -88,49 +89,20 @@ function PlaylistCard({
               {/* Display when loading */}
               {/* <LoadingIndicator /> */}
             </button>
-            <Popover autoClose={true} onHide={() => setFocus(false)} onShow={() => setFocus(true)}>
-              <PopoverHandler>
-                <Tippy content="Khác" theme="root">
-                  <button
-                    className="size-[30px] min-w-[30px] flex items-center justify-center text-white rounded-full hover:bg-[--hover-tooltip-opacity]"
-                    onClick={(e) => {
-                      e.stopPropagation();
-                    }}
-                  >
-                    <HiOutlineDotsHorizontal className="size-5" />
-                  </button>
-                </Tippy>
-              </PopoverHandler>
-              <PopoverContent>
-                <div className="w-[250px] rounded-lg bg-[--primary-bg]">
-                  <div className="py-2.5 text-[--navigation-text]">
-                    <div
-                      className="px-[15px] py-2.5 hover:bg-[--alpha-bg] hover:text-[--text-item-hover] flex items-center cursor-pointer"
-                      onClick={(e) => {
-                        addToQueue(playlist);
-                      }}
-                    >
-                      <div className="size-4 mr-[15px]">
-                        <RiPlayList2Fill className="size-4" />
-                      </div>
-                      <h3 className="text-sm">Thêm vào danh sách phát</h3>
-                    </div>
-                    <div className="px-[15px] py-2.5 hover:bg-[--alpha-bg] hover:text-[--text-item-hover] flex items-center cursor-pointer">
-                      <div className="size-4 mr-[15px]">
-                        <GoDownload className="size-4" />
-                      </div>
-                      <h3 className="text-sm">Tải xuống</h3>
-                    </div>
-                    <div className="px-[15px] py-2.5 hover:bg-[--alpha-bg] hover:text-[--text-item-hover] flex items-center cursor-pointer">
-                      <div className="size-4 mr-[15px]">
-                        <FiLink className="size-4" />
-                      </div>
-                      <h3 className="text-sm grow">Sao chép link</h3>
-                    </div>
-                  </div>
-                </div>
-              </PopoverContent>
-            </Popover>
+            <PlaylistMenu
+              playlist={playlist}
+              onShow={() => setFocus(true)}
+              onHide={() => setFocus(false)}
+            >
+              <button
+                className="size-[30px] min-w-[30px] flex items-center justify-center text-white rounded-full hover:bg-[--hover-tooltip-opacity]"
+                onClick={(e) => {
+                  e.stopPropagation();
+                }}
+              >
+                <HiOutlineDotsHorizontal className="size-5" />
+              </button>
+            </PlaylistMenu>
           </div>
         </div>
       </div>
@@ -172,7 +144,7 @@ function PlaylistCard({
 }
 
 PlaylistCard.propTypes = {
-  playlist: PropTypes.array,
+  playlist: PropTypes.object,
   titile: PropTypes.bool,
   description: PropTypes.bool,
   artist: PropTypes.bool,

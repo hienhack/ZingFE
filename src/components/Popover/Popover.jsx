@@ -22,6 +22,7 @@ function Popover({
 
   const handleScroll = useCallback((e) => {
     handlerRef.current.click();
+    handlerRef.current.blur();
   }, []);
 
   function handleShow() {
@@ -47,6 +48,7 @@ function Popover({
       offset={offset}
       placement={placement}
       render={(attrs) => <div {...attrs}>{content}</div>}
+      onClickOutside={() => console.log('clicked outside')}
     >
       {React.cloneElement(handler, { ref: handlerRef })}
     </Tippy>

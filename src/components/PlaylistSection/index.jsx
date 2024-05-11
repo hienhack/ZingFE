@@ -58,7 +58,7 @@ function PlaylistSection({
 
 PlaylistSection.propTypes = {
   sectionTitle: PropTypes.string,
-  listPlaylist: PropTypes.object,
+  listPlaylist: PropTypes.array,
   path: PropTypes.string,
   title: PropTypes.bool,
   artist: PropTypes.bool,
