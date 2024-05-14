@@ -16,6 +16,7 @@ import { AllSearch } from './pages/Search/AllSearch';
 import { SongsSearch } from './pages/Search/SongsSearch';
 import { AlbumsSearch } from './pages/Search/AlbumsSearch';
 import { SingersSearch } from './pages/Search/SingersSearch';
+import { ArtistPage } from './pages/Artist';
 
 function App() {
   const authenticate = useSelector((state) => state.user.authenticate);
@@ -39,6 +40,7 @@ function App() {
           <Route path="/hub" element={<TopicPage />}></Route>
           <Route path="/top100" element={<Top100Page />}></Route>
           <Route path="/mymusic/history" element={<HistoryPage />}></Route>
+          <Route path="/nghe-si/name" element={<ArtistPage />}></Route>
           {/* Bài hát yêu thích */}
           <Route path="/mymusic/song/favorite" element={<MyMusicPage />}></Route>
           <Route path="/mymusic/library/playlist" element={<MyPlaylistPage />}></Route>

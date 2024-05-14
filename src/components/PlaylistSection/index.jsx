@@ -30,6 +30,7 @@ function PlaylistSection({
   path,
   title,
   artist,
+  year,
   description,
   size = 'grid-cols-5',
   className,
@@ -49,6 +50,8 @@ function PlaylistSection({
             title={title}
             artist={artist}
             description={description}
+            year={year}
+
           />
         ))}
       </div>
@@ -63,6 +66,7 @@ PlaylistSection.propTypes = {
   title: PropTypes.bool,
   artist: PropTypes.bool,
   description: PropTypes.bool,
+  year: PropTypes.bool,
   size: PropTypes.string,
   className: PropTypes.string,
 };
