@@ -8,6 +8,8 @@ import { AiOutlineInfoCircle } from 'react-icons/ai';
 import { TbBadgeAd, TbPhone } from 'react-icons/tb';
 import { FaRegFlag } from 'react-icons/fa';
 
+
+
 function SettingMenu() {
   return (
     <Popover offset={[0, 10]}>
@@ -104,15 +106,22 @@ function SettingMenu() {
               </button>
             </li>
             <li className="text-[--text-secondary] hover:text-[--navigation-text] rounded hover:bg-[--alpha-bg]">
-              <button className="w-full flex items-center justify-between px-2.5 py-3 text-sm whitespace-nowrap hover:filter-none">
-                <div className="flex items-center">
-                  <div className="size-5 flex items-center mr-2.5">
-                    <TbPhone className="text-[20px]" />
+            <a href="/huong-dan">
+                <button className="w-full flex items-center justify-between px-2.5 py-3 text-sm whitespace-nowrap hover:filter-none" >
+                  <div className="flex items-center">
+                    <div className="size-5 flex items-center mr-2.5">
+                      <TbPhone className="text-[20px]" />
+                    </div>
+                    
+                    <span>Liên hệ</span>
+                    
+            
+                    
                   </div>
-                  <span>Liên hệ</span>
-                </div>
-                <GoArrowUpRight className="text-[16px]" />
-              </button>
+                  <GoArrowUpRight className="text-[16px]" />
+                </button>
+                </a>
+              
             </li>
           </ul>
         </div>
