@@ -16,6 +16,7 @@ import { AllSearch } from './pages/Search/AllSearch';
 import { SongsSearch } from './pages/Search/SongsSearch';
 import { AlbumsSearch } from './pages/Search/AlbumsSearch';
 import { SingersSearch } from './pages/Search/SingersSearch';
+import Album from './pages/Album/Album';
 
 function App() {
   const authenticate = useSelector((state) => state.user.authenticate);
@@ -52,6 +53,7 @@ function App() {
             <Route path="playlist" element={<AlbumsSearch />} />
             <Route path="artist" element={<SingersSearch />} />
           </Route>
+          <Route path="/album" element={<Album/>}> </Route>
         </Route>
       </Routes>
       <AuthForm open={authenticate} handleOpen={() => dispacth(setAuthenticate(false))} />
