@@ -161,7 +161,7 @@ function Album() {
                 </div>
             )}
             {playlistDetail.artistsNames && (
-                <div className="flex-auto flex flex-col">
+                <div className="flex-auto flex flex-col overflow-y-auto hide-scrollbar">
                     {playlistDetail?.sortDescription && (
                         <div className="mb-[10px]">
                             <span className="text-[#FFFFFF80] text-sm leading-5">Lời tựa{' '}</span>
