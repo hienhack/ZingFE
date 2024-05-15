@@ -182,8 +182,8 @@ function ArtistPage() {
             <div className="flex flex-col">
               <div className="flex items-center">
                 <div className="text-[60px] font-bold	text-white">{artist.name}</div>
-                <button className="ml-5 rounded-full border bg-white text-black w-[52px] h-[52px] flex justify-center items-center bg-[#9b4de0] border-[#9b4de0]">
-                  <BsFillPlayFill size={35} className="ml-[5px] text-white" />
+                <button className="ml-5 rounded-full border w-[52px] h-[52px] flex justify-center items-center bg-[#9b4de0] border-[#9b4de0]">
+                  <BsFillPlayFill size={35} className="text-white ml-[5px] " />
                 </button>
               </div>
               <div className="flex items-centermt mt-2">
