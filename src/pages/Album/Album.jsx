@@ -2,7 +2,7 @@
 import { useEffect, useState, useRef } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import moment from 'moment';
-import playlistDetail from './album.json';
+import playlistDetail from './album2.json';
 import { AlbumPlaylist } from '.';
 import { BsPlayCircle } from 'react-icons/bs';
 import { SlOptions } from "react-icons/sl";
@@ -20,7 +20,7 @@ function likesDisplay(likes) {
     }
 }
 
-
+console.log(playlistDetail?.releaseDate)
 function Album() {
     const imgRef = useRef('');
 
@@ -81,8 +81,9 @@ function Album() {
                             <>
                                 <span className="text-[#FFFFFF80] text-xs leading-5 select-none">
                                     {`Cập nhật: ${moment.unix(playlistDetail?.contentLastUpdate).format('DD/MM/YYYY')}`}
+                                    {/* {`Cập nhật: ${playlistDetail?.releaseDate}`} */}
                                 </span>
-                                <span className="text-[#FFFFFF80] text-xs font-medium overflow-ellipsis-2-line">
+                                <span className="text-[#FFFFFF80] text-xs font-normal overflow-ellipsis-2-line">
                                     {playlistDetail?.artists?.map((artist, index) => (
                                         <Link
                                             key={artist?.link}
@@ -95,20 +96,26 @@ function Album() {
                                 </span>
                             </>
                                 ) : (
-                                    <span className="text-[#FFFFFF80] text-xs font-medium overflow-ellipsis-2-line pt-1">
-                                        {playlistDetail?.artists?.map((artist, index) => (
+                                    <span className="text-[#FFFFFF80] text-xs font-normal overflow-ellipsis-2-line pt-1">
+                                        {playlistDetail?.artists?.map((artist, index, artists) => (
                                             <Link
                                                 key={artist?.link}
                                                 to={artist?.link}
                                                 className="cursor-pointer hover:underline hover:text-purple-500"
                                             >
-                                                {index === artistsLength - 1 ? `${artist?.name}` : `${artist?.name}, `}
+                                                {index === artists.length - 1 ? artist?.name : `${artist?.name}, `}
                                             </Link>
                                         ))}
-                                        &nbsp;&middot;&nbsp;
-                                        {`${moment.unix(playlistDetail?.contentLastUpdate).format('YYYY')}`}
+                                        {playlistDetail?.objectType ? null : (
+                                            <>
+                                                &nbsp;&middot;&nbsp;
+                                                {/* {moment.unix(playlistDetail?.contentLastUpdate).format('YYYY')} */}
+                                                {`${moment(playlistDetail?.releaseDate, "DD/MM/YYYY").format('YYYY')}`}
+                                            </>
+                                        )}
                                     </span>
-                                )}
+                                )
+                        }
                         <span className="text-[#FFFFFF80] text-xs leading-5 select-none pt-0.5">
                             {likesDisplay(playlistDetail?.like)}
                         </span>
