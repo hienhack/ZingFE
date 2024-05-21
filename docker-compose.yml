@@ -1,6 +1,8 @@
-version: '3'
+version: '3.8'
 services:
-  react-app:
+  zing-fe:
+    container_name: zing-fe
+    image: ngoxuanchien/zing-fe:latest
     build:
       context: .
       dockerfile: Dockerfile
