@@ -1,16 +1,20 @@
 pipeline {
     agent {
-        label 'agent 1'
+        label 'nxc-hcmus-1'
     }
 
     stages {
         stage('Build') {
             steps {
                 echo 'Building..'
-                withDockerRegistry(credentialsId: 'dockerhub-ngoxuanchien', url: 'https://index.docker.io/v1/') {
-                    sh 'docker-compose build'
-                    sh 'docker-compose push'
-                }
+                script {
+                    if (env.BRANCH_NAME == 'main') {
+                        withDockerRegistry(credentialsId: 'dockerhub-ngoxuanchien', url: 'https://index.docker.io/v1/') {
+                            sh 'docker-compose build'
+                            sh 'docker-compose push'
+                        }
+                    }
+                } 
             }
         }
         stage('Test') {
@@ -21,9 +25,13 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo 'Deploying....'
-                sh 'docker-compose rm -s -f'
-                sh 'docker-compose pull'
-                sh 'docker-compose up -d'
+                script {
+                    if (env.BRANCH_NAME == 'main') {
+                        sh 'docker-compose rm -s -f'
+                        sh 'docker-compose pull'
+                        sh 'docker-compose up -d'
+                    }
+                } 
             }
         }
     }
