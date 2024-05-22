@@ -20,7 +20,7 @@ function AuthForm({ open, handleOpen }) {
               ? 'Nhập email và mật khẩu của bạn để đăng nhập'
               : 'Hãy nhập tất cả thông tin để có thể đăng ký'}
           </h6>
-          {isLogin ? <Login /> : <Register />}
+          {isLogin ? <Login /> : <Register onSuccess={() => setLogin(true)} />}
           <div className="flex items-center w-full gap-2 mt-4">
             <span className="text-gray-400 text-[13px]">
               {isLogin ? 'Bạn chưa có tài khoản?' : 'Ban đã có tài khoản?'}

@@ -4,7 +4,7 @@ import { ErrorMessage } from '@hookform/error-message';
 import { authRequest } from '../../api';
 import { useState } from 'react';
 
-function Register() {
+function Register({ onSuccess }) {
   const [processing, setProcessing] = useState(false);
   const [error, setError] = useState(null);
   const {
@@ -30,7 +30,7 @@ function Register() {
       })
       .then((data) => {
         reset();
-        toSignin();
+        onSuccess();
       })
       .catch((e) => {
         console.log(e);

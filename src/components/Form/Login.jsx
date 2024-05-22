@@ -8,6 +8,7 @@ import { useDispatch } from 'react-redux';
 
 function Login() {
   const [error, setError] = useState(null);
+  const [processing, setProcessing] = useState(false);
   const dispatch = useDispatch();
 
   const {
@@ -20,6 +21,7 @@ function Login() {
   });
 
   function onSubmit(data) {
+    setProcessing(true);
     authRequest
       .post('/auth/token', {
         client_id: 'user-service',
@@ -30,11 +32,15 @@ function Login() {
       })
       .then((res) => {
         dispatch(login(res.data.access_token));
+        dispatch(setAuthenticate(false));
       })
       .catch((error) => {
         if (error.response.status == 401) {
           setError('Email hoặc mật khẩu không đúng');
         }
+      })
+      .finally(() => {
+        setProcessing(false);
       });
   }
 
@@ -96,6 +102,7 @@ function Login() {
         <button
           type="submit"
           className="mt-5 bg-[--purple-primary] text-gray-300 font-bold text-sm w-full p-3 rounded-md"
+          disabled={processing}
         >
           Đăng nhập
         </button>
