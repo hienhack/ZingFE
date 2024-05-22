@@ -25,11 +25,13 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo 'Deploying....'
-                if (env.BRANCH_NAME == 'main') {
-                    sh 'docker-compose rm -s -f'
-                    sh 'docker-compose pull'
-                    sh 'docker-compose up -d'
-                }
+                script {
+                    if (env.BRANCH_NAME == 'main') {
+                        sh 'docker-compose rm -s -f'
+                        sh 'docker-compose pull'
+                        sh 'docker-compose up -d'
+                    }
+                } 
             }
         }
     }
