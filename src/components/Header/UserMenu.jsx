@@ -45,7 +45,7 @@ function UserMenu() {
                     <p className="leading-[19px] font-bold text-[--text-primary] mb-1.5">
                       {user?.name}
                     </p>
-                    <div className="px-1 rounded-sm font-black tracking-[2px] bg-teal-600 text-gray-100 text-[11px] ">
+                    <div className="px-1 rounded-sm font-black tracking-[2px] bg-teal-600 text-gray-100 text-[11px] inline-block">
                       BASIC
                     </div>
                   </div>
