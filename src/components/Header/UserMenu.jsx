@@ -3,10 +3,9 @@ import { FiLogOut, FiUpload, FiUser } from 'react-icons/fi';
 import { MdBlockFlipped } from 'react-icons/md';
 import { useDispatch, useSelector } from 'react-redux';
 import { setAuthenticate, logout } from '../../redux/slice/userSlice';
-import { authRequest } from '../../api';
 
 function UserMenu() {
-  const isLoggedIn = useSelector((state) => state.user.isLoggedIn);
+  const { profile: user, isLoggedIn } = useSelector((state) => state.user);
   const dispatch = useDispatch();
 
   function handleLogin() {
@@ -14,14 +13,8 @@ function UserMenu() {
   }
 
   function handleLogout() {
-    // dispatch(logout());
-    localStorage.removeItem('token');
-    location.reload();
+    dispatch(logout());
   }
-
-  // useEffect(() => {
-  //   authRequest.post
-  // }, [])
 
   return (
     <Tippy
@@ -49,7 +42,9 @@ function UserMenu() {
                 <div className="flex items-center gap-2 mb-4">
                   <img className="w-[64px] rounded-full aspect-square bg-white"></img>
                   <div>
-                    <p className="leading-[19px] font-bold text-[--text-primary] mb-1.5">Hien</p>
+                    <p className="leading-[19px] font-bold text-[--text-primary] mb-1.5">
+                      {user?.name}
+                    </p>
                     <div className="px-1 rounded-sm font-black tracking-[2px] bg-teal-600 text-gray-100 text-[11px] ">
                       BASIC
                     </div>

@@ -4,7 +4,7 @@ import { getObject, saveObject } from '../../util';
 export const userSlice = createSlice({
     name: 'user',
     initialState: {
-        user: null,
+        profile: null,
         token: localStorage.getItem('token') || null,
         isLoggedIn: localStorage.getItem('token') != null,
         authenticate: false,
@@ -24,6 +24,8 @@ export const userSlice = createSlice({
 
         logout: (state) => {
             state.isLoggedIn = false;
+            state.token = null;
+            localStorage.removeItem('token');
         },
 
         addSearchHistory: (state, action) => {
@@ -32,6 +34,11 @@ export const userSlice = createSlice({
             saveObject('search_history', temp);
             state.searchHistory = temp;
         },
+
+        setUser: (state, action) => {
+            state.profile = action.payload;
+        }
+
 
         // addPlayed: (state, action) => {
         //     const temp = state.searchHistory.slice();
@@ -42,5 +49,5 @@ export const userSlice = createSlice({
     }
 });
 
-export const { setAuthenticate, login, logout, addSearchHistory } = userSlice.actions;
+export const { setAuthenticate, login, logout, setUser, addSearchHistory } = userSlice.actions;
 export default userSlice.reducer;

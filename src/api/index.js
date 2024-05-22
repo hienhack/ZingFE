@@ -1,8 +1,8 @@
 import axios from "axios";
 
-export const authRequest = axios.create({
+const authRequest = axios.create({
     baseURL: 'http://nxc-hcmus.me:8081/api',
-    timeout: 10000,
+    timeout: 5000,
     headers: {
         common: {
             "Content-Type": 'application/x-www-form-urlencoded'
@@ -10,7 +10,17 @@ export const authRequest = axios.create({
     }
 });
 
-export const request = axios.create({
+authRequest.interceptors.response.use(
+    response => response,
+    error => {
+        if (error.code === 'ECONNABORTED' && error.message.includes('timeout')) {
+            alert('Server không phản hồi, vui lòng thử lại sau!');
+        }
+        return Promise.reject(error);
+    }
+)
+
+const request = axios.create({
     baseURL: 'http://nxc-hcmus.me:8081/api',
     timeout: 10000,
     headers: {
@@ -20,7 +30,9 @@ export const request = axios.create({
     }
 })
 
-export const guest = axios.create({
+const guest = axios.create({
     baseURL: 'http://nxc-hcmus.me:8081/api',
     timeout: 10000,
 })
+
+export { authRequest, request, guest }

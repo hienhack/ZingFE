@@ -1,30 +1,11 @@
-import { FiSettings } from 'react-icons/fi';
 import clsx from 'clsx';
 import './style.scss';
 import UserMenu from './UserMenu';
-import { MdOutlineInstallDesktop, MdOutlineWest } from 'react-icons/md';
-import { GoArrowLeft, GoArrowRight, GoSearch } from 'react-icons/go';
+import { GoArrowLeft, GoArrowRight } from 'react-icons/go';
 import Search from './Search';
-import { authRequest, request } from '../../api';
-import { useEffect } from 'react';
-import { useSelector } from 'react-redux';
 import SettingMenu from './SettingMenu';
 
 function Header({ isSticky }) {
-  const isLoggedIn = useSelector((state) => state.user.isLoggedIn);
-
-  useEffect(() => {
-    if (!isLoggedIn) return;
-    authRequest
-      .post('/auth/token/introspect', {
-        client_id: 'user-service',
-        client_secret: 'jSLIfcd5eq2t6e0CzNid3QKUaQNP1m0x',
-        grant_type: 'password',
-      })
-      .then((res) => {})
-      .catch((error) => {});
-  }, []);
-
   return (
     <div className={clsx('header', isSticky && 'is-sticky')}>
       <div className="grow text-[--text-primary] flex items-center">

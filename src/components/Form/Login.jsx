@@ -6,9 +6,10 @@ import { useState } from 'react';
 import { login, setAuthenticate } from '../../redux/slice/userSlice';
 import { useDispatch } from 'react-redux';
 
-function Login({ toRegister }) {
+function Login() {
   const [error, setError] = useState(null);
-  const dispatch = useDispatch;
+  const dispatch = useDispatch();
+
   const {
     register,
     handleSubmit,
@@ -28,8 +29,7 @@ function Login({ toRegister }) {
         password: data.password,
       })
       .then((res) => {
-        localStorage.setItem('token', res.data.access_token);
-        location.reload();
+        dispatch(login(res.data.access_token));
       })
       .catch((error) => {
         if (error.response.status == 401) {
@@ -39,11 +39,7 @@ function Login({ toRegister }) {
   }
 
   return (
-    <div className="rounded-l-2xl bg-[--layout-bg] p-10">
-      <h1 className="mt-5 text-gray-400 font-bold text-2xl">Đăng nhập</h1>
-      <h6 className="mt-5 text-gray-400 font-medium text-sm">
-        Nhập email và mật khẩu của bạn để đăng nhập
-      </h6>
+    <div>
       <small className="text-red-600 italic block my-1">{error}</small>
       <form onSubmit={handleSubmit(onSubmit)}>
         <div className="mt-6 flex flex-col gap-5">
@@ -58,10 +54,10 @@ function Login({ toRegister }) {
             <FormInput
               {...register('email', {
                 required: { value: true, message: 'Email không được bỏ trống' },
-                // pattern: {
-                //   value: /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/,
-                //   message: 'Email không hợp lệ',
-                // },
+                pattern: {
+                  value: /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/,
+                  message: 'Email không hợp lệ',
+                },
               })}
               error={errors.email}
               placeholder="Email"
@@ -81,10 +77,10 @@ function Login({ toRegister }) {
                   value: true,
                   message: 'Mật khẩu không được bỏ trống',
                 },
-                // minLength: {
-                //   value: 8,
-                //   message: 'Mật khẩu phải chứa ít nhất 8 kí tự',
-                // },
+                minLength: {
+                  value: 8,
+                  message: 'Mật khẩu phải chứa ít nhất 8 kí tự',
+                },
               })}
               error={errors.password}
               placeholder="Mật khẩu"
@@ -104,12 +100,6 @@ function Login({ toRegister }) {
           Đăng nhập
         </button>
       </form>
-      <div className="flex items-center w-full gap-2 mt-4">
-        <span className="text-gray-400 text-[13px]">Bạn chưa có tài khoản?</span>
-        <button className="text-[--purple-primary] text-[13px] font-semibold" onClick={toRegister}>
-          Đăng ký
-        </button>
-      </div>
     </div>
   );
 }

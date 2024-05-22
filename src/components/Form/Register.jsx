@@ -4,7 +4,7 @@ import { ErrorMessage } from '@hookform/error-message';
 import { authRequest } from '../../api';
 import { useState } from 'react';
 
-function Register({ toSignin }) {
+function Register() {
   const [processing, setProcessing] = useState(false);
   const [error, setError] = useState(null);
   const {
@@ -33,7 +33,8 @@ function Register({ toSignin }) {
         toSignin();
       })
       .catch((e) => {
-        if (e.response.status == 401) {
+        console.log(e);
+        if (e.response.status == 409) {
           setError('Email đã được sử dụng');
         }
       })
@@ -43,11 +44,7 @@ function Register({ toSignin }) {
   }
 
   return (
-    <div className="rounded-l-2xl bg-[--layout-bg] p-10">
-      <h1 className="mt-5 text-gray-400 font-bold text-2xl">Đăng ký</h1>
-      <h6 className="mt-5 text-gray-400 font-medium text-sm">
-        Hãy nhập tất cả thông tin để có thể đăng ký
-      </h6>
+    <div>
       <small className="text-red-600 italic block my-1">{error}</small>
       <form onSubmit={handleSubmit(onSubmit)}>
         <div className="mt-6 flex flex-col gap-5">
@@ -147,12 +144,6 @@ function Register({ toSignin }) {
           Đăng ký
         </button>
       </form>
-      <div className="flex items-center w-full gap-2 mt-4">
-        <span className="text-gray-400 text-[13px]">Bạn đã có tài khoản?</span>
-        <button className="text-[--purple-primary] text-[13px] font-semibold" onClick={toSignin}>
-          Đăng nhập
-        </button>
-      </div>
     </div>
   );
 }

@@ -9,17 +9,38 @@ import HistoryPage from './pages/History/HistoryPage';
 import MyPlaylistPage from './pages/MyPlaylist/MyPLaylistPage';
 import { MyMusicPage, FavoriteSong, Song } from './pages/MyMusic';
 import { useSelector, useDispatch } from 'react-redux';
-import { setAuthenticate } from './redux/slice/userSlice';
+import { logout, setAuthenticate, setUser } from './redux/slice/userSlice';
 import AuthForm from './components/Form/AuthForm';
 import Search from './pages/Search/Search';
 import { AllSearch } from './pages/Search/AllSearch';
 import { SongsSearch } from './pages/Search/SongsSearch';
 import { AlbumsSearch } from './pages/Search/AlbumsSearch';
 import { SingersSearch } from './pages/Search/SingersSearch';
+import { useEffect } from 'react';
+import { authRequest } from './api';
 
 function App() {
-  const authenticate = useSelector((state) => state.user.authenticate);
+  const { authenticate, token } = useSelector((state) => state.user);
   const dispacth = useDispatch();
+
+  useEffect(() => {
+    if (!token) return;
+    authRequest
+      .post('/auth/token/introspect', {
+        client_id: 'user-service',
+        client_secret: 'jSLIfcd5eq2t6e0CzNid3QKUaQNP1m0x',
+        token: token,
+      })
+      .then((res) => {
+        console.log(res);
+        dispacth(setUser(res.data));
+      })
+      .catch((error) => {
+        if (error.response.status == 401) {
+          dispacth(logout());
+        }
+      });
+  }, [token]);
 
   return (
     <>
@@ -54,7 +75,9 @@ function App() {
           </Route>
         </Route>
       </Routes>
-      <AuthForm open={authenticate} handleOpen={() => dispacth(setAuthenticate(false))} />
+      {authenticate && (
+        <AuthForm open={authenticate} handleOpen={() => dispacth(setAuthenticate(false))} />
+      )}
     </>
   );
 }
