@@ -5,9 +5,15 @@ services:
     # image: ngoxuanchien/zing-fe:latest
     # environment:
     #   - VITE_TEXT=vasdfasdfasdfasdf-asdfsd
-    build: .
+
+
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        - A=pr
     environment:
       - VITE_TEXT=https://api.example.com
       - NODE_ENV=production
     ports:
-      - "3000:80"
+      - "80"

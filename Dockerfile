@@ -1,27 +1,23 @@
 FROM node:20-alpine AS build
 
+ARG E
+
 WORKDIR /app
-
 COPY package*.json ./
-
 RUN npm install
-
-# ARG VITE_TEXT
-
-# ENV VITE_TEXT=$VITE_TEXT
-# # ENV VITE_API_KEY=$VITE_API_KEY
-
 COPY . .
 
-RUN npm run build
+RUN if [[ "$E" = "production" ]]; then \
+    npm run build; \
+    else \
+    npm run build-dev; \
+    fi
 
 RUN ls -la /app/dist
 
 FROM nginx:alpine
 
 COPY --from=build /app/dist /usr/share/nginx/html
-COPY env.sh /docker-entrypoint.d/env.sh
-RUN chmod +x /docker-entrypoint.d/env.sh
 
 EXPOSE 80
 
