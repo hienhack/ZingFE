@@ -27,8 +27,8 @@ pipeline {
                 echo 'Deploying....'
                 script {
                     if (env.BRANCH_NAME == 'main') {
-                        sh 'docker-compose rm -s -f'
-                        sh 'docker-compose pull'
+                        sh 'docker-compose down'
+                        // sh 'docker-compose pull'
                         sh 'docker-compose up -d'
                     }
                 } 
