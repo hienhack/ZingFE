@@ -25,6 +25,7 @@ import About from './pages/Guideline/Element/About';
 import Contact from './pages/Guideline/Element/Contact';
 import Copyright from './pages/Guideline/Element/Copyright';
 import Album from './pages/Album/Album';
+import Album from './pages/MyMusic/Album';
 
 function App() {
   const { authenticate, token } = useSelector((state) => state.user);
@@ -72,7 +73,7 @@ function App() {
           <Route path="/mymusic/song/favorite" element={<MyMusicPage />}></Route>
           <Route path="/mymusic/library/playlist" element={<MyPlaylistPage />}></Route>
 
-          <Route path="/mymusic/album" element={<MyMusicPage />}></Route>
+          <Route path="/mymusic/album" element={<Album />}></Route>
           <Route path="/" element={<MyMusicPage />}></Route>
           {/*Tìm kiếm*/}
           <Route path="/tim-kiem" element={<Search />}>
