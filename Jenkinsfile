@@ -10,8 +10,9 @@ pipeline {
                 script {
                     if (env.BRANCH_NAME == 'main') {
                         withDockerRegistry(credentialsId: 'dockerhub-ngoxuanchien', url: 'https://index.docker.io/v1/') {
-                            sh 'docker-compose build'
-                            sh 'docker-compose push'
+                            // sh 'docker-compose build'
+                            // sh 'docker-compose push'
+                            echo 'Build and push docker images'
                         }
                     }
                 } 
