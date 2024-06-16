@@ -1,7 +1,8 @@
 import axios from "axios";
+const baseURL = import.meta.env.VITE_API_URL;
 
 const authRequest = axios.create({
-    baseURL: 'http://nxc-hcmus.me:8081/api',
+    baseURL: baseURL,
     timeout: 5000,
     headers: {
         common: {
@@ -21,7 +22,7 @@ authRequest.interceptors.response.use(
 )
 
 const request = axios.create({
-    baseURL: 'http://nxc-hcmus.me:8081/api',
+    baseURL: baseURL,
     timeout: 10000,
     headers: {
         common: {
@@ -31,7 +32,7 @@ const request = axios.create({
 })
 
 const guest = axios.create({
-    baseURL: 'http://nxc-hcmus.me:8081/api',
+    baseURL: baseURL,
     timeout: 10000,
 })
 

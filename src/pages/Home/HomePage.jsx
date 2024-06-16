@@ -9,6 +9,8 @@ import { ChartHome } from './ChartHome';
 import { HiChevronRight } from 'react-icons/hi2';
 import PlaylistSection from '../../components/PlaylistSection';
 
+const TEXT = import.meta.env.TEXT;
+
 const title1 = 'Nghe Gần đây';
 const title2 = 'Tâm Trạng Tan Chậm';
 const title3 = 'Album Hot';
@@ -116,6 +118,7 @@ function HomePage() {
 
   return (
     <div className="px-[--padding-section] relative z-0">
+      <h1 className="text-white text-3xl">{import.meta.env.VITE_TEXT}</h1>
       <Slider />
       <PlaylistSection
         className="mt-12"
