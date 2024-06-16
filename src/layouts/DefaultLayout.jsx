@@ -25,6 +25,10 @@ function DefaultLayout() {
     return () => instance.removeEventListener('scroll', handleScroll);
   }, []);
 
+  useEffect(() => {
+    main.current.scrollTo(0, 0);
+  }, [window.location.pathname]);
+
   return (
     <div className="h-screen">
       <div

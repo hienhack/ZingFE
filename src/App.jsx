@@ -24,7 +24,7 @@ import Guideline from './pages/Guideline/Guideline';
 import About from './pages/Guideline/Element/About';
 import Contact from './pages/Guideline/Element/Contact';
 import Copyright from './pages/Guideline/Element/Copyright';
-import Album from './pages/Album/Album';
+import AlbumPage from './pages/Album/Album';
 import Album from './pages/MyMusic/Album';
 
 function App() {
@@ -82,10 +82,7 @@ function App() {
             <Route path="playlist" element={<AlbumsSearch />} />
             <Route path="artist" element={<SingersSearch />} />
           </Route>
-
-          <Route path="/album" element={<Album />}>
-            {' '}
-          </Route>
+          <Route path="/album" element={<AlbumPage />}></Route>
         </Route>
 
         {/*Guideline*/}
