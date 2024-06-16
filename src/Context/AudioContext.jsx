@@ -2,6 +2,8 @@ import { createContext, useLayoutEffect, useRef } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { addToQueue, setCurrentSong, setCurrentTime } from '../redux/slice/featureSlice';
 import { setPlaying } from '../redux/slice/statusSlice';
+const API = import.meta.env.VITE_API_URL;
+const streamingURL = API + '/play/';
 
 const AudioContext = createContext();
 
@@ -80,7 +82,7 @@ function AudioProvider({ children }) {
       {children}
       <audio
         ref={audioRef}
-        src={currentSong ? currentSong.streaming?.url128kps : ''}
+        src={currentSong ? streamingURL + currentSong.mediaIds[0] : ''}
         onTimeUpdate={handleTimeUpdate}
         autoPlay={isPlaying}
         hidden

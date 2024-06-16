@@ -33,7 +33,7 @@ const request = axios.create({
 
 const guest = axios.create({
     baseURL: baseURL,
-    timeout: 10000,
+    timeout: 5000,
 })
 
 export { authRequest, request, guest }

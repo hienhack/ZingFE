@@ -5,7 +5,7 @@ import { GoSearch } from 'react-icons/go';
 import { PiTrendUpBold } from 'react-icons/pi';
 import { VscClose } from 'react-icons/vsc';
 import { useDispatch, useSelector } from 'react-redux';
-import { useNavigate } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 import { addSearchHistory } from '../../redux/slice/userSlice';
 
 function SearchLine({ variant, children, handleClick }) {
@@ -33,6 +33,7 @@ function Search() {
   const [suggestion, setSuggestion] = useState();
   const [result, setResult] = useState([]);
   const [related, setRelated] = useState([]);
+  const { pathname } = useLocation();
   // const [history, setHistory] = useState();
   const { searchHistory: history } = useSelector((state) => state.user);
   const inputRef = useRef();
@@ -81,7 +82,13 @@ function Search() {
     const key = inputRef.current.value;
     if (key.trim() !== '') {
       dispatch(addSearchHistory(key));
-      navigate('/tim-kiem/tat-ca?q=' + key);
+      if (pathname.includes('/tim-kiem')) {
+        navigate(pathname + '?q=' + key);
+        inputRef.current.blur();
+        handleOutsideClick();
+      } else {
+        navigate('/tim-kiem/tat-ca?q=' + key);
+      }
     }
   }
 

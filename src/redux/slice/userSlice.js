@@ -29,6 +29,8 @@ export const userSlice = createSlice({
         },
 
         addSearchHistory: (state, action) => {
+            const newLine = action.payload;
+            if (state.searchHistory.includes(newLine)) return;
             const temp = state.searchHistory.slice(-10);
             temp.push(action.payload);
             saveObject('search_history', temp);

@@ -11,7 +11,6 @@ import Tooltip from '../../components/Tooltip';
 function Song({ song, index, isAlbum, isIcon }) {
   const dispatch = useDispatch();
   const [isHovered, setIsHovered] = useState(false);
-  console.log(song?.title);
 
   const artistsLength = song?.artist?.length;
   const titleLength = 100;

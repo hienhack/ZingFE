@@ -3,31 +3,36 @@ import { SongSearchItem } from '.';
 import { useLocation } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import { guest } from '../../../api';
+
 function SongsSearch() {
   const { search } = useLocation();
   const [query, setQuery] = useState(new URLSearchParams(search).get('q'));
   const currentSong = useSelector((state) => state.feature.currentSong);
   const [songs, setSongs] = useState([]);
 
-  useEffect(() => {
-    guest
-      .get('/music/song/search', {
-        params: {
-          keyword: query,
-        },
-      })
-      .then((res) => {
-        setSongs(standardize(res.data));
-      })
-      .catch((error) => {})
-      .finally(() => {});
-  }, [query]);
-
   function standardize(songs) {
     return songs.map((song) => {
       return { ...song, artists: song.artistsNames.split(', ').map((str) => ({ name: str })) };
     });
   }
+
+  useEffect(() => {
+    guest
+      .get('/songs/search', {
+        params: {
+          title: query,
+          size: 20,
+        },
+      })
+      .then((res) => {
+        // setSongs(standardize(res.data.content));
+        setSongs(res.data.content);
+      })
+      .catch((error) => {
+        console.log(error);
+      })
+      .finally(() => {});
+  }, [query]);
 
   return (
     <div className={`w-full flex flex-col px-[59px] `}>
@@ -42,7 +47,7 @@ function SongsSearch() {
         </div>
       )}
       {songs.length == 0 && (
-        <div className="w-full h-[250px] text-[#FFFFFF80] rounded-lg bg-[#542E4B] flex items-center justify-center">
+        <div className="mt-6 w-full h-[250px] text-[#FFFFFF80] rounded-lg bg-[#542E4B] flex items-center justify-center">
           Không có kết quả được tìm thấy, hãy thử lại...
         </div>
       )}

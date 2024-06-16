@@ -21,7 +21,7 @@ function Register({ onSuccess }) {
   function onSubmit(data) {
     setProcessing(true);
     authRequest
-      .post('/register', {
+      .post('/users/register', {
         name: data.name,
         email: data.email,
         password: data.password,

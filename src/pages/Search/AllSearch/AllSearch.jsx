@@ -15,7 +15,6 @@ import { BsChevronRight } from 'react-icons/bs';
 
 function AllSearch() {
   const [queryParams] = useSearchParams();
-
   const searchParams = queryParams.get('q');
 
   return (
