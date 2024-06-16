@@ -16,6 +16,7 @@ import { AllSearch } from './pages/Search/AllSearch';
 import { SongsSearch } from './pages/Search/SongsSearch';
 import { AlbumsSearch } from './pages/Search/AlbumsSearch';
 import { SingersSearch } from './pages/Search/SingersSearch';
+import { ArtistPage } from './pages/Artist';
 import { useEffect } from 'react';
 import { authRequest } from './api';
 
@@ -65,6 +66,7 @@ function App() {
           <Route path="/hub" element={<TopicPage />}></Route>
           <Route path="/top100" element={<Top100Page />}></Route>
           <Route path="/mymusic/history" element={<HistoryPage />}></Route>
+          <Route path="/nghe-si/name" element={<ArtistPage />}></Route>
           {/* Bài hát yêu thích */}
           <Route path="/mymusic/song/favorite" element={<MyMusicPage />}></Route>
           <Route path="/mymusic/library/playlist" element={<MyPlaylistPage />}></Route>
@@ -78,17 +80,13 @@ function App() {
             <Route path="playlist" element={<AlbumsSearch />} />
             <Route path="artist" element={<SingersSearch />} />
           </Route>
-
-         
         </Route>
 
-         {/*Guideline*/}
-         <Route path="/huong-dan" element={<Guideline />}>
-              
-              <Route path="/huong-dan/about" element={<About />} />
-              <Route path="/huong-dan/contact" element={<Contact />} />
-              <Route path="/huong-dan/copyright" element={<Copyright />} />
-
+        {/*Guideline*/}
+        <Route path="/huong-dan" element={<Guideline />}>
+          <Route path="/huong-dan/about" element={<About />} />
+          <Route path="/huong-dan/contact" element={<Contact />} />
+          <Route path="/huong-dan/copyright" element={<Copyright />} />
         </Route>
       </Routes>
       {authenticate && (

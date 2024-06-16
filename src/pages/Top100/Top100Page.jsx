@@ -61,7 +61,7 @@ function Top100Page() {
         <div className="absolute w-full h-full items-center justify-center bg-black bg-opacity-20 hidden group-[:hover]:flex z-1">
           <SongMenu song={testSong} onHide={() => {}} onShow={() => {}}>
             <Tooltip content="Khác">
-              <button className="size-9 bg-[--alpha-bg] flex items-center justify-center text-[--primary-text] rounded-full hover:filter-none">
+              <button className=" flex items-center justify-center text-[--primary-text] rounded-full hover:filter-none">
                 <HiOutlineDotsHorizontal />
               </button>
             </Tooltip>

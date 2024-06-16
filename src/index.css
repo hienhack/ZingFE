@@ -72,6 +72,7 @@
   --dark-alpha-50: rgba(0,0,0,0.5);
   --font-size-topic: 26px;
   --hover-tooltip-opacity: hsla(0,0%,100%,0.3);
+  --alpha-layout-bg:rgba(41,21,71,0.8)
 }
 
 * {

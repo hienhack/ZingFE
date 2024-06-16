@@ -20,6 +20,8 @@ function PlaylistCard({
   description = false,
   artist = false,
   isOnwer = false,
+  year = false,
+
 }) {
   const navigate = useNavigate();
   const [focus, setFocus] = useState(false);
@@ -138,6 +140,11 @@ function PlaylistCard({
             {playlist.description}
           </h3>
         )}
+        {year && (
+          <h3 className="text-sm text-[--text-secondary] font-normal leading-[1.33] line-clamp-2">
+            {playlist.year}
+          </h3>
+        )}
       </div>
     </div>
   );
@@ -148,6 +155,8 @@ PlaylistCard.propTypes = {
   titile: PropTypes.bool,
   description: PropTypes.bool,
   artist: PropTypes.bool,
+  year: PropTypes.bool,
+
 };
 
 export default PlaylistCard;
