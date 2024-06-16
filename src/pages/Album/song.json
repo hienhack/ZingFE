@@ -1,0 +1,42 @@
+{
+    "encodeId": "ZZ8CCFFB",
+    "title": "Nơi Em Mãi Mãi Là Bình Yên",
+    "alias": "Noi-Em-Mai-Mai-La-Binh-Yen-Ho-Quang-Hieu",
+    "isOffical": true,
+    "username": "",
+    "artistsNames": "Hồ Quang Hiếu",
+    "artists": [
+      {
+        "id": "IWZ968UO",
+        "name": "Hồ Quang Hiếu",
+        "link": "/Ho-Quang-Hieu",
+        "spotlight": false,
+        "alias": "Ho-Quang-Hieu",
+        "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/avatars/8/8/f/5/88f5a28ecd2c02dd98229b5d910c0d0c.jpg",
+        "thumbnailM": "https://photo-resize-zmp3.zmdcdn.me/w360_r1x1_jpeg/avatars/8/8/f/5/88f5a28ecd2c02dd98229b5d910c0d0c.jpg",
+        "isOA": true,
+        "isOABrand": false,
+        "playlistId": "ZWZ9DAA6"
+      }
+    ],
+    "isWorldWide": true,
+    "thumbnailM": "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/cover/8/5/d/1/85d179e154862d265464958d32a6e133.jpg",
+    "link": "/bai-hat/Noi-Em-Mai-Mai-La-Binh-Yen-Ho-Quang-Hieu/ZZ8CCFFB.html",
+    "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w94_r1x1_jpeg/cover/8/5/d/1/85d179e154862d265464958d32a6e133.jpg",
+    "duration": 301,
+    "zingChoice": false,
+    "isPrivate": false,
+    "preRelease": false,
+    "releaseDate": 1647604800,
+    "genreIds": [
+      "IWZ9Z08I",
+      "IWZ97FCD"
+    ],
+    "distributor": "DAO Music Entertainment",
+    "indicators": [],
+    "isIndie": false,
+    "streamingStatus": 1,
+    "allowAudioAds": true,
+    "hasLyric": true,
+    "objectType": "song"
+  }

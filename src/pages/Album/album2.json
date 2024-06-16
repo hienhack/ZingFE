@@ -1,0 +1,155 @@
+{
+  "encodeId": "6C0CCI90",
+  "title": "Tôi (Single)",
+  "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w165_r1x1_jpeg/cover/6/0/a/e/60aeb329048dcbd6b986f7ebdb221707.jpg",
+  "isoffical": true,
+  "link": "/album/Toi-Single-Hao/6C0CCI90.html",
+  "isIndie": false,
+  "releaseDate": "10/05/2024",
+  "sortDescription": "",
+  "releasedAt": 1715346000000,
+  "genreIds": [
+    "IWZ9Z08I",
+    "IWZ9Z0C8"
+  ],
+  "PR": false,
+  "artists": [
+    {
+      "id": "IW7886CF",
+      "name": "Hào",
+      "link": "/nghe-si/Hao-IW7886CF",
+      "spotlight": false,
+      "alias": "Hao-IW7886CF",
+      "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/avatars/d/3/4/3/d343051c32c426a4de41982bd63cef59.jpg",
+      "thumbnailM": "https://photo-resize-zmp3.zmdcdn.me/w360_r1x1_jpeg/avatars/d/3/4/3/d343051c32c426a4de41982bd63cef59.jpg",
+      "isOA": false,
+      "isOABrand": false,
+      "playlistId": "6BBWDUAE",
+      "totalFollow": 1523
+    }
+  ],
+  "artistsNames": "Hào",
+  "playItemMode": 0,
+  "subType": 1,
+  "uid": 456,
+  "thumbnailM": "https://photo-resize-zmp3.zmdcdn.me/w320_r1x1_jpeg/cover/6/0/a/e/60aeb329048dcbd6b986f7ebdb221707.jpg",
+  "isShuffle": false,
+  "isPrivate": false,
+  "userName": "Zing MP3",
+  "isAlbum": true,
+  "textType": "Single",
+  "isSingle": true,
+  "distributor": "Yin Yang Media",
+  "description": "",
+  "aliasTitle": "Toi-Single-Hao",
+  "sectionId": "album",
+  "contentLastUpdate": 1714985143,
+  "artist": {
+    "id": "IW7886CF",
+    "name": "Hào",
+    "link": "/nghe-si/Hao-IW7886CF",
+    "spotlight": false,
+    "alias": "Hao-IW7886CF",
+    "cover": "https://zmp3-static.zmdcdn.me/skins/zmp3-v5.2/images/default_cover.png",
+    "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/avatars/d/3/4/3/d343051c32c426a4de41982bd63cef59.jpg"
+  },
+  "genres": [
+    {
+      "id": "IWZ9Z08I",
+      "name": "Việt Nam",
+      "title": "Việt Nam",
+      "alias": "viet-nam",
+      "link": "/the-loai-album/Viet-Nam/IWZ9Z08I.html"
+    },
+    {
+      "id": "IWZ9Z0C8",
+      "name": "R&B Việt",
+      "title": "R&B Việt",
+      "alias": "r-b-viet",
+      "link": "/the-loai-album/R-B-Viet/IWZ9Z0C8.html"
+    }
+  ],
+  "song": {
+    "items": [
+      {
+        "encodeId": "Z76D9660",
+        "title": "Tôi",
+        "alias": "Toi-Hao",
+        "isOffical": true,
+        "username": "",
+        "artistsNames": "Hào",
+        "artists": [
+          {
+            "id": "IW7886CF",
+            "name": "Hào",
+            "link": "/nghe-si/Hao-IW7886CF",
+            "spotlight": false,
+            "alias": "Hao-IW7886CF",
+            "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/avatars/d/3/4/3/d343051c32c426a4de41982bd63cef59.jpg",
+            "thumbnailM": "https://photo-resize-zmp3.zmdcdn.me/w360_r1x1_jpeg/avatars/d/3/4/3/d343051c32c426a4de41982bd63cef59.jpg",
+            "isOA": false,
+            "isOABrand": false,
+            "playlistId": "6BBWDUAE"
+          }
+        ],
+        "isWorldWide": true,
+        "thumbnailM": "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/cover/6/0/a/e/60aeb329048dcbd6b986f7ebdb221707.jpg",
+        "link": "/bai-hat/Toi-Hao/Z76D9660.html",
+        "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w94_r1x1_jpeg/cover/6/0/a/e/60aeb329048dcbd6b986f7ebdb221707.jpg",
+        "duration": 174,
+        "zingChoice": false,
+        "isPrivate": false,
+        "preRelease": false,
+        "releaseDate": 1715346000,
+        "genreIds": [
+          "IWZ9Z08I",
+          "IWZ9Z0C8"
+        ],
+        "album": {
+          "encodeId": "6C0CCI90",
+          "title": "Tôi (Single)",
+          "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w165_r1x1_jpeg/cover/6/0/a/e/60aeb329048dcbd6b986f7ebdb221707.jpg",
+          "isoffical": true,
+          "link": "/album/Toi-Single-Hao/6C0CCI90.html",
+          "isIndie": false,
+          "releaseDate": "10/05/2024",
+          "sortDescription": "",
+          "releasedAt": 1715346000000,
+          "genreIds": [
+            "IWZ9Z08I",
+            "IWZ9Z0C8"
+          ],
+          "PR": false,
+          "artists": [
+            {
+              "id": "IW7886CF",
+              "name": "Hào",
+              "link": "/nghe-si/Hao-IW7886CF",
+              "spotlight": false,
+              "alias": "Hao-IW7886CF",
+              "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/avatars/d/3/4/3/d343051c32c426a4de41982bd63cef59.jpg",
+              "thumbnailM": "https://photo-resize-zmp3.zmdcdn.me/w360_r1x1_jpeg/avatars/d/3/4/3/d343051c32c426a4de41982bd63cef59.jpg",
+              "isOA": false,
+              "isOABrand": false,
+              "playlistId": "6BBWDUAE",
+              "totalFollow": 1523
+            }
+          ],
+          "artistsNames": "Hào"
+        },
+        "distributor": "Yin Yang Media",
+        "indicators": [],
+        "isIndie": false,
+        "mvlink": "/video-clip/Toi-Hao/Z76D9660.html",
+        "streamingStatus": 1,
+        "allowAudioAds": true,
+        "hasLyric": true
+      }
+    ],
+    "total": 1,
+    "totalDuration": 174
+  },
+  "like": 5,
+  "listen": 179,
+  "liked": false
+}

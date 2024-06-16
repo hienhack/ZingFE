@@ -24,6 +24,7 @@ import Guideline from './pages/Guideline/Guideline';
 import About from './pages/Guideline/Element/About';
 import Contact from './pages/Guideline/Element/Contact';
 import Copyright from './pages/Guideline/Element/Copyright';
+import Album from './pages/Album/Album';
 
 function App() {
   const { authenticate, token } = useSelector((state) => state.user);
@@ -80,6 +81,17 @@ function App() {
             <Route path="playlist" element={<AlbumsSearch />} />
             <Route path="artist" element={<SingersSearch />} />
           </Route>
+
+          <Route path="/album" element={<Album />}>
+            {' '}
+          </Route>
+        </Route>
+
+        {/*Guideline*/}
+        <Route path="/huong-dan" element={<Guideline />}>
+          <Route path="/huong-dan/about" element={<About />} />
+          <Route path="/huong-dan/contact" element={<Contact />} />
+          <Route path="/huong-dan/copyright" element={<Copyright />} />
         </Route>
 
         {/*Guideline*/}

@@ -1,0 +1,393 @@
+{
+  "encodeId": "68UBADZ6",
+  "title": "Post",
+  "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w165_r1x1_jpeg/cover/a/d/5/4/ad54f7fde17da84f6b8b7d844c773c49.jpg",
+  "isoffical": true,
+  "link": "/album/Post-OttO/68UBADZ6.html",
+  "isIndie": false,
+  "releaseDate": "27/09/2019",
+  "sortDescription": "",
+  "releasedAt": 1569517200000,
+  "genreIds": [
+    "IWZ9Z08O",
+    "IWZ9Z097"
+  ],
+  "PR": false,
+  "artists": [
+    {
+      "id": "IW6ZO8BZ",
+      "name": "OttO",
+      "link": "/nghe-si/OttO",
+      "spotlight": false,
+      "alias": "OttO",
+      "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/avatars/9/8/d/d/98dda19711a0f795c1410d2bb8e99c85.jpg",
+      "thumbnailM": "https://photo-resize-zmp3.zmdcdn.me/w360_r1x1_jpeg/avatars/9/8/d/d/98dda19711a0f795c1410d2bb8e99c85.jpg",
+      "isOA": false,
+      "isOABrand": false,
+      "playlistId": "6UB7IUWB",
+      "totalFollow": 4
+    }
+  ],
+  "artistsNames": "OttO",
+  "playItemMode": 0,
+  "subType": 1,
+  "uid": 342,
+  "thumbnailM": "https://photo-resize-zmp3.zmdcdn.me/w320_r1x1_jpeg/cover/a/d/5/4/ad54f7fde17da84f6b8b7d844c773c49.jpg",
+  "isShuffle": false,
+  "isPrivate": false,
+  "userName": "Zing MP3",
+  "isAlbum": true,
+  "textType": "Single",
+  "isSingle": true,
+  "distributor": "The Orchard",
+  "description": "",
+  "aliasTitle": "Post-OttO",
+  "sectionId": "album",
+  "contentLastUpdate": 1622663059,
+  "artist": {
+    "id": "IW6ZO8BZ",
+    "name": "OttO",
+    "link": "/nghe-si/OttO",
+    "spotlight": false,
+    "alias": "OttO",
+    "cover": "https://zmp3-static.zmdcdn.me/skins/zmp3-v5.2/images/default_cover.png",
+    "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/avatars/9/8/d/d/98dda19711a0f795c1410d2bb8e99c85.jpg"
+  },
+  "genres": [
+    {
+      "id": "IWZ9Z08O",
+      "name": "Âu Mỹ",
+      "title": "Âu Mỹ",
+      "alias": "au-my",
+      "link": "/the-loai-album/Au-My/IWZ9Z08O.html"
+    },
+    {
+      "id": "IWZ9Z097",
+      "name": "Pop",
+      "title": "Pop",
+      "alias": "pop",
+      "link": "/the-loai-album/Pop/IWZ9Z097.html"
+    }
+  ],
+  "song": {
+    "items": [
+      {
+        "encodeId": "ZOFD6ABF",
+        "title": "Boxer (Single)",
+        "alias": "Boxer-Single-OttO",
+        "isOffical": true,
+        "username": "",
+        "artistsNames": "OttO",
+        "artists": [
+          {
+            "id": "IW6ZO8BZ",
+            "name": "OttO",
+            "link": "/nghe-si/OttO",
+            "spotlight": false,
+            "alias": "OttO",
+            "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/avatars/9/8/d/d/98dda19711a0f795c1410d2bb8e99c85.jpg",
+            "thumbnailM": "https://photo-resize-zmp3.zmdcdn.me/w360_r1x1_jpeg/avatars/9/8/d/d/98dda19711a0f795c1410d2bb8e99c85.jpg",
+            "isOA": false,
+            "isOABrand": false,
+            "playlistId": "6UB7IUWB"
+          }
+        ],
+        "isWorldWide": false,
+        "thumbnailM": "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/cover/a/d/5/4/ad54f7fde17da84f6b8b7d844c773c49.jpg",
+        "link": "/bai-hat/Boxer-Single-OttO/ZOFD6ABF.html",
+        "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w94_r1x1_jpeg/cover/a/d/5/4/ad54f7fde17da84f6b8b7d844c773c49.jpg",
+        "duration": 227,
+        "zingChoice": false,
+        "isPrivate": false,
+        "preRelease": false,
+        "releaseDate": 1564678800,
+        "genreIds": [
+          "IWZ9Z08O",
+          "IWZ9Z097"
+        ],
+        "album": {
+          "encodeId": "68WOFBOE",
+          "title": "The Boxer - a Single by Otto. (Single)",
+          "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w165_r1x1_jpeg/cover/3/3/2/b/332bb9ae9de81dc70b0e7d0a60e92386.jpg",
+          "isoffical": true,
+          "link": "/album/The-Boxer-a-Single-by-Otto-Single-OttO/68WOFBOE.html",
+          "isIndie": false,
+          "releaseDate": "02/08/2019",
+          "sortDescription": "",
+          "releasedAt": 1564678800000,
+          "genreIds": [
+            "IWZ9Z08O",
+            "IWZ9Z097"
+          ],
+          "PR": false,
+          "artists": [
+            {
+              "id": "IW6ZO8BZ",
+              "name": "OttO",
+              "link": "/nghe-si/OttO",
+              "spotlight": false,
+              "alias": "OttO",
+              "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/avatars/9/8/d/d/98dda19711a0f795c1410d2bb8e99c85.jpg",
+              "thumbnailM": "https://photo-resize-zmp3.zmdcdn.me/w360_r1x1_jpeg/avatars/9/8/d/d/98dda19711a0f795c1410d2bb8e99c85.jpg",
+              "isOA": false,
+              "isOABrand": false,
+              "playlistId": "6UB7IUWB",
+              "totalFollow": 4
+            }
+          ],
+          "artistsNames": "OttO"
+        },
+        "distributor": "The Orchard",
+        "indicators": [],
+        "isIndie": false,
+        "streamingStatus": 2,
+        "streamPrivileges": [
+          2
+        ],
+        "downloadPrivileges": [
+          3
+        ],
+        "allowAudioAds": false
+      },
+      {
+        "encodeId": "ZU07WCZB",
+        "title": "Safer Out The City",
+        "alias": "Safer-Out-The-City-OttO",
+        "isOffical": true,
+        "username": "",
+        "artistsNames": "OttO",
+        "artists": [
+          {
+            "id": "IW6ZO8BZ",
+            "name": "OttO",
+            "link": "/nghe-si/OttO",
+            "spotlight": false,
+            "alias": "OttO",
+            "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/avatars/9/8/d/d/98dda19711a0f795c1410d2bb8e99c85.jpg",
+            "thumbnailM": "https://photo-resize-zmp3.zmdcdn.me/w360_r1x1_jpeg/avatars/9/8/d/d/98dda19711a0f795c1410d2bb8e99c85.jpg",
+            "isOA": false,
+            "isOABrand": false,
+            "playlistId": "6UB7IUWB"
+          }
+        ],
+        "isWorldWide": false,
+        "thumbnailM": "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/cover/a/d/5/4/ad54f7fde17da84f6b8b7d844c773c49.jpg",
+        "link": "/bai-hat/Safer-Out-The-City-OttO/ZU07WCZB.html",
+        "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w94_r1x1_jpeg/cover/a/d/5/4/ad54f7fde17da84f6b8b7d844c773c49.jpg",
+        "duration": 199,
+        "zingChoice": false,
+        "isPrivate": false,
+        "preRelease": false,
+        "releaseDate": 1569517200,
+        "genreIds": [
+          "IWZ9Z08O",
+          "IWZ9Z097"
+        ],
+        "album": {
+          "encodeId": "68UBADZ6",
+          "title": "Post",
+          "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w165_r1x1_jpeg/cover/a/d/5/4/ad54f7fde17da84f6b8b7d844c773c49.jpg",
+          "isoffical": true,
+          "link": "/album/Post-OttO/68UBADZ6.html",
+          "isIndie": false,
+          "releaseDate": "27/09/2019",
+          "sortDescription": "",
+          "releasedAt": 1569517200000,
+          "genreIds": [
+            "IWZ9Z08O",
+            "IWZ9Z097"
+          ],
+          "PR": false,
+          "artists": [
+            {
+              "id": "IW6ZO8BZ",
+              "name": "OttO",
+              "link": "/nghe-si/OttO",
+              "spotlight": false,
+              "alias": "OttO",
+              "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/avatars/9/8/d/d/98dda19711a0f795c1410d2bb8e99c85.jpg",
+              "thumbnailM": "https://photo-resize-zmp3.zmdcdn.me/w360_r1x1_jpeg/avatars/9/8/d/d/98dda19711a0f795c1410d2bb8e99c85.jpg",
+              "isOA": false,
+              "isOABrand": false,
+              "playlistId": "6UB7IUWB",
+              "totalFollow": 4
+            }
+          ],
+          "artistsNames": "OttO"
+        },
+        "distributor": "The Orchard",
+        "indicators": [],
+        "isIndie": false,
+        "streamingStatus": 2,
+        "streamPrivileges": [
+          2
+        ],
+        "downloadPrivileges": [
+          3
+        ],
+        "allowAudioAds": false
+      },
+      {
+        "encodeId": "ZU07WCZC",
+        "title": "Old Lane",
+        "alias": "Old-Lane-OttO",
+        "isOffical": true,
+        "username": "",
+        "artistsNames": "OttO",
+        "artists": [
+          {
+            "id": "IW6ZO8BZ",
+            "name": "OttO",
+            "link": "/nghe-si/OttO",
+            "spotlight": false,
+            "alias": "OttO",
+            "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/avatars/9/8/d/d/98dda19711a0f795c1410d2bb8e99c85.jpg",
+            "thumbnailM": "https://photo-resize-zmp3.zmdcdn.me/w360_r1x1_jpeg/avatars/9/8/d/d/98dda19711a0f795c1410d2bb8e99c85.jpg",
+            "isOA": false,
+            "isOABrand": false,
+            "playlistId": "6UB7IUWB"
+          }
+        ],
+        "isWorldWide": false,
+        "thumbnailM": "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/cover/a/d/5/4/ad54f7fde17da84f6b8b7d844c773c49.jpg",
+        "link": "/bai-hat/Old-Lane-OttO/ZU07WCZC.html",
+        "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w94_r1x1_jpeg/cover/a/d/5/4/ad54f7fde17da84f6b8b7d844c773c49.jpg",
+        "duration": 198,
+        "zingChoice": false,
+        "isPrivate": false,
+        "preRelease": false,
+        "releaseDate": 1569517200,
+        "genreIds": [
+          "IWZ9Z08O",
+          "IWZ9Z097"
+        ],
+        "album": {
+          "encodeId": "68UBADZ6",
+          "title": "Post",
+          "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w165_r1x1_jpeg/cover/a/d/5/4/ad54f7fde17da84f6b8b7d844c773c49.jpg",
+          "isoffical": true,
+          "link": "/album/Post-OttO/68UBADZ6.html",
+          "isIndie": false,
+          "releaseDate": "27/09/2019",
+          "sortDescription": "",
+          "releasedAt": 1569517200000,
+          "genreIds": [
+            "IWZ9Z08O",
+            "IWZ9Z097"
+          ],
+          "PR": false,
+          "artists": [
+            {
+              "id": "IW6ZO8BZ",
+              "name": "OttO",
+              "link": "/nghe-si/OttO",
+              "spotlight": false,
+              "alias": "OttO",
+              "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/avatars/9/8/d/d/98dda19711a0f795c1410d2bb8e99c85.jpg",
+              "thumbnailM": "https://photo-resize-zmp3.zmdcdn.me/w360_r1x1_jpeg/avatars/9/8/d/d/98dda19711a0f795c1410d2bb8e99c85.jpg",
+              "isOA": false,
+              "isOABrand": false,
+              "playlistId": "6UB7IUWB",
+              "totalFollow": 4
+            }
+          ],
+          "artistsNames": "OttO"
+        },
+        "distributor": "The Orchard",
+        "indicators": [],
+        "isIndie": false,
+        "streamingStatus": 2,
+        "streamPrivileges": [
+          2
+        ],
+        "downloadPrivileges": [
+          3
+        ],
+        "allowAudioAds": false
+      },
+      {
+        "encodeId": "ZU07WCZD",
+        "title": "Something She Never Knew",
+        "alias": "Something-She-Never-Knew-OttO",
+        "isOffical": true,
+        "username": "",
+        "artistsNames": "OttO",
+        "artists": [
+          {
+            "id": "IW6ZO8BZ",
+            "name": "OttO",
+            "link": "/nghe-si/OttO",
+            "spotlight": false,
+            "alias": "OttO",
+            "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/avatars/9/8/d/d/98dda19711a0f795c1410d2bb8e99c85.jpg",
+            "thumbnailM": "https://photo-resize-zmp3.zmdcdn.me/w360_r1x1_jpeg/avatars/9/8/d/d/98dda19711a0f795c1410d2bb8e99c85.jpg",
+            "isOA": false,
+            "isOABrand": false,
+            "playlistId": "6UB7IUWB"
+          }
+        ],
+        "isWorldWide": false,
+        "thumbnailM": "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/cover/a/d/5/4/ad54f7fde17da84f6b8b7d844c773c49.jpg",
+        "link": "/bai-hat/Something-She-Never-Knew-OttO/ZU07WCZD.html",
+        "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w94_r1x1_jpeg/cover/a/d/5/4/ad54f7fde17da84f6b8b7d844c773c49.jpg",
+        "duration": 264,
+        "zingChoice": false,
+        "isPrivate": false,
+        "preRelease": false,
+        "releaseDate": 1569517200,
+        "genreIds": [
+          "IWZ9Z08O",
+          "IWZ9Z097"
+        ],
+        "album": {
+          "encodeId": "68UBADZ6",
+          "title": "Post",
+          "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w165_r1x1_jpeg/cover/a/d/5/4/ad54f7fde17da84f6b8b7d844c773c49.jpg",
+          "isoffical": true,
+          "link": "/album/Post-OttO/68UBADZ6.html",
+          "isIndie": false,
+          "releaseDate": "27/09/2019",
+          "sortDescription": "",
+          "releasedAt": 1569517200000,
+          "genreIds": [
+            "IWZ9Z08O",
+            "IWZ9Z097"
+          ],
+          "PR": false,
+          "artists": [
+            {
+              "id": "IW6ZO8BZ",
+              "name": "OttO",
+              "link": "/nghe-si/OttO",
+              "spotlight": false,
+              "alias": "OttO",
+              "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/avatars/9/8/d/d/98dda19711a0f795c1410d2bb8e99c85.jpg",
+              "thumbnailM": "https://photo-resize-zmp3.zmdcdn.me/w360_r1x1_jpeg/avatars/9/8/d/d/98dda19711a0f795c1410d2bb8e99c85.jpg",
+              "isOA": false,
+              "isOABrand": false,
+              "playlistId": "6UB7IUWB",
+              "totalFollow": 4
+            }
+          ],
+          "artistsNames": "OttO"
+        },
+        "distributor": "The Orchard",
+        "indicators": [],
+        "isIndie": false,
+        "streamingStatus": 2,
+        "streamPrivileges": [
+          2
+        ],
+        "downloadPrivileges": [
+          3
+        ],
+        "allowAudioAds": false
+      }
+    ],
+    "total": 4,
+    "totalDuration": 888
+  },
+  "like": 0,
+  "listen": 0,
+  "liked": false
+}
